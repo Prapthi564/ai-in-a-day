@@ -116,52 +116,52 @@ The high-level steps covered in the lab are:
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Task 4 - Querying Azure Search Indexes
-
+ 
 1. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials. Then, select **Resource groups**.
 
-    ![Open Azure resource group](media/SHC2a.3.1.png)
+   ![Open Azure resource group](media/SHC2a.3.1.png)
 
-2. Select the **AI-in-a-Day** resource group.
+1. Select the **AI-in-a-Day** resource group.
 
 3. Locate **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and select it.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
 
-4. Select the **Indexes** tab and ensure that you have two indexes created. If the Document Count is 0 for either, wait a couple of minutes and select **Refresh** until the document count appears.
+1. Select the **Indexes** tab and ensure that you have two indexes created. If the Document Count is 0 for either, wait a couple of minutes and select **Refresh** until the document count appears.
 
     ![The list of Azure Search indexes.](media/AI1.png)
 
 
 
-6. Once documents are available, Navigate to Overview **(1)** of Search service and then select **Search Explorer (2)** to open up the Search Explorer.
+1. Once documents are available, Navigate to Overview **(1)** of Search service and then select **Search Explorer (2)** to open up the Search Explorer.
 
     ![The Search Explorer option is selected.](media/innovate4.png)
 
-7. Choose the **covid19temp (1)** index and enter `RNA interference`**(2)** into the Query string input box, and then select **Search (3)**. This will return the documents which include the phrase "RNA interference."
+1. Choose the **covid19temp (1)** index and enter `RNA interference`**(2)** into the Query string input box, and then select **Search (3)**. This will return the documents which include the phrase "RNA interference."
 
     ![Articles with the phrase RNA interference.](media/L2T4S6.png)
 
-8. We can also see how many articles match a certain search string. In the Query string input box, enter the phrase `Brazil&$count=true` **(1)** and then select **Search (2)**.  This will return 53 documents.
+1. We can also see how many articles match a certain search string. In the Query string input box, enter the phrase `Brazil&$count=true` **(1)** and then select **Search (2)**.  This will return 53 documents.
 
     ![53 articles reference Brazil.](media/image03.png)
 
-9. Each document returns a large number of fields, but we can specify the fields we would like to see. In the Query string input box, enter the phrase `UNC Chapel Hill&$select=metadata/authors, metadata/title` **(1)** and then select **Search (2)**. This will return the title as well as detailed information on each author.
+1. Each document returns a large number of fields, but we can specify the fields we would like to see. In the Query string input box, enter the phrase `UNC Chapel Hill&$select=metadata/authors, metadata/title` **(1)** and then select **Search (2)**. This will return the title as well as detailed information on each author.
 
     ![Paper titles and authors referencing UNC Chapel Hill.](media/image04.png)
 
-10. The Azure Search service can also generate a demo application. Return to the search service and select the **covid19temp** index.
+1. The Azure Search service can also generate a demo application. Return to the search service and select the **covid19temp** index.
 
     ![The covid19temp index is selected.](media/inn8.png)
 
-11. Select the **Create Demo App** option.
+1. Select the **Create Demo App** option.
 
     ![The Create Demo App option is selected.](media/lab2a-task4-step10.png)
 
-12. On the first tab, select `metadata.title` **(1)** for the Title and `abstract.text` **(2)** for the Description. Then select **Next** twice and click on **Create Demo App (3)**. After the prompt, select **Download** to download an HTML file named `AzSearch.html`.
+1. On the first tab, select `metadata.title` **(1)** for the Title and `abstract.text` **(2)** for the Description. Then select **Next** twice and click on **Create Demo App (3)**. After the prompt, select **Download** to download an HTML file named `AzSearch.html`.
 
     ![Create a demo app.](media/create-demo-app-1.1.png)
 
-13. Open the demo app HTML file. In the search box, enter the phrase **RNA interference (1)** and select the **Search icon (2)**. This will return 497 papers relating to RNA interference.
+1. Open the demo app HTML file. In the search box, enter the phrase **RNA interference (1)** and select the **Search icon (2)**. This will return 497 papers relating to RNA interference.
 
     ![Use the demo app.](media/L2T4S12.png)
 
@@ -181,63 +181,63 @@ The high-level steps covered in the lab are:
 
     ![Storage explorer is selected on the desktop.](media/storage-exp-desktop.png)
 
-2. Select the **Connect (1)** option and then click on **Storage account or service (2)**.
+1. Select the **Connect (1)** option and then click on **Storage account or service (2)**.
 
     ![storageaccount](media/storage-account.1.png)
 
-3. Select **Connection String (Key or SAS) (1)** under the Select Connection Method Window and then select **Next (2)**.
+1. Select **Connection String (Key or SAS) (1)** under the Select Connection Method Window and then select **Next (2)**.
 
     ![The Use a connection string option is selected.](media/connectionstring.1.png)
 
-4. Paste in your storage account **Connection string (1)** **<inject key="storageAccountConnectionString" enableCopy="true"/>**. Then, select **Next (2)** to continue and **Connect (3)** to complete the operation.
+1. Paste in your storage account **Connection string (1)** **<inject key="storageAccountConnectionString" enableCopy="true"/>**. Then, select **Next (2)** to continue and **Connect (3)** to complete the operation.
 
     ![The connection string is filled in.](media/new-lab2a-1.1.png)
 
     ![Connect is selected on the storage explorer page](media/new-lab2a-2.1.png)
 
-5. In Azure Storage Explorer, navigate down the **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> (1)** attached storage and expand **Blob containers (2)** expand the **blob container (3)** and select `covid19temp` **(4)**.  Double-click the **comm_use_subset (5)** to enter that folder.
+1. In Azure Storage Explorer, navigate down the **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> (1)** attached storage and expand **Blob containers (2)** expand the **blob container (3)** and select `covid19temp` **(4)**.  Double-click the **comm_use_subset (5)** to enter that folder.
 
     ![The comm_use_subset folder is selected.](media/new-lab2a-3.png)
 
-6. Enter the **pdf_json_refresh** folder. Then, in the **Select All (1)** menu, choose **Select All Cached (2)**. This will highlight all 100 records in the folder.  Select **Copy (3)** to copy these documents.
+1. Enter the **pdf_json_refresh** folder. Then, in the **Select All (1)** menu, choose **Select All Cached (2)**. This will highlight all 100 records in the folder.  Select **Copy (3)** to copy these documents.
 
     ![Select the PDF refresh folder.](media/select-pdf-refresh-folder01.png)
     
     ![Select all cached items and copy them.](media/azure-storage-explorer-201.png)
 
-7. Navigate up to **comm_use_subset** by selecting the upward arrow and then double-click **pdf_json (1)**. Inside this folder, select **Paste (2)** to paste the 100 documents into the **pdf_json** folder. When it finishes, you should have **965 total documents (3)**.
+1. Navigate up to **comm_use_subset** by selecting the upward arrow and then double-click **pdf_json (1)**. Inside this folder, select **Paste (2)** to paste the 100 documents into the **pdf_json** folder. When it finishes, you should have **965 total documents (3)**.
 
     ![Navigate into the pdf_json folder.](media/upward-arrow01.png)
 
     ![Paste all cached items into the pdf_json folder.](media/azure-storage-explorer-301.png)
 
-8. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials if not logged in already. Then, select **Resource groups**.
+1. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials if not logged in already. Then, select **Resource groups**.
 
     ![Open Azure resource group](media/SHC2a.3.1.png)
 
-9. Select the **AI-in-a-Day** resource group.
+1. Select the **AI-in-a-Day** resource group.
 
-10. Select the **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** Search service.
+1. Select the **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** Search service.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
 
-11. Navigate to the **Indexers (1)** section and select the **covid19temp (2)** indexer.
+1. Navigate to the **Indexers (1)** section and select the **covid19temp (2)** indexer.
 
     ![The covid19temp indexer is selected.](media/AI2.png)
 
-12. Select the **Run (1)** option to process the 100 documents. Although we can configure an indexer to run periodically, this indexer will only run when manually engaged.  Select **Yes (2)** to run the indexer.
+1. Select the **Run (1)** option to process the 100 documents. Although we can configure an indexer to run periodically, this indexer will only run when manually engaged.  Select **Yes (2)** to run the indexer.
 
     ![The covid19temp indexer is set to run.](media/azure-search-indexers-run.1.png)
 
-13. The indexer will run. It should be completed within 15-30 seconds to process the 100 new documents. You may need to select **Refresh** to see the indexer's progress.
+1. The indexer will run. It should be completed within 15-30 seconds to process the 100 new documents. You may need to select **Refresh** to see the indexer's progress.
 
     ![The covid19temp indexer has finished running.](media/azure-search-indexers-refresh.png)
 
-14. Return to the **Indexes** tab for the Search service and ensure that the **covid19temp** index has 965 documents. If it still reads 865, wait 30 seconds and select **Refresh** to check again.
+1. Return to the **Indexes** tab for the Search service and ensure that the **covid19temp** index has 965 documents. If it still reads 865, wait 30 seconds and select **Refresh** to check again.
 
     ![The covid19temp index has finished updating.](media/inn10.png)
 
-15. Select the **covid19temp** index to return to the Search Explorer. When we had 865 documents, 53 of them pertained to Brazil. We can confirm that this update was successful by entering `Brazil&$count=true` **(1)** and selecting **Search (2)**. This will now return 57 results **(3)** instead of the prior 53.
+1. Select the **covid19temp** index to return to the Search Explorer. When we had 865 documents, 53 of them pertained to Brazil. We can confirm that this update was successful by entering `Brazil&$count=true` **(1)** and selecting **Search (2)**. This will now return 57 results **(3)** instead of the prior 53.
 
     ![57 documents pertaining to Brazil.](media/L2T5S15.png)
 
