@@ -88,11 +88,11 @@ The high-level steps covered in the lab are:
    
    * Compute instance name: notebook<inject key="DeploymentID" enableCopy="false"/>
 
-    ![Verify Azure Machine Learning compute instance is running](media/ml-compute-status.png)
+     ![Verify Azure Machine Learning compute instance is running](media/ml-compute-status.png)
 
-    >**Note**: If you launched Azure Machine Learning Studio right after your lab environment was provisioned, you might find the compute instance in a provisioning state. In this case, wait a few minutes until it changes its status to `Running`.
+     >**Note**: If you launched Azure Machine Learning Studio right after your lab environment was provisioned, you might find the compute instance in a provisioning state. In this case, wait a few minutes until it changes its status to `Running`.
 
-1. In the Azure Machine Learning Studio under **Compute** **(1)**, click on **... (2)** and, open the **Terminal** **(2)** environment.
+1. In the Azure Machine Learning Studio under **Compute** **(1)**, click on **... (2)** and, open the **Terminal** **(3)** environment.
     
    ![](media/ml-terminal.png)
    
@@ -134,7 +134,7 @@ The high-level steps covered in the lab are:
 
    ![Select Note Book](./media/IMG015.png)
    
-2. On Jupiter page, select **Kernel (1)**, then **Change kernel (2)** and make sure **Python (aiw-ai-kernel) (3)** is selected.
+2. On Jupyter page, select **Kernel (1)**, then **Change kernel (2)** and make sure **Python (aiw-ai-kernel) (3)** is selected.
 
    ![](./media/IMG011.png)
 
@@ -151,7 +151,7 @@ The high-level steps covered in the lab are:
 
     >**Note:** If you see the "IProgress not found" error, it is expected. Please proceed further.
 
- 5. Please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>**
+ 5. Run each cell and Please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>**
 
      ![Note Book Cell Output](./media/aiupdates.png)
 
@@ -167,7 +167,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn5.png)
    
-3. On the `Task type and data` page, make sure `Classification` **(1)** is selected. Select `COVID19Articles_Train_Vectors`**(2)** as your dataset and click `Next` **(3)** to proceed.
+3. On the `Task type and data` page, make sure `Classification` **(1)** is selected under **Select task type**. Select `COVID19Articles_Train_Vectors`**(2)** as your dataset and click `Next` **(3)** to proceed.
 
     ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/innovate1.png)
 
@@ -197,9 +197,9 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
     - **Virtual machine type (2)**: CPU
     - **Virtual machine Size (3)**: Standard_DS3_v2
 
-    ![Dedicated virtual machine priority, CPU virtual machine type, and Standard_DS3_v2 virtual machine size are selected. The next button is highlighted.](./media/SHC5.4.1.png)
+      ![Dedicated virtual machine priority, CPU virtual machine type, and Standard_DS3_v2 virtual machine size are selected. The next button is highlighted.](./media/SHC5.4.1.png)
 
-    Select `Next` **(4)** to continue.
+     - Select `Next` **(4)** to continue.
 
 9. To configure cluster settings set the values given below:
 
@@ -211,7 +211,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     ![Computer name is set to aml-compute-cpu. The minimum number of nodes is set to zero. The maximum number of nodes is set to four. The create button is highlighted.](./media/SHC5.5.1.png)    
 
-10. On the Review page, select `Submit training job` **(1)**  to kick off the Automated ML experiment run. If this is the first time you are launching an experiment run in the Azure Machine Learning workspace, the total experiment time will be longer than the `training job time` we have set. This is because of the time needed to start the Compute Cluster and deploy the container images required to execute.
+10. On the Review page, select **Submit training job**  to kick off the Automated ML experiment run. If this is the first time you are launching an experiment run in the Azure Machine Learning workspace, the total experiment time will be longer than the `training job time` we have set. This is because of the time needed to start the Compute Cluster and deploy the container images required to execute.
 
     ![Validation is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/inn4.png)
 
