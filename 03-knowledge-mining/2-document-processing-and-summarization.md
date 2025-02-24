@@ -67,7 +67,7 @@ The high-level steps covered in the lab are:
 
     ![The Search service's API key is copied to the clipboard.](media/inn7.png)
 
-1. Navigate to Storage account named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** **(1)**, select **Access keys** **(2)** under Security + networking from left-menu. Click on **Show** of the connection string under Key1 **(3)** to see the connection string and **copy the connection string** **(4)** under Key1. Paste this into a text file.
+1. Navigate to Storage account named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** **(1)**, select **Access keys** **(2)** under Security + networking from left-menu. Click on **Show (3)** of the connection string under Key1  to see the connection string and **copy the connection string** **(4)** under Key1. Paste this into a text file.
 
    ![](media/ai-sa-cs.png)
 
@@ -165,7 +165,7 @@ The high-level steps covered in the lab are:
 
 ## Task 5 - Updating Azure Search Indexes
 
-1. On the desktop, select the Azure Storage Explorer.  
+1. On the desktop, select the **Azure Storage Explorer**.  
 
     ![Storage explorer is selected on the desktop.](media/storage-exp-desktop.png)
 
@@ -183,7 +183,7 @@ The high-level steps covered in the lab are:
 
     ![Connect is selected on the storage explorer page](media/new-lab2a-2.1.png)
 
-5. In Azure Storage Explorer, navigate down the **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> (1)** attached storage and expand **Blob containers (2)** expand the **blob container (3)** and select `covid19temp` **(4)**.  Double-click the **comm_use_subset (5)** to enter that folder.
+5. In Azure Storage **Explorer (1)**, navigate down the **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> (2)** attached storage and expand **Blob containers (3)** and select **covid19temp (4)**.  Double-click the **comm_use_subset (5)** to enter that folder.
 
     ![The comm_use_subset folder is selected.](media/new-lab2a-3.png)
 
@@ -242,29 +242,29 @@ The high-level steps covered in the lab are:
 
  1. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials. Then, select **Resource groups**.
 
-      ![Open Azure resource group](media/SHC2a.3.1.png)
+       ![Open Azure resource group](media/SHC2a.3.1.png)
 
  2. Select the **AI-in-a-Day** resource group.
 
  3. Select the **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** Storage account.
 
-      ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn15.png)
+       ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn15.png)
 
  4. Under **Settings**, navigate to the **Resource sharing (CORS)** page. 
 
-      ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/storaheaccount-CORS.png)
+       ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/storaheaccount-CORS.png)
     
  5. On the Resource Sharing (CORS) page, ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table **(2)** and then select **Save** **(3)** to save the CORS settings.  
 
-    | Parameter                   | Value                                              |
-    | --------------------------- | -------------------------------------------------- |
-    | Allowed origins             | Enter `https://formrecognizer.appliedai.azure.com` |
-    | Allowed methods             | Select all of the available methods.               |
-    | Allowed headers             | Enter `*`                                          |
-    | Exposed headers             | Enter `*`                                          |
-    | Max age                     | Enter `200`                                        |
+        | Parameter                   | Value                                              |
+        | --------------------------- | -------------------------------------------------- |
+        | Allowed origins             | Enter `https://formrecognizer.appliedai.azure.com` |
+        | Allowed methods             | Select all of the available methods.               |
+        | Allowed headers             | Enter `*`                                          |
+        | Exposed headers             | Enter `*`                                          |
+        | Max age                     | Enter `200`                                        |
 
-      ![The CORS options are set for the storage account](media/storage-cors-blob.png)
+    ![The CORS options are set for the storage account](media/storage-cors-blob.png)
 
  6. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Document Intelligence resource **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -321,7 +321,7 @@ The high-level steps covered in the lab are:
     
       ![The Abstract tag has been created](media/lab2a-t6-frs9.png)
 
- 15. Click on Run Layout and wait for the layout to complete for the first document. Locate the document’s abstract. Note that in some documents, the abstract may be on the second page. However, after running the layout, the abstract may not be automatically detected, and all text might be highlighted in yellow. In this case, you will need to manually select each word in the abstract before tagging.
+ 15. Click on **Run Layout** and wait for the layout to complete for the first document. Locate the document’s abstract. Note that in some documents, the abstract may be on the second page. However, after running the layout, the abstract may not be automatically detected, and all text might be highlighted in yellow. In this case, you will need to manually select each word in the abstract before tagging.
 
       ![Running layout for a document](media/L2-T6-S15.png)
 

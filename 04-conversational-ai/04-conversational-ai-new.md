@@ -50,11 +50,9 @@ The way organizations are building conversational systems is evolving, with bots
 
 1. On the **Agent** page click on **Skip to configure**.
 
-1. On the **Create a Copilot** page enter the following details:
+1. On the **Create a Copilot** page enter the following details and click on **Create (2)**.
 
    - **Copilot name (1)**: Enter **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>**.
-
-   Now select **Create (2)**.
 
    ![](media/create_bot.jpg)
 
@@ -84,7 +82,7 @@ The way organizations are building conversational systems is evolving, with bots
 
 1. Select **Ask a question** from the drop-down while adding a node.
 
-   ![](media/L4T3S5.png)
+   ![](media/up5.png)
 
 1. Enter the question as "**What type of food would you like to order?**" **(1)** and under options for users, click on **New option** **(2)** to add types of food. Add **Chinese** and **Italian** **(3)** as shown in the below screenshot.
 
