@@ -264,121 +264,121 @@ The high-level steps covered in the lab are:
         | Exposed headers             | Enter `*`                                          |
         | Max age                     | Enter `200`                                        |
 
-    ![The CORS options are set for the storage account](media/storage-cors-blob.png)
+       ![The CORS options are set for the storage account](media/storage-cors-blob.png)
 
  6. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Document Intelligence resource **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
 
-      ![The AI Services service is selected](media/inn11.png)
+       ![The AI Services service is selected](media/inn11.png)
 
  7. Select the **Keys and Endpoint** **(1)** option under Resource Management and click on **Show Keys** **(2)**. Then, copy the value for **KEY 1** **(3)** and the **Endpoint** **(4)**. Paste these into a text file for later use.
 
-      ![The AI Services key and endpoint are selected](media/inn12.png)
+       ![The AI Services key and endpoint are selected](media/inn12.png)
 
  8. Navigate to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Get Started** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
 
-      ![Create new custom model](media/updated-document-ai.png)
+       ![Create new custom model](media/updated-document-ai.png)
 
  9. In the Custom models page, under **My Project** click on **+ Create a project**.
   
-      ![Project](media/updated-doc-ai-2.png)
+       ![Project](media/updated-doc-ai-2.png)
 
  10. In the Enter Project Details pane, enter the Project Name as **covid19abstract (1)** and add the description as **Extracting Abstract from the documents (2)**. Click on **Continue (3)**.
 
-      ![The covid19abstract project has been created](media/lab2a-t6-frs3.1.png)
+        ![The covid19abstract project has been created](media/lab2a-t6-frs3.1.png)
     
  11. In the **Configure service resource**, provide the following details and click on **Continue (4)**.
    
-    | Parameter                   | Value                                |
-    | --------------------------- | -------------------------------------|
-    | Subscription                | Select the default subscription  **(1)**    |
-    | Resource Group              | Select `AI-in-a-Day` **(2)**                |
-    | Document Intelligence or AI Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
+       | Parameter                   | Value                                |
+       | --------------------------- | -------------------------------------|
+       | Subscription                | Select the default subscription  **(1)**    |
+       | Resource Group              | Select `AI-in-a-Day` **(2)**                |
+       | Document Intelligence or AI Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
     
 
-      ![Project](media/form-service.png)
+     ![Project](media/form-service.png)
     
  12. Next in the connect training data source, select the below values from the drop-down and click on **Continue (6)**.
 
-    | Parameter                   | Value                                |
-    | --------------------------- | -------------------------------------|
-    | Subscription                | Select the default subscription **(1)**     |
-    | Resource Group              | Select `AI-in-a-Day` **(2)**                |
-    | Storage account             | Select aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> **(3)** |
-    | Blob container              | Select `covid19temp` **(4)**                 |
-    | Folder path                 | Enter `papers` **(5)**                      |
+        | Parameter                   | Value                                |
+        | --------------------------- | -------------------------------------|
+        | Subscription                | Select the default subscription **(1)**     |
+        | Resource Group              | Select `AI-in-a-Day` **(2)**                |
+        | Storage account             | Select aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> **(3)** |
+        | Blob container              | Select `covid19temp` **(4)**                 |
+        | Folder path                 | Enter `papers` **(5)**                      |
 
-      ![Project](media/form-training.png)
+       ![Project](media/form-training.png)
     
-    > **Note**: If you are unable to select the Storage Account in the Connect training data source page, signout and signin from the Document Intelligence Studio with the given credentials. Re-perform the task from Step-8.
+       > **Note**: If you are unable to select the Storage Account in the Connect training data source page, signout and signin from the Document Intelligence Studio with the given credentials. Re-perform the task from Step-8.
 
  13. Review the details and click on **Create project**.
 
-      ![Project](media/SHC2a.6.13.png)
+        ![Project](media/SHC2a.6.13.png)
   
  14. After creating a new project, you will be sent to the project for tagging in Label data. Select **+Add a Field** **(1)** to create a new field click on **Field** **(2)**, type `Abstract` in the Field, and hit enter. By this, you have created a new Abstract Field.
 
-      ![The Abstract tag has been created](media/innovate5.png)
+        ![The Abstract tag has been created](media/innovate5.png)
     
-      ![The Abstract tag has been created](media/lab2a-t6-frs9.png)
+        ![The Abstract tag has been created](media/lab2a-t6-frs9.png)
 
  15. Click on **Run Layout** and wait for the layout to complete for the first document. Locate the document’s abstract. Note that in some documents, the abstract may be on the second page. However, after running the layout, the abstract may not be automatically detected, and all text might be highlighted in yellow. In this case, you will need to manually select each word in the abstract before tagging.
 
-      ![Running layout for a document](media/L2-T6-S15.png)
+        ![Running layout for a document](media/L2-T6-S15.png)
 
-      ![Running layout for a document](media/lab2a-t6-frs7.png)
+        ![Running layout for a document](media/lab2a-t6-frs7.png)
 
  16. Once the layout is generated for the first document, move on to the next document. We will tag each of the five papers, so navigate to each in turn, allowing the layout to be processed. To ensure tagging is successful, you must first run the layout for a document, navigate to another document, and then return to the first document before beginning the tagging process. Layout generation happens only once per document, so after it is generated, you can return to the document and proceed with tagging.
 
  17. Return to the second PDF and manually select each word in the **Abstract** section. Once highlighted, select the **Abstract** tag to tag this section. You will need to select each word individually rather than selecting a box. After tagging, you should see a tag logo next to the PDF. If the tag logo appears, it confirms that tagging was successful for this document.
 
-      ![The first PDF has been viewed, and the second PDF has been tagged](media/L2-T6-S16.1.png)
+        ![The first PDF has been viewed, and the second PDF has been tagged](media/L2-T6-S16.1.png)
 
  18. Return to the first PDF and highlight the word **ABSTRACT** and the abstract. If the abstract is lengthy, as in this example, it is okay to include just the first paragraph. Then, select the **Abstract** tag to tag this document. Ensure that the viewed icon (an eye) changes to a tag icon. If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful. In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
 
-      ![The first PDF has been tagged](media/L2-T6-S17.png)
+        ![The first PDF has been tagged](media/L2-T6-S17.png)
 
  19. Continue tagging until all five of the top papers are tagged. Once we have tagged five documents, select the **Train** option.
     
-      ![The first five PDFs have been tagged](media/L2-T6-S18.png)
+        ![The first five PDFs have been tagged](media/L2-T6-S18.png)
 
  20. In a pop-up to Train a new model, enter **Abstracts (1)** as the ModelID, and select the **Neural (Recommended) (2)** from the drop-down as Build Mode. Then click on **Train (3)**.
 
-      ![The option to train a model has been selected](media/form-model.png)
+        ![The option to train a model has been selected](media/form-model.png)
 
  21. Training a model may take up to 45-60 minutes to succeed. Click on **Go to models**. 
 
-      ![The option to train a model has been selected](media/lab2a-t6-frs14.png)
+        ![The option to train a model has been selected](media/lab2a-t6-frs14.png)
 
-    >**Note**: As Training a model will take up to 45-60 minutes to succeed. No need to wait for it, you can continue with next Lab. Come back later and review it after an hour.
+        >**Note**: As Training a model will take up to 45-60 minutes to succeed. No need to wait for it, you can continue with next Lab. Come back later and review it after an hour.
 
  22. After the model has finished training, you will see that the Status has succeeded.  Although the estimated accuracy is not great, we will use this model.
 
-      ![The Abstracts model has been trained](media/lab2a-t6-frs15.png)
+        ![The Abstracts model has been trained](media/lab2a-t6-frs15.png)
 
  23. From the left menu, select the **Test (1)**. Click on **Browse for a file (2)**. 
 
-      ![An analyzed document](media/innovate6.png)
+        ![An analyzed document](media/innovate6.png)
     
   24. In the Upload Files pop-up, Navigate to `C:\Temp\AzureSearch\`, select `2020.09.25.20201616v1.pdf` file **(2)** and then click on **Open** **(3)**.
     
-      ![An analyzed document](media/innovate7.png)
+         ![An analyzed document](media/innovate7.png)
    
   25. Choose `2020.09.25.20201616v1.pdf` file, select **Run Analysis (1)**. Note that the abstract is on **page 2 (2)** of the PDF. View the **Results (3)** on the right side of the page.
     
-      ![An analyzed document](media/innovate8.png)
+         ![An analyzed document](media/innovate8.png)
 
  26. Select **Result (1)** and click on **download icon (2)** to download JSON file. Find the location where the script was downloaded and observe the result code.
 
-      ![An analyzed document](media/lab2a-t6-frs19.1.png)
+        ![An analyzed document](media/lab2a-t6-frs19.1.png)
     
  27. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Document Intelligence Studio: [Quickstart: Document Intelligence Studio - Azure Applied AI Services | Microsoft Docs](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-3.1.0)
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Hit the Validate button for the corresponding task.
-    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-    <validation step="24474dca-c3ab-413f-ba34-eb278f3c895f" />
+     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+     > - Hit the Validate button for the corresponding task.
+     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+     > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+     <validation step="24474dca-c3ab-413f-ba34-eb278f3c895f" />
 
 ## Task 7 - Document Summarization via AI Service for Language Integration
 
