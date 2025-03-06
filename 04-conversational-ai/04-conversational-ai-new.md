@@ -50,35 +50,39 @@ The way organizations are building conversational systems is evolving, with bots
 
 1. On the **Agent** page click on **Skip to configure**.
 
-1. On the **Create a Copilot** page enter the following details and click on **Create (2)**.
+1. On the **Agents** page enter the following details and click on **Create (2)**.
 
    - **Copilot name (1)**: Enter **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>**.
 
-   ![](media/create_bot.jpg)
+   ![](media/create_botupd.png)
 
 1. Once the Bot is created you will see the Copilot Studio page.
 
-   ![](media/test-copilot0.1-1.jpg)
+   ![](media/test-copilot0.1-1upd.png)
 
 ## Task 3 - Create a New Topic
 
 1. One the **Microsoft Copilot Studio** page, select **Topics** **(1)**, **Add a topic** **(2)**, from the drop down menu select **Create from description** **(3)**.
 
-   ![](media/copilot-1.jpg)
+   ![](media/copilot-1upd.png)
 
 1. In Create it with Copilot pane, Name your topic as **Meal delivery options** **(1)**. In Create a topic to ..., enter the given phrase "**Checking for food options based on the city you are in**" **(2)**, then click on **Create** **(3)**.
 
-   ![](media/cai-l4-t4-s2.png)
+   ![](media/cai-l4-t4-s2upd.png)
 
 1. Once you are in the topic pane, **close** the edit with copilot pane from right-side.
 
-1. On the **topics** pane, click on **+** at the bottom of the **Question** node and select **Add a condition**.
+1. On the **topics** pane, click on **+ (1)** at the bottom of the **Question** node and select **Add a condition (2)**.
 
-   ![](media/L4T3S4.png)
+   ![](media/L4T3S4upd.png)
 
-1. In add a condition, enter **Los Angeles** and **Seattle** as the values for the conditions.
+1. In add a condition,select **City (1)** as the **variable** and enter **Los Angeles (2)** as the value for the condition.
 
-   ![](media/L4T3S4-2.png)
+   ![](media/L4T3S4-2upd.png)
+
+1. Add another condition by clicking on the **+** at the bottom of the **Question** node and select **City** as the **variable** and enter **Seattle** as the value for the condition.
+
+   ![](media/L4T3S4-3.png)
 
 1. Select **Ask a question** from the drop-down while adding a node.
 
