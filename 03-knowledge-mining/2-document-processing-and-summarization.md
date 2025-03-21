@@ -290,15 +290,15 @@ The high-level steps covered in the lab are:
     
 1. On the Resource Sharing (CORS) page, ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table **(2)** and then select **Save** **(3)** to save the CORS settings.  
 
-       | Parameter                   | Value                                              |
-       | --------------------------- | -------------------------------------------------- |
-       | Allowed origins             | Enter `https://formrecognizer.appliedai.azure.com`  |
-       | Allowed methods             | Select all of the available methods.               |
-       | Allowed headers             | Enter `*`                                          |
-       | Exposed headers             | Enter `*`                                          |
-       | Max age                     | Enter `200`                                        |
+    | Parameter                   | Value                                              |
+    | --------------------------- | -------------------------------------------------- |
+    | Allowed origins             | Enter `https://formrecognizer.appliedai.azure.com`  |
+    | Allowed methods             | Select all of the available methods.               |
+    | Allowed headers             | Enter `*`                                          |
+    | Exposed headers             | Enter `*`                                          |
+    | Max age                     | Enter `200`                                        |
 
-    ![The CORS options are set for the storage account](media/storage-cors-blob.png)
+     ![The CORS options are set for the storage account](media/storage-cors-blob.png)
 
 1. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Document Intelligence resource **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -329,28 +329,27 @@ The high-level steps covered in the lab are:
     
 1. In the **Configure service resource**, provide the following details and click on **Continue (4)**.
    
-       | Parameter                   | Value                                |
-       | --------------------------- | -------------------------------------|
-       | Subscription                | Select the default subscription  **(1)**    |
-       | Resource Group              | Select `AI-in-a-Day` **(2)**                |
-       | Document Intelligence or AI Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
+    | Parameter                   | Value                                |
+    | --------------------------- | -------------------------------------|
+    | Subscription                | Select the default subscription  **(1)**    |
+    | Resource Group              | Select `AI-in-a-Day` **(2)**                |
+    | Document Intelligence or AI Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
     
-
      ![Project](media/form-service.png)
     
 1. Next in the connect training data source, select the below values from the drop-down and click on **Continue (6)**.
 
-        | Parameter                   | Value                                |
-        | --------------------------- | -------------------------------------|
-        | Subscription                | Select the default subscription **(1)**     |
-        | Resource Group              | Select `AI-in-a-Day` **(2)**                |
-        | Storage account             | Select aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> **(3)** |
-        | Blob container              | Select `covid19temp` **(4)**                 |
-        | Folder path                 | Enter `papers` **(5)**                      |
+    | Parameter                   | Value                                |
+    | --------------------------- | -------------------------------------|
+    | Subscription                | Select the default subscription **(1)**     |
+    | Resource Group              | Select `AI-in-a-Day` **(2)**                |
+    | Storage account             | Select aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> **(3)** |
+    | Blob container              | Select `covid19temp` **(4)**                 |
+    | Folder path                 | Enter `papers` **(5)**                      |
 
-       ![Project](media/form-training.png)
+     ![Project](media/form-training.png)
     
-       > **Note**: If you are unable to select the Storage Account in the Connect training data source page, signout and signin from the Document Intelligence Studio with the given credentials. Re-perform the task from Step-8.
+      > **Note**: If you are unable to select the Storage Account in the Connect training data source page, signout and signin from the Document Intelligence Studio with the given credentials. Re-perform the task from Step-8.
 
 1. Review the details and click on **Create project**.
 
@@ -382,7 +381,7 @@ The high-level steps covered in the lab are:
 
 1. Continue tagging until all five of the top papers are tagged. Once we have tagged five documents, select the **Train** option.
     
-        ![The first five PDFs have been tagged](media/L2-T6-S18.png)
+    ![The first five PDFs have been tagged](media/L2-T6-S18.png)
 
 1. In a pop-up to Train a new model, enter **Abstracts (1)** as the ModelID, and select the **Neural (Recommended) (2)** from the drop-down as Build Mode. Then click on **Train (3)**.
 
