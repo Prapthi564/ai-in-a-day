@@ -16,17 +16,19 @@ Azure Document Intelligence and AI Service for Language streamline document proc
 
 ## Task 1 - Explore the dashboard of COVID-19 data
 
+To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) 💻 of the virtual machine provided with your environment. If you see the `Introducing the updated mobile layout` pop-up screen, then close it by clicking on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
+
+ ![Azure AI in a Day datasets](./media/in1.png)
+
+> **Note:** Please close and reopen the Power BI Desktop document if it throws an error on the first attempt.
+
 Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
 
 ![Azure AI in a Day datasets](./media/SHC1.png)
 
 To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
 
-To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) 💻 of the virtual machine provided with your environment. If you see the `Introducing the updated mobile layout` pop-up screen, then close it by clicking on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
 
- ![Azure AI in a Day datasets](./media/powerbireportopen.png)
-
-> **Note:** Please close and reopen the Power BI Desktop document if it throws an error on the first attempt.
 
 ## Task 2 - Explore lab scenario
 
@@ -67,13 +69,27 @@ The high-level steps covered in the lab are:
 
     ![The Search service's API key is copied to the clipboard.](media/inn7.png)
 
-1. Navigate to Storage account named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** **(1)**, select **Access keys** **(2)** under Security + networking from left-menu. Click on **Show (3)** of the connection string under Key1  to see the connection string and **copy the connection string** **(4)** under Key1. Paste this into a text file.
+1. On the Azure portal, search for **Storage accounts (1)** and then select **Storage accounts (2)** from the services.
+
+    ![The Search service's API key is copied to the clipboard.](media/in13.png)
+
+1. Navigate to Storage account named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>**.
+
+    ![The Search service's API key is copied to the clipboard.](media/in14.png)
+
+1. On the Storage account named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** **(1)**, select **Access keys** **(2)** under Security + networking from left-menu. Click on **Show (3)** of the connection string under Key1  to see the connection string and **copy the connection string** **(4)** under Key1. Paste this into a text file.
 
    ![](media/ai-sa-cs.png)
 
-1. Open **File Explorer** from the task bar and navigate to the path `C:\Temp\AzureSearch\`. There are six files, three prefixed with `abstracts` and three with `covid19temp`.
+1. Open **File Explorer** from the task bar and navigate to the path `C:\Temp\AzureSearch\ (1)`. There are six files, three prefixed with `abstracts (2)` and three with `covid19temp (3)`.
 
-1. Open the `abstracts_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
+   ![](media/in11.png)
+
+1. Open the `abstracts_datasource.schema (1)` file with a **Notepad (2)**, then click on **OK(3)**.
+
+   ![](media/in12.png)
+
+1. Replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
 
     ![The abstract data source is ready to be updated.](media/edit-abstracts-datasource.png)
 
@@ -81,7 +97,7 @@ The high-level steps covered in the lab are:
 
 1. Now, open the `AzureSearchIndex.ps1` file with a text editor and copy the code present in it.
 
-1. Open a new PowerShell prompt and navigate to the following directory:
+1. Open a new PowerShell prompt as a **administrator** and navigate to the following directory:
 
     ```
     cd C:\Temp\AzureSearch\
@@ -155,11 +171,23 @@ The high-level steps covered in the lab are:
 
     ![The Create Demo App option is selected.](media/lab2a-task4-step10.png)
 
-11. On the first tab, select `metadata.title` **(1)** for the Title and `abstract.text` **(2)** for the Description. Then select **Next (3)** twice and click on **Create Demo App**. After the prompt, select **Download** to download an HTML file named `AzSearch.html`.
+11. On the first tab, select `metadata.title` **(1)** for the Title and `abstract.text` **(2)** for the Description. Then select **Next (3)** twice. 
 
     ![Create a demo app.](media/demoappupd.png)
 
-12. Open the demo app HTML file. In the search box, enter the phrase **RNA interference (1)** and select the **Search icon (2)**. This will return 497 papers relating to RNA interference.
+12. Click on **Create Demo App**. 
+
+    ![Create a demo app.](media/in15.png)
+
+13. After the prompt, select **Download** to download an HTML file named `AzSearch.html`. 
+
+    ![Create a demo app.](media/in16.png)
+
+14. Open the HTML file named `AzSearch.html`.
+
+    ![Create a demo app.](media/in17.png)
+
+15. Open the demo app HTML file. In the search box, enter the phrase **RNA interference (1)** and select the **Search icon (2)**. This will return 497 papers relating to RNA interference.
 
     ![Use the demo app.](media/L2T4S12.png)
 
@@ -185,47 +213,53 @@ The high-level steps covered in the lab are:
 
 5. In Azure Storage **Explorer (1)**, navigate down the **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> (2)** attached storage and expand **Blob containers (3)** and select **covid19temp (4)**.  Double-click the **comm_use_subset (5)** to enter that folder.
 
-    ![The comm_use_subset folder is selected.](media/new-lab2a-3.png)
+    ![The comm_use_subset folder is selected.](media/in19.png)
 
-6. Enter the **pdf_json_refresh** folder. Then, in the **Select All (1)** menu, choose **Select All Cached (2)**. This will highlight all 100 records in the folder.  Select **Copy (3)** to copy these documents.
+6. Select the **pdf_json_refresh** folder.
 
     ![Select the PDF refresh folder.](media/select-pdf-refresh-folder01.png)
+
+7. Then, in the **Select All (1)** menu, choose **Select All Cached (2)**. This will highlight all 100 records in the folder.  Select **Copy (3)** to copy these documents.
     
-    ![Select all cached items and copy them.](media/azure-storage-explorer-201.png)
+    ![Select all cached items and copy them.](media/in20.png)
 
-7. Navigate up to **comm_use_subset** by selecting the upward arrow and then double-click **pdf_json (1)**. Inside this folder, select **Paste (2)** to paste the 100 documents into the **pdf_json** folder. When it finishes, you should have **965 total documents (3)**.
+8. Navigate up to **comm_use_subset** by selecting the upward arrow.
 
-    ![Navigate into the pdf_json folder.](media/upward-arrow01.png)
+9. Then double-click **pdf_json (1)**.
 
-    ![Paste all cached items into the pdf_json folder.](media/azure-storage-explorer-301.png)
+    ![Select all cached items and copy them.](media/in21.png)
 
-8. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials if not logged in already. Then, select **Resource groups**.
+10. Inside this folder, select **Paste** to paste the 100 documents into the **pdf_json** folder. When it finishes, you should have **965 total documents**.
+
+    ![Navigate into the pdf_json folder.](media/in22.png)
+
+11. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials if not logged in already. Then, select **Resource groups**.
 
     ![Open Azure resource group](media/SHC2a.3.1.png)
 
-9. Select the **AI-in-a-Day** resource group.
+12. Select the **AI-in-a-Day** resource group.
 
-10. Select the **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** Search service.
+13. Select the **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** Search service.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
 
-11. Navigate to the **Indexers (1)** section and select the **covid19temp (2)** indexer.
+14. Navigate to the **Indexers (1)** section and select the **covid19temp (2)** indexer.
 
     ![The covid19temp indexer is selected.](media/AI2.png)
 
-12. Select the **Run** option to process the 100 documents. Although we can configure an indexer to run periodically, this indexer will only run when manually engaged.  Select **Yes** to run the indexer.
+15. Select the **Run** option to process the 100 documents. Although we can configure an indexer to run periodically, this indexer will only run when manually engaged.  Select **Yes** to run the indexer.
 
     ![The covid19temp indexer is set to run.](media/azure-search-indexers-run.1upd.png)
 
-13. The indexer will run. It should be completed within 15-30 seconds to process the 100 new documents. You may need to select **Refresh** to see the indexer's progress.
+16. The indexer will run. It should be completed within 15-30 seconds to process the 100 new documents. You may need to select **Refresh** to see the indexer's progress.
 
     ![The covid19temp indexer has finished running.](media/azure-search-indexers-refreshupd.png)
 
-14. Return to the **Indexes** tab for the Search service and ensure that the **covid19temp** index has 965 documents. If it still reads 865, wait 30 seconds and select **Refresh** to check again.
+17. Return to the **Indexes (1)** tab for the Search service and ensure that the **covid19temp (2)** index has `965` documents. If it still reads 865, wait 30 seconds and select **Refresh** to check again.
 
-    ![The covid19temp index has finished updating.](media/inn10.png)
+    ![The covid19temp index has finished updating.](media/in23.png)
 
-15. Select the **covid19temp** index to return to the Search Explorer. When we had 865 documents, 53 of them pertained to Brazil. We can confirm that this update was successful by entering `Brazil&$count=true` **(1)** and selecting **Search (2)**. This will now return 57 results **(3)** instead of the prior 53.
+18. Select the **covid19temp** index to return to the Search Explorer. When we had 865 documents, 53 of them pertained to Brazil. We can confirm that this update was successful by entering `Brazil&$count=true` **(1)** and selecting **Search (2)**. This will now return 57 results **(3)** instead of the prior 53.
 
     ![57 documents pertaining to Brazil.](media/L2T5S15.png)
 
@@ -258,7 +292,7 @@ The high-level steps covered in the lab are:
 
         | Parameter                   | Value                                              |
         | --------------------------- | -------------------------------------------------- |
-        | Allowed origins             | Enter `https://formrecognizer.appliedai.azure.com` |
+        | Allowed origins             | Enter `https://formrecognizer.appliedai.azure.com`  |
         | Allowed methods             | Select all of the available methods.               |
         | Allowed headers             | Enter `*`                                          |
         | Exposed headers             | Enter `*`                                          |
@@ -274,19 +308,26 @@ The high-level steps covered in the lab are:
 
        ![The AI Services key and endpoint are selected](media/inn12.png)
 
- 8. Navigate to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Get Started** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
+ 8. Navigate to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/).
+ 
+
+ 10. If prompted, select your user account.
+
+       ![Create new custom model](media/in25.png)   
+ 
+ 11. Scroll-down to **Custom models** and select **Get Started** under **Custom extraction model**. Use the credentials provided in the Environment Details to Sign-in.
 
        ![Create new custom model](media/updated-document-ai.png)
 
- 9. In the Custom models page, under **My Project** click on **+ Create a project**.
+ 12. In the Custom models page, under **My Project** click on **+ Create a project**.
   
        ![Project](media/updated-doc-ai-2.png)
 
- 10. In the Enter Project Details pane, enter the Project Name as **covid19abstract (1)** and add the description as **Extracting Abstract from the documents (2)**. Click on **Continue (3)**.
+ 13. In the Enter Project Details pane, enter the Project Name as **covid19abstract (1)** and add the description as **Extracting Abstract from the documents (2)**. Click on **Continue (3)**.
 
         ![The covid19abstract project has been created](media/lab2a-t6-frs3.1.png)
     
- 11. In the **Configure service resource**, provide the following details and click on **Continue (4)**.
+ 14. In the **Configure service resource**, provide the following details and click on **Continue (4)**.
    
        | Parameter                   | Value                                |
        | --------------------------- | -------------------------------------|
@@ -297,7 +338,7 @@ The high-level steps covered in the lab are:
 
      ![Project](media/form-service.png)
     
- 12. Next in the connect training data source, select the below values from the drop-down and click on **Continue (6)**.
+ 15. Next in the connect training data source, select the below values from the drop-down and click on **Continue (6)**.
 
         | Parameter                   | Value                                |
         | --------------------------- | -------------------------------------|
@@ -311,67 +352,69 @@ The high-level steps covered in the lab are:
     
        > **Note**: If you are unable to select the Storage Account in the Connect training data source page, signout and signin from the Document Intelligence Studio with the given credentials. Re-perform the task from Step-8.
 
- 13. Review the details and click on **Create project**.
+ 16. Review the details and click on **Create project**.
 
         ![Project](media/SHC2a.6.13.png)
   
- 14. After creating a new project, you will be sent to the project for tagging in Label data. Select **+Add a Field** **(1)** to create a new field click on **Field** **(2)**, type `Abstract` in the Field, and hit enter. By this, you have created a new Abstract Field.
+ 17. After creating a new project, you will be sent to the project for tagging in Label data. Select **+Add a Field** **(1)** to create a new field click on **Field** **(2)**, type `Abstract` in the Field, and hit enter. By this, you have created a new Abstract Field.
 
         ![The Abstract tag has been created](media/innovate5.png)
     
         ![The Abstract tag has been created](media/lab2a-t6-frs9.png)
 
- 15. Click on **Run Layout** and wait for the layout to complete for the first document. Locate the document’s abstract. Note that in some documents, the abstract may be on the second page. However, after running the layout, the abstract may not be automatically detected, and all text might be highlighted in yellow. In this case, you will need to manually select each word in the abstract before tagging.
+ 18. Click on **Run Layout** and wait for the layout to complete for the first document. Locate the document’s abstract. Note that in some documents, the abstract may be on the second page. However, after running the layout, the abstract may not be automatically detected, and all text might be highlighted in yellow. In this case, you will need to manually select each word in the abstract before tagging.
 
         ![Running layout for a document](media/L2-T6-S15.png)
 
         ![Running layout for a document](media/lab2a-t6-frs7.png)
 
- 16. Once the layout is generated for the first document, move on to the next document. We will tag each of the five papers, so navigate to each in turn, allowing the layout to be processed. To ensure tagging is successful, you must first run the layout for a document, navigate to another document, and then return to the first document before beginning the tagging process. Layout generation happens only once per document, so after it is generated, you can return to the document and proceed with tagging.
+ 19. Once the layout is generated for the first document, move on to the next document. We will tag each of the five papers, so navigate to each in turn, allowing the layout to be processed. To ensure tagging is successful, you must first run the layout for a document, navigate to another document, and then return to the first document before beginning the tagging process. Layout generation happens only once per document, so after it is generated, you can return to the document and proceed with tagging.
 
- 17. Return to the second PDF and manually select each word in the **Abstract** section. Once highlighted, select the **Abstract** tag to tag this section. You will need to select each word individually rather than selecting a box. After tagging, you should see a tag logo next to the PDF. If the tag logo appears, it confirms that tagging was successful for this document.
+ 20. Before selecting the words, make sure to **Run Layout** then only you will be able to select the words.
+
+ 21. Return to the second PDF and manually select each word in the **Abstract** section. Once highlighted, select the **Abstract** tag to tag this section. You will need to select each word individually rather than selecting a box. After tagging, you should see a tag logo next to the PDF. If the tag logo appears, it confirms that tagging was successful for this document.
 
         ![The first PDF has been viewed, and the second PDF has been tagged](media/L2-T6-S16.1.png)
 
- 18. Return to the first PDF and highlight the word **ABSTRACT** and the abstract. If the abstract is lengthy, as in this example, it is okay to include just the first paragraph. Then, select the **Abstract** tag to tag this document. Ensure that the viewed icon (an eye) changes to a tag icon. If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful. In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
+ 22. Return to the first PDF and highlight the word **ABSTRACT** and the abstract. If the abstract is lengthy, as in this example, it is okay to include just the first paragraph. Then, select the **Abstract** tag to tag this document. Ensure that the viewed icon (an eye) changes to a tag icon. If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful. In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
 
         ![The first PDF has been tagged](media/L2-T6-S17.png)
 
- 19. Continue tagging until all five of the top papers are tagged. Once we have tagged five documents, select the **Train** option.
+ 23. Continue tagging until all five of the top papers are tagged. Once we have tagged five documents, select the **Train** option.
     
         ![The first five PDFs have been tagged](media/L2-T6-S18.png)
 
- 20. In a pop-up to Train a new model, enter **Abstracts (1)** as the ModelID, and select the **Neural (Recommended) (2)** from the drop-down as Build Mode. Then click on **Train (3)**.
+ 24. In a pop-up to Train a new model, enter **Abstracts (1)** as the ModelID, and select the **Neural (Recommended) (2)** from the drop-down as Build Mode. Then click on **Train (3)**.
 
         ![The option to train a model has been selected](media/form-model.png)
 
- 21. Training a model may take up to 45-60 minutes to succeed. Click on **Go to models**. 
+ 25. Training a model may take up to 45-60 minutes to succeed. Click on **Go to models**. 
 
         ![The option to train a model has been selected](media/lab2a-t6-frs14.png)
 
         >**Note**: As Training a model will take up to 45-60 minutes to succeed. No need to wait for it, you can continue with next Lab. Come back later and review it after an hour.
 
- 22. After the model has finished training, you will see that the Status has succeeded.  Although the estimated accuracy is not great, we will use this model.
+ 26. After the model has finished training, you will see that the Status has succeeded.  Although the estimated accuracy is not great, we will use this model.
 
         ![The Abstracts model has been trained](media/lab2a-t6-frs15.png)
 
- 23. From the left menu, select the **Test (1)**. Click on **Browse for a file (2)**. 
+ 27. From the left menu, select the **Test (1)**. Click on **Browse for a file (2)**. 
 
         ![An analyzed document](media/innovate6.png)
     
-  24. In the Upload Files pop-up, Navigate to `C:\Temp\AzureSearch\`, select `2020.09.25.20201616v1.pdf` file **(2)** and then click on **Open** **(3)**.
+  28. In the Upload Files pop-up, Navigate to `C:\Temp\AzureSearch\`, select `2020.09.25.20201616v1.pdf` file **(2)** and then click on **Open** **(3)**.
     
          ![An analyzed document](media/innovate7.png)
    
-  25. Choose `2020.09.25.20201616v1.pdf` file, select **Run Analysis (1)**. Note that the abstract is on **page 2 (2)** of the PDF. View the **Results (3)** on the right side of the page.
+  29. Choose `2020.09.25.20201616v1.pdf` file, select **Run Analysis (1)**. Note that the abstract is on **page 2 (2)** of the PDF. View the **Results (3)** on the right side of the page.
     
          ![An analyzed document](media/innovate8.png)
 
- 26. Select **Result (1)** and click on **download icon (2)** to download JSON file. Find the location where the script was downloaded and observe the result code.
+ 30. Select **Result (1)** and click on **download icon (2)** to download JSON file. Find the location where the script was downloaded and observe the result code.
 
         ![An analyzed document](media/lab2a-t6-frs19.1.png)
     
- 27. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Document Intelligence Studio: [Quickstart: Document Intelligence Studio - Azure Applied AI Services | Microsoft Docs](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-3.1.0)
+ 31. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Document Intelligence Studio: [Quickstart: Document Intelligence Studio - Azure Applied AI Services | Microsoft Docs](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-3.1.0)
 
      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
      > - Hit the Validate button for the corresponding task.
@@ -396,9 +439,9 @@ In this task, we are creating a text summarization application with the client l
 
     ![The AI Services key and endpoint are selected](media/inn14.png)
 
-3. In the labvm, open a command prompt (`cmd.exe`). To do this, open the Windows menu, type in `cmd`, and select the **Command Prompt** application.
+3. In the labvm, open a command prompt (`cmd.exe`). To do this, open the Windows menu, type in `cmd (1)`, and select the **Command Prompt (2)** application.
 
-    ![The Command Prompt application is selected](media/open-cmd.png)
+    ![The Command Prompt application is selected](media/in26.png)
 
 4. Run the below command. To run this, you must have Python installed on the machine. If `python.exe` is not accessible as part of the path--meaning you get an error when trying to run `pip`, navigate to where Python is installed.  The `pip.exe` program is inside the `\Scripts\` folder.
 
@@ -408,7 +451,9 @@ In this task, we are creating a text summarization application with the client l
 
     ![Pip has installed the azureai text analytics package for Python](media/lab2a-t7-pip-azureai.png)
 
-5. Open **File Explorer** and navigate to the path `C:\Temp\AzureSearch\`. Select the file named **summarization.py** and open it in **Notepad or IDLE**. 
+5. Open **File Explorer** and navigate to the path `C:\Temp\AzureSearch\ (1)`. Select the file named **summarization.py (2)** and open it in **Notepad or IDLE**. 
+
+    ![summarization](media/in27.png)
 
 6. Replace the **key** and **endpoint** in the file with AI services multi-service account named **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have already copied in step-2 of the same task and finally save the file.
     

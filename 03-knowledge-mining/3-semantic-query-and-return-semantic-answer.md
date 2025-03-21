@@ -44,10 +44,10 @@ The semantic ranking is an extension of the query execution pipeline that improv
 
     | Parameter                   | Value                                        |
     | --------------------------- | -------------------------------------------- |
-    | Name (1)                    | my-semantic-config                           |
-    | Title field (2)             | Select `metadata/title` from the drop-down   |
-    | Field name under Content fields (3) | Select `bib_entries/BIBREFO/title` from the drop-down |
-    | Field name under Keyword fields (4)    | Select `bib_entries/BIBREFO/ref_id` from the drop-down |
+    | Name                     | my-semantic-config (1)                          |
+    | Title field (2)             | Select `metadata/title` (2 )from the drop-down   |
+    | Field name under Content fields  | Select `bib_entries/BIBREFO/title` (3) from the drop-down |
+    | Field name under Keyword fields     | Select `bib_entries/BIBREFO/ref_id` (4) from the drop-down |
   
    Click on **Save** **(5)**.
   
@@ -104,8 +104,8 @@ In this task, you are going to perform the semantic search using a query in [RES
 
     | Key           | Value                                        |
     | --------------------| -------------------------------------------- |
-    | api-version         | 2021-04-30-Preview                           |
-    | api-key             | Enter the manage query key which you have copied earlier in Step - 2    |
+    | api-version         | 2021-04-30-Preview (1)                           |
+    | api-key             | Enter the manage query key which you have copied earlier in Step - 2  (2)  |
    
    After updating the parameters, your **Request URL** **(3)** should be the same as shown in the below screenshot.
    

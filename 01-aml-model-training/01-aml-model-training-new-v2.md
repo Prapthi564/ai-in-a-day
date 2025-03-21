@@ -37,17 +37,18 @@ The corpus may be updated as new research is published in peer-reviewed publicat
 
 ## Task 1 - Explore dashboard of COVID-19 data
 
+To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) 💻 of the virtual machine provided with your environment. If you see the `Introducing the updated mobile layout` pop-up screen, then close it by clicking on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
+
+> **Note:** Please close and reopen the Power BI Desktop document if it throws an error on the first attempt.
+
+ ![Azure AI in a Day datasets](./media/in1.png)
+
 Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
 
 ![Azure AI in a Day datasets](./media/SHC1.png)
 
 To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
 
-To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) 💻 of the virtual machine provided with your environment. If you see the `Introducing the updated mobile layout` pop-up screen, then close it by clicking on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
-
-> **Note:** Please close and reopen the Power BI Desktop document if it throws an error on the first attempt.
-
- ![Azure AI in a Day datasets](./media/powerbireportopen.png)
 
 ## Task 2 - Explore lab scenario
 
@@ -116,13 +117,13 @@ The high-level steps covered in the lab are:
 
     > **Note:** Ensure that you execute all the commands and verify that they run to completion.
 
-1. From the `Application` section associated with the compute instance, select `Jupyter` **(1)**. 
+1. Navigate back to **compute (1)**, under the `Application (2)` section associated with the compute instance, select `Jupyter` **(3)**. 
 
-    ![](media/ml-jupyter.png)
+    ![](media/in3.png)
 
-1. If you see **IMPORTANT NOTE: Always use trusted code**, then check on **Yes, I Understand** and then click on **Continue**.
+1. If you see **IMPORTANT NOTE: Always use trusted code**, then check on **Yes, I Understand (1)** and then click on **Continue (2)**.
 
-    ![](./media/trustcode01.png)
+    ![](./media/in4.png)
     
    >**Note**: If prompted with Do you wish to trust this compute instance? webpage, click on **Click here to trust this compute instance**.
     
@@ -130,23 +131,26 @@ The high-level steps covered in the lab are:
     
 ## Task 4 - Prepare data for the Machine Learning process
 
-1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** and open `1. Data Preparation.ipynb` notebook.
+1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/> (1)** and open `1. Data Preparation.ipynb` **(2)** notebook.
 
-   ![Select Note Book](./media/IMG015.png)
+   ![Select Note Book](./media/in5.png)
    
 2. On Jupyter page, select **Kernel (1)**, then **Change kernel (2)** and make sure **Python (aiw-ai-kernel) (3)** is selected.
 
    ![](./media/IMG011.png)
 
-3. Execute the cells inside `1. Data Preparation.ipynb` notebook one by one (Click on the 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
+3. Execute the cells inside `1. Data Preparation.ipynb` notebook one by one (Click on the **Run** button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
 
    ![Run Note Book Cell](./media/IMG012.png)
    ![Note Book Cell Output](./media/SHC4.1.png)
 
-    >**Note:** Please restart the kernal once the packages have been updated
+    >**Note:** Once the packages have been updated **(1)**, please **restart (2)** the kernal 
+
+     ![Note Book Cell Output](./media/in6.png)    
 
  4. Run the import cell and ensure it completes execution.
 
+    ![Note Book Cell Output](./media/in7.png)
     ![Note Book Cell Output](./media/import-1.png)
 
     >**Note:** If you see the "IProgress not found" error, it is expected. Please proceed further.
@@ -163,15 +167,23 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     ![Automated ML section is open. + New Automated ML run button is highlighted.](media/ml-newautomatedml.png)
 
-2. In the `Submit an Automated ML job` wizard, for Experiment name `Select Existing` **(1)** and select Existing experiment as `COVID19_Classification` **(2)**. Click  `Next` **(3)** to proceed.
+2. In the `Submit an Automated ML job` wizard, provide the following details:
 
-    ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn5.png)
+   - Experiment name: `Select Existing` **(1)** 
+   - Existing experiment: Select `COVID19_Classification` **(2)**
+   - Click  on `Next` **(3)** to proceed.
+
+     ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn5.png)
    
-3. On the `Task type and data` page, make sure `Classification` **(1)** is selected under **Select task type**. Select `COVID19Articles_Train_Vectors`**(2)** as your dataset and click `Next` **(3)** to proceed.
+3. On the `Task type and data` page,
 
-    ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/innovate1.png)
+   - **Select task type**:  Make sure `Classification` **(1)** is selected
+   - Select `COVID19Articles_Train_Vectors`**(2)** as your **dataset**
+   - Click `Next` **(3)** to proceed.
 
-    ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/iinn9.png)   
+     ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/innovate1.png)
+
+     ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/iinn9.png)   
 
 5. On `Task settings` page, select the Target column to `cluster (Integer)` **(1)**. The values we're trying to predict are in the `cluster` column.
 
@@ -185,11 +197,17 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
       ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn2.png)
       
-7. In order to be able to launch an Automated ML run, we need to provision an Azure ML compute cluster. On the `Compute` page, select compute type as `Compute Cluster` **(1)** and select Azure AML compute cluster as `aml-compute-cpu` **(2)** from the list of clusters then click on **Next.** If the list is empty select `+ New` **(3)** link.
+7. In order to be able to launch an Automated ML run, we need to provision an Azure ML compute cluster. On the `Compute` page, 
 
-    ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/inn3.png)
+   - Select compute type as `Compute Cluster` **(1)** 
+   - Select Azure AML compute cluster as `aml-compute-cpu` **(2)** from the list of clusters
+   - Then click on **Next** and proceed with **step 9** 
+   
+     >**Note**: If the list is empty then only select `+ New` **(3)** link and follow the steps from 7
 
-   >**Note**: If you already have `aml-compute-cpu` cluster provisioned, feel free to skip to step 9.
+      ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/inn3.png)
+
+       >**Note**: If you already have `aml-compute-cpu` cluster provisioned, feel free to skip to step 9.
 
 8. On the `Create compute cluster` screen set the values listed below:
 
@@ -217,6 +235,8 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 12. On the following screen, you will see the progress of your experiment run.
 
+    ![Validation is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/in8.png)
+
 13. Now that you understand the process of launching an AutoML run, let's explore in the next task the results of an already completed AutoML run.
 
 >**Note**: We have already executed in this environment an AutoML run that is very similar to the one you've just launched. This allows you to explore AutoML results without having to wait for the completion of the run.
@@ -235,9 +255,9 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![Explore the models section of the AutoML run](media/innovate3.png)
 
-4. On the **Explanations (preview) (1)** section, browse the available explanations **(2)** and investigate the **Model performance (3)** representation.
+4. Browse all the tabs to get more details about the model.
 
-   ![View explanations](media/L1-T6-S4.png)
+   ![View explanations](media/in9.png)
 
    <validation step="46d5c33f-126f-4f3c-9a15-a4596a0b876c"/>
 
@@ -260,9 +280,9 @@ Responsible AI is a governance framework that documents how a specific organizat
  - Ethical AI initiatives have processes in place to seek out and eliminate bias in machine learning models.
  - Efficient AI is able to run continually and respond quickly to changes in the operational environment.
 
-1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** and open `erroranalysis-dashboard-regression-superconductor.ipynb` notebook.
+1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/> (1)** and open `erroranalysis-dashboard-regression-superconductor.ipynb` **(2)** notebook.
 
-   ![Select Note Book](./media/IMG016.png)
+   ![Select Note Book](./media/in10.png)
    
 1. Once the notebook is opened in the Jupyter application, select **Kernel** **(1)**. Then select **Change kernel** **(2)** and make sure to select **Python (aiw-ai-kernel) (3)**.
 
@@ -273,6 +293,12 @@ Responsible AI is a governance framework that documents how a specific organizat
    ![Run Note Book Cell](./media/IMG014.png)
 
     >**Note:** Please restart the kernal once the packages have been updated
+
+ 1. Run the import cell and ensure it completes execution.
+
+    ![Note Book Cell Output](./media/import-1.png)
+
+     >**Note:** If you see the "IProgress not found" error, it is expected. Please proceed further.    
 
 1. Please make sure to read the cells carefully and run them one by one. Click on the **Endpoint** URL at the end of the notebook before moving to the next task.
 
@@ -288,9 +314,13 @@ Responsible AI is a governance framework that documents how a specific organizat
 
    ![Run Note Book Cell](./media/ai-img5.png)
 
-1. Navigate back to **Error explorer** page, and choose **Heat map (1)** form the drop-down next to **Error Explorer**. Choose **number_of_elements (2)** for **Rows: Feature 1** , **mean_atomic_mass (3)** for **Columns: Feature 2** and Set **Select mertic** to **Mean absolute error (4)** .
+1. Navigate back to **Error explorer** page, and choose **Heat map (1)** form the drop-down next to **Error Explorer**. 
+   
+   - Choose **number_of_elements (2)** for **Rows: Feature 1** 
+   - Choose **mean_atomic_mass (3)** for **Columns: Feature 2** 
+   - Set **Select mertic** to **Mean absolute error (4)** .
 
-   ![Run Note Book Cell](./media/image02.png)
+     ![Run Note Book Cell](./media/image02.png)
 
 ## Summary
 

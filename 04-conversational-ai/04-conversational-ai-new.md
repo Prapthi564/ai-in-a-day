@@ -28,14 +28,16 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/L4T2S1upd.png)
 
-1. On the **Let's get you started**, enter your azure username **(1)** and select **Next (2)**. Then click on **Sign in.** 
+1. On the **Let's get you started**, enter your azure username **(1)** and select **Next (2)**. 
 
-   ![](media/L4T2S2.png)
-   ![](media/L4T2S2.2.png)
+   ![](media/in28.png)
 
-1. Once **Signed in**, under Create your account, **choose your respective region (1)** from the drop-down menu and enter phone number and click on **Get Started (2)**.
+1. Then click on **Sign in.**    
+   ![](media/in29.png)
+
+1. Once **Signed in**, under Create your account, **choose your respective region (1)** from the drop-down menu and enter **phone number (2)** and click on **Get Started (3)**.
    
-   ![](media/L4T2S3.png)
+   ![](media/in30.png)
    
 1. Under the **Confirmation details (1)**, click on **Get Started (2)**.
 
@@ -45,10 +47,12 @@ The way organizations are building conversational systems is evolving, with bots
 
 1. On the **Welcome to Microsoft Copilot Studio (1)** page, choose your respective region and select **Get Started (2)**.
 
-   ![](media/L4T2S6.png)
+   ![](media/in31.png)
    >**Note:** If you see a page **Welcome to Copilot Studio!**, click on Skip.
 
 1. On the **Agent** page click on **Skip to configure**.
+
+   ![](media/in32.png)
 
 1. On the **Agents** page enter the following details and click on **Create (2)**.
 
@@ -66,9 +70,9 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/copilot-1upd.png)
 
-1. In Create it with Copilot pane, Name your topic as **Meal delivery options** **(1)**. In Create a topic to ..., enter the given phrase "**Checking for food options based on the city you are in**" **(2)**, then click on **Create** **(3)**.
+1. In Create it with Copilot pane, Name your topic as **Meal in solution** **(1)**. In Create a topic to ..., enter the given phrase "**Checking for food options based on the city you are in**" **(2)**, then click on **Create** **(3)**.
 
-   ![](media/cai-l4-t4-s2upd.png)
+   ![](media/in33.png)
 
 1. Once you are in the topic pane, **close** the edit with copilot pane from right-side.
 
