@@ -151,7 +151,6 @@ The high-level steps covered in the lab are:
  4. Run the import cell and ensure it completes execution.
 
     ![Note Book Cell Output](./media/in7.png)
-    ![Note Book Cell Output](./media/import-1.png)
 
     >**Note:** If you see the "IProgress not found" error, it is expected. Please proceed further.
 
