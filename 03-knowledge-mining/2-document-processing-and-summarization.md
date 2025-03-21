@@ -263,14 +263,14 @@ The high-level steps covered in the lab are:
 
     ![57 documents pertaining to Brazil.](media/L2T5S15.png)
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Hit the Validate button for the corresponding task.
-    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="b927b6a3-f2fd-4047-9a54-233ef39525c5" />
 
-    <validation step="b927b6a3-f2fd-4047-9a54-233ef39525c5" />
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-    >**Note**: If you face any issues on validation, please perform the next steps till the end of this lab and then click on validate button again.
+>**Note**: If you face any issues on validation, please perform the next steps till the end of this lab and then click on validate button again.
 
 ## Task 6 - Using the Document Intelligence Studio
 
