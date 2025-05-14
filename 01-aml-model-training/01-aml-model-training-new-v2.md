@@ -178,7 +178,7 @@ The high-level steps covered in the lab are:
 
     >**Note:** If you see the "IProgress not found" error, it is expected. Please proceed further.
 
- 5. Run each cell and Please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>**
+ 5. Run each cell and Please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>** and storage account access key with **<inject key="Storage Account Access key" enableCopy="false"/>**.
 
      ![Note Book Cell Output](./media/aiupdates.png)
 
