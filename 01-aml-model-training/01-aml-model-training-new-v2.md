@@ -117,6 +117,49 @@ The high-level steps covered in the lab are:
 
     > **Note:** Ensure that you execute all the commands and verify that they run to completion.
 
+1. Navigate back to **compute (1)**, under the `Application (2)` section associated with the compute instance, select `Jupyter` **(3)**. 
+
+    ![](media/in3.png)
+
+1. If you see **IMPORTANT NOTE: Always use trusted code**, then check on **Yes, I Understand (1)** and then click on **Continue (2)**.
+
+    ![](./media/in4.png)
+    
+   >**Note**: If prompted with Do you wish to trust this compute instance? webpage, click on **Click here to trust this compute instance**.
+    
+    ![](./media/upd-l1-t3-s14.png)
+    
+## Task 4 - Prepare data for the Machine Learning process
+
+1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/> (1)** and open `1. Data Preparation.ipynb` **(2)** notebook.
+
+   ![Select Note Book](./media/in5.png)
+   
+1. On Jupyter page, select **Kernel (1)**, then **Change kernel (2)** and make sure **Python (aiw-ai-kernel) (3)** is selected.
+
+   ![](./media/IMG011.png)
+
+1. Execute the cells inside `1. Data Preparation.ipynb` notebook one by one (Click on the **Run** button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
+
+   ![Run Note Book Cell](./media/IMG012.png)
+   ![Note Book Cell Output](./media/SHC4.1.png)
+
+    >**Note:** Once the packages have been updated **(1)**, please **restart (2)** the kernal 
+
+     ![Note Book Cell Output](./media/in6.png)    
+
+ 1. Run the import cell and ensure it completes execution.
+
+    ![Note Book Cell Output](./media/in7.png)
+
+    >**Note:** If you see the "IProgress not found" error, it is expected. Please proceed further.
+
+1. Run each cell and Please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>** and storage account access key with **<inject key="Storage Account Access key" enableCopy="false"/>**.
+
+      ![](./media/inno10.png)
+
+      ![](./media/inno11.png)
+
 1. Navigate back to the studio, click on **Data (1)** and select **Create (2)**.
 
       ![](./media/inno1.png)
@@ -140,49 +183,6 @@ The high-level steps covered in the lab are:
 1. Select the **test_data_vectors.csv (1)** file and click on **Next (2)**
 
       ![](./media/inno8.png)
-
-1. Navigate back to **compute (1)**, under the `Application (2)` section associated with the compute instance, select `Jupyter` **(3)**. 
-
-    ![](media/in3.png)
-
-1. If you see **IMPORTANT NOTE: Always use trusted code**, then check on **Yes, I Understand (1)** and then click on **Continue (2)**.
-
-    ![](./media/in4.png)
-    
-   >**Note**: If prompted with Do you wish to trust this compute instance? webpage, click on **Click here to trust this compute instance**.
-    
-    ![](./media/upd-l1-t3-s14.png)
-    
-## Task 4 - Prepare data for the Machine Learning process
-
-1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/> (1)** and open `1. Data Preparation.ipynb` **(2)** notebook.
-
-   ![Select Note Book](./media/in5.png)
-   
-2. On Jupyter page, select **Kernel (1)**, then **Change kernel (2)** and make sure **Python (aiw-ai-kernel) (3)** is selected.
-
-   ![](./media/IMG011.png)
-
-3. Execute the cells inside `1. Data Preparation.ipynb` notebook one by one (Click on the **Run** button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
-
-   ![Run Note Book Cell](./media/IMG012.png)
-   ![Note Book Cell Output](./media/SHC4.1.png)
-
-    >**Note:** Once the packages have been updated **(1)**, please **restart (2)** the kernal 
-
-     ![Note Book Cell Output](./media/in6.png)    
-
- 4. Run the import cell and ensure it completes execution.
-
-    ![Note Book Cell Output](./media/in7.png)
-
-    >**Note:** If you see the "IProgress not found" error, it is expected. Please proceed further.
-
- 5. Run each cell and Please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>** and storage account access key with **<inject key="Storage Account Access key" enableCopy="false"/>**.
-
-      ![](./media/inno10.png)
-
-      ![](./media/inno11.png)
 
 ## Task 5 - Train a Machine Learning model with Automated ML
 
