@@ -117,6 +117,22 @@ The high-level steps covered in the lab are:
 
     > **Note:** Ensure that you execute all the commands and verify that they run to completion.
 
+1. Navigate back to the studio, click on **Data (1)** and select **Create (2)**.
+
+      ![](./media/inno1.png)
+
+1. On the Create data set page, provide the name as **datasset1234 (1)**, select the type as **Tabular (2)** and click on **Next (3)**.
+
+      ![](./media/inno2.png)
+
+1. Select **From Azure Storage (1)** and click on **Next (2)**.
+
+      ![](./media/inno3.png)
+
+1. Select **Azure Blob Storage (1)** for Datastore type, click on **workspaceblobstore (2)** and click on **Next (3)**.
+
+      ![](./media/inno4.png)
+
 1. Navigate back to **compute (1)**, under the `Application (2)` section associated with the compute instance, select `Jupyter` **(3)**. 
 
     ![](media/in3.png)
