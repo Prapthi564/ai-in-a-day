@@ -180,7 +180,9 @@ The high-level steps covered in the lab are:
 
  5. Run each cell and Please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>** and storage account access key with **<inject key="Storage Account Access key" enableCopy="false"/>**.
 
-     ![Note Book Cell Output](./media/aiupdates.png)
+      ![](./media/inno10.png)
+
+      ![](./media/inno11.png)
 
 ## Task 5 - Train a Machine Learning model with Automated ML
 
