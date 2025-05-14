@@ -121,9 +121,9 @@ The high-level steps covered in the lab are:
 
       ![](./media/inno1.png)
 
-1. On the Create data set page, provide the name as **datasset1234 (1)**, select the type as **Tabular (2)** and click on **Next (3)**.
+1. On the Create data set page, provide the name as **dataset<inject key="DeploymentID" enableCopy="false"/> (1)**, select the type as **Tabular (2)** and click on **Next (3)**.
 
-      ![](./media/inno2.png)
+      ![](./media/inno7.png)
 
 1. Select **From Azure Storage (1)** and click on **Next (2)**.
 
@@ -132,6 +132,14 @@ The high-level steps covered in the lab are:
 1. Select **Azure Blob Storage (1)** for Datastore type, click on **workspaceblobstore (2)** and click on **Next (3)**.
 
       ![](./media/inno4.png)
+
+1. Select the **covid19articles_data (1)** folder and click on **Next (2)**.
+
+      ![](./media/inno5.png)
+
+1. Select the **test_data_vectors.csv (1)** file and click on **Next (2)**
+
+      ![](./media/inno8.png)
 
 1. Navigate back to **compute (1)**, under the `Application (2)` section associated with the compute instance, select `Jupyter` **(3)**. 
 
