@@ -117,6 +117,30 @@ The high-level steps covered in the lab are:
 
     > **Note:** Ensure that you execute all the commands and verify that they run to completion.
 
+1. Navigate back to the studio, click on **Data (1)** and select **Create (2)**.
+
+      ![](./media/inno1.png)
+
+1. On the Create data set page, provide the name as **dataset<inject key="DeploymentID" enableCopy="false"/> (1)**, select the type as **Tabular (2)** and click on **Next (3)**.
+
+      ![](./media/inno7.png)
+
+1. Select **From Azure Storage (1)** and click on **Next (2)**.
+
+      ![](./media/inno3.png)
+
+1. Select **Azure Blob Storage (1)** for Datastore type, click on **workspaceblobstore (2)** and click on **Next (3)**.
+
+      ![](./media/inno4.png)
+
+1. Select the **covid19articles_data (1)** folder and click on **Next (2)**.
+
+      ![](./media/inno5.png)
+
+1. Select the **test_data_vectors.csv (1)** file and click on **Next (2)**
+
+      ![](./media/inno8.png)
+
 1. Navigate back to **compute (1)**, under the `Application (2)` section associated with the compute instance, select `Jupyter` **(3)**. 
 
     ![](media/in3.png)
@@ -154,9 +178,11 @@ The high-level steps covered in the lab are:
 
     >**Note:** If you see the "IProgress not found" error, it is expected. Please proceed further.
 
- 5. Run each cell and Please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>**
+ 5. Run each cell and Please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>** and storage account access key with **<inject key="Storage Account Access key" enableCopy="false"/>**.
 
-     ![Note Book Cell Output](./media/aiupdates.png)
+      ![](./media/inno10.png)
+
+      ![](./media/inno11.png)
 
 ## Task 5 - Train a Machine Learning model with Automated ML
 
