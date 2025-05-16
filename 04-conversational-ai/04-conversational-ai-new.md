@@ -1,8 +1,8 @@
-# Lab 4 - Conversational AI with Bot Service using Power Virtual Agents
+# Lab 4 - Conversational AI with Microsoft Copilot Studio
 
 ### Estimated Duration: 1 Hour 30 Minutes
 
-Conversational AI with Bot Service using Power Virtual Agents allows users to create and deploy sophisticated chatbots with no code, enabling automated interactions and enhanced customer engagement through intuitive, customizable conversational flows.
+Conversational AI with Microsoft Copilot Studio allows users to create and deploy sophisticated chatbots with no code, enabling automated interactions and enhanced customer engagement through intuitive, customizable conversational flows.
 
 ## Lab Objectives
 
@@ -17,8 +17,7 @@ The power of Machine Learning also comes into play when dealing with human-to-ma
 
 With Machine Learning (ML) and Natural Language Processing (NLP), Human Machine Interface (HMI) technologies are enjoying an increased adoption year over year. By 2021, [the growth of chatbots in this space is expected to be 25.07%](https://www.technavio.com/report/chatbot-market-industry-analysis).
 
-
-The way organizations are building conversational systems is evolving, with bots being built and maintained by a mix of technical and non-technical roles. Power Virtual Agents has the capability to extend its capabilities by allowing pro-code users to create dialogs/topics using the Azure Bot Framework Composer today. This experience allows technical and non-technical teams to build and host their solutions on a single platform.
+The way organizations are building conversational systems is evolving, with bots being built and maintained by a mix of technical and non-technical roles. Microsoft Copilot Studio has the capability to extend its capabilities by allowing pro-code users to create dialogs/topics using the Azure Bot Framework Composer today. This experience allows technical and non-technical teams to build and host their solutions on a single platform.
 
 ![Architecture for Lab 4](media/ai-workflow.png)
 
@@ -37,11 +36,7 @@ The way organizations are building conversational systems is evolving, with bots
 
 1. Once **Signed in**, under Create your account, **choose your respective region (1)** from the drop-down menu and enter **phone number (2)** and click on **Get Started (3)**.
    
-   ![](media/in30.png)
-   
-1. Under the **Confirmation details (1)**, click on **Get Started (2)**.
-
-   ![](media/upd-l3-t3-s4.png)
+   ![](media/in30.png)   
 
 1. You have now successfully signed up for **Microsoft Copilot Studio**.
 
