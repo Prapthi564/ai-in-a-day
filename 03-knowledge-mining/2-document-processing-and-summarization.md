@@ -16,7 +16,7 @@ Azure Document Intelligence and AI Service for Language streamline document proc
 
 ## Task 1 - Explore the dashboard of COVID-19 data
 
-To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) 💻 of the virtual machine provided with your environment. If you see the `Introducing the updated mobile layout` pop-up screen, then close it by clicking on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
+To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) of the virtual machine provided with your environment. If you see the `Introducing the updated mobile layout` pop-up screen, then close it by clicking on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
 
  ![Azure AI in a Day datasets](./media/in1.png)
 
@@ -51,9 +51,9 @@ The high-level steps covered in the lab are:
 
 ## Task 3 - Creating Azure Search Indexes
 
-1. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials. Then, select **Resource groups**.
+1. Navigate to [the Azure portal](https://portal.azure.com), search for **Resource groups (1)** and **select it (2)** under Services.
 
-    ![Open Azure resource group](media/SHC2a.3.1.png)
+    ![Open Azure resource group](media/Lab2-00.png)
 
 1. Select the **AI-in-a-Day** resource group.
 
@@ -61,7 +61,7 @@ The high-level steps covered in the lab are:
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
 
-1. Copy the search service URL and paste this into a text file. Also make a note of the service account name, which comes before `.search.windows.net`.
+1. Copy the search service **URL** and paste this into a text file. Also make a note of the **service account name**, which comes before `.search.windows.net` in the search service URL.
 
     ![The Search service's URL is copied to the clipboard.](media/copy-azure-search-url.png)
 
