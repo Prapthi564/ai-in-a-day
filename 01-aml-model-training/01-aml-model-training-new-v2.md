@@ -37,7 +37,7 @@ The corpus may be updated as new research is published in peer-reviewed publicat
 
 ## Task 1 - Explore dashboard of COVID-19 data
 
-To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) 💻 of the virtual machine provided with your environment. If you see the `Introducing the updated mobile layout` pop-up screen, then close it by clicking on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
+To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) of the virtual machine provided with your environment. If you see the `Introducing the updated mobile layout` pop-up screen, then close it by clicking on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
 
 > **Note:** Please close and reopen the Power BI Desktop document if it throws an error on the first attempt.
 
@@ -73,27 +73,29 @@ The high-level steps covered in the lab are:
 
 ## Task 3 - Prepare Azure Machine Learning workspace
 
-1. In the **Azure portal**, navigate to `All Resources`.
+1. In the **Azure portal** search bar, search for **All resources (1)** and select it **(1)** under Services.
 
-    ![All Resources](./media/AllResources.png)
+    ![All Resources](./media/Ex1-01.png)
         
-1. Locate **Machine Learning** resource named **<inject key="AML Workspace Name " enableCopy="true"/>** and select it.
+1. Locate **Azure Machine Learning workspace** resource named **<inject key="AML Workspace Name " enableCopy="true"/>** and select it.
 
     ![Navigate to Azure Machine Learning](./media/innovate10.png)
     
-1. On the **Overview (1)** page, click on **Launch studio (2)**. If you are prompted to sign in again, use the same lab credentials you used to login to the Azure portal. Close the welcome **pop-up** if any with the cross icon.  
+1. On the **Overview (1)** page, click on **Launch studio (2)**. 
     
     ![Launch Machine Learning Studio](media/ml-workspace-launch.png)
+    
+   >**Note:** If you are prompted to sign in again, use the same **lab credentials** you used to login to the Azure portal.  If a welcome pop-up appears, simply close it by clicking the **X (close)** icon.  
 
-1. In Azure Machine Learning Studio, select `Compute` **(1)** from the left side menu and verify that your compute instance is `running` **(2)**.
+1. In Azure Machine Learning Studio, select `Compute` **(1)** from the left side menu and verify that your compute instance is `Running` **(2)**.
    
-   * Compute instance name: notebook<inject key="DeploymentID" enableCopy="false"/>
+   * Compute instance name: **notebook<inject key="DeploymentID" enableCopy="false"/>**
 
      ![Verify Azure Machine Learning compute instance is running](media/ml-compute-status.png)
 
      >**Note**: If you launched Azure Machine Learning Studio right after your lab environment was provisioned, you might find the compute instance in a provisioning state. In this case, wait a few minutes until it changes its status to `Running`.
 
-1. In the Azure Machine Learning Studio under **Compute** **(1)**, click on **... (2)** and, open the **Terminal** **(3)** environment.
+1. In the Azure Machine Learning Studio under **Compute** **(1)**, click on **ellipsis (...) (2)** and, open the **Terminal** **(3)** environment.
     
    ![](media/ml-terminal.png)
    
@@ -102,7 +104,8 @@ The high-level steps covered in the lab are:
     ```  
     conda env create -f aiw-ai-kernel.yml
     ```
-    
+     ![](./media/Ex1new-00.png)
+
     ```
     conda activate aiw-ai-kernel
     ```
@@ -111,13 +114,11 @@ The high-level steps covered in the lab are:
     ipython kernel install --user --name aiw-ai-kernel --display-name "Python (aiw-ai-kernel)"
     ```
    
-   ![](./media/setkernel1.png)
-   
-   ![](./media/setkernel2.png)
+   ![](./media/Ex1new-01.png)
 
     > **Note:** Ensure that you execute all the commands and verify that they run to completion.
 
-1. Navigate back to **compute (1)**, under the `Application (2)` section associated with the compute instance, select `Jupyter` **(3)**. 
+1. Navigate back to **Compute (1)**, under the `Applications` **(2)** section associated with the compute instance, select `Jupyter` **(3)**. 
 
     ![](media/in3.png)
 
@@ -135,7 +136,7 @@ The high-level steps covered in the lab are:
 
    ![Select Note Book](./media/in5.png)
    
-1. On Jupyter page, select **Kernel (1)**, then **Change kernel (2)** and make sure **Python (aiw-ai-kernel) (3)** is selected.
+1. On Jupyter page, select **Kernel (1)**, then **Change kernel... (2)** and make sure **Python (aiw-ai-kernel) (3)** is selected from the dropdown menu.
 
    ![](./media/IMG011.png)
 
