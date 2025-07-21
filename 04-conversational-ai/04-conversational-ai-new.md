@@ -31,10 +31,11 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/Lab4-1.png)
 
-1. Then click on **Sign in.**    
+1. Then click on **Sign in.**  
+
    ![](media/Lab4-2.png)
 
-1. Once **Signed in**, under Create your account, **choose your respective region (1)** from the drop-down menu and enter **phone number (2)** and click on **Get Started (3)**.
+1. Once signed in, under Create your account, select your **respective region (1)** from the drop-down menu. Then, enter your **Job title (2)** and **Phone number (3)**. Finally, click on **Get Started (4)** to proceed.
    
    ![](media/Lab4-4.png)   
 
@@ -57,7 +58,8 @@ The way organizations are building conversational systems is evolving, with bots
 
 1. Once the Bot is created you will see the Copilot Studio page.
 
-   ![](media/test-copilot0.1-1upd.png)
+    ![](media/Lab4-01.png)
+
 
 ## Task 3 - Create a New Topic
 
@@ -147,3 +149,4 @@ Now you have successfully created and tested the Microsoft Copilot.
 In this lab, you set up Microsoft Copilot Studio, created your first Copilot, and tested it by developing and validating a new topic.
 
 ## You have successfully completed this Lab!
+

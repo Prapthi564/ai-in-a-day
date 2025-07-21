@@ -57,7 +57,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 ![](media/GettingStarted-01.png)
 
 ## Virtual Machine & Lab Guide
-Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+Your virtual machine is your workhorse throughout the workshop. The guide is your roadmap to success.
 
 ## Exploring Your Lab Resources
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
@@ -78,7 +78,7 @@ Feel free to **start, restart, or stop (2)** your virtual machine as needed from
  
 1. On your virtual machine, click on the **Azure Portal** icon as shown below:
  
-   ![](media/azure-portal-edge.png)
+   ![](media/GettingStarted-09.png)
 
 1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next (2)**. 
 
@@ -115,7 +115,7 @@ Learner Support Contacts:
 - Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
-Click **Next** from the bottom right corner to embark on your Lab journey!
+Click **Next >>** from the bottom right corner to embark on your Lab journey!
 
 ![](media/GettingStarted-08.png)
 

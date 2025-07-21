@@ -215,7 +215,7 @@ The high-level steps covered in the lab are:
 
     ![Connect is selected on the storage explorer page](media/Lab2-12.png)
 
-5. In Azure Storage **Explorer (1)**, navigate down the **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> (2)** attached storage and expand **Blob containers (3)** and select **covid19temp (4)**.  Double-click the **comm_use_subset (5)** to enter that folder.
+1. In **Azure Storage Explorer (1)**, navigate to the attached storage named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> (2)**. Expand **Blob containers (3)** and select **covid19temp (4)**. Then, double-click the **comm_use_subset (5)** folder to open it.
 
     ![The comm_use_subset folder is selected.](media/Lab2-13.png)
 
@@ -229,11 +229,11 @@ The high-level steps covered in the lab are:
 
 8. Navigate up to **comm_use_subset** by selecting the upward arrow.
 
-9. Then double-click **pdf_json (1)**.
+9. Then double-click **pdf_json**.
 
     ![Select all cached items and copy them.](media/in21.png)
 
-10. Inside this folder, select **Paste** to paste the 100 documents into the **pdf_json** folder. When it finishes, you should have **965 total documents**.
+10. Inside this folder, click **Paste (1)** to paste the 100 documents into the **pdf_json** folder. Once the transfer is complete, you should see a total of **965 documents (2)**. You can also verify this from the **transfer completion message (3)** under the Activities section.
 
     ![Navigate into the pdf_json folder.](media/Lab2-17.png)
 
@@ -304,7 +304,7 @@ The high-level steps covered in the lab are:
 
      ![The CORS options are set for the storage account](media/Lab2-23.png)
 
-1. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Document Intelligence resource **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
+1. Navigate back to the **AI-in-a-Day** resource group and select the Document Intelligence resource **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
 
     ![The AI Services service is selected](media/inn11.png)
 
@@ -323,7 +323,7 @@ The high-level steps covered in the lab are:
 
     ![Create new custom model](media/updated-document-ai.png)
 
-1. In the Custom models page, under **My Project** click on **+ Create a project**.
+1. In the Custom models page, under **My Projects** click on **+ Create a project**.
   
     ![Project](media/Lab2-24.png)
 
@@ -365,21 +365,22 @@ The high-level steps covered in the lab are:
 
 1. Type `Abstract` **(1)** in the Field, and hit **enter**. By this, you have created a new Abstract Field.
 
-1. Click on **Run Layout (2)** and wait for the layout to complete for the first document. Locate the document’s abstract. Note that in some documents, the abstract may be on the second page. However, after running the layout, the abstract may not be automatically detected, and all text might be highlighted in yellow. In this case, you will need to manually select each word in the abstract before tagging.
+1. Click on **Run Layout (2)** and wait for the layout to complete for the first document. Locate the document’s abstract. 
+
+   >**Note:** In some documents, the abstract may be on the second page. However, after running the layout, the abstract may not be automatically detected, and all text might be highlighted in yellow. In this case, you will need to manually select each word in the abstract before tagging.
 
     ![The Abstract tag has been created](media/Lab2-7.png)
-
-    ![Running layout for a document](media/lab2a-t6-frs7.png)
 
 1. Once the layout is generated for the first document, move on to the next document. We will tag each of the five papers, so navigate to each in turn, allowing the layout to be processed. To ensure tagging is successful, you must first run the layout for a document, navigate to another document, and then return to the first document before beginning the tagging process. Layout generation happens only once per document, so after it is generated, you can return to the document and proceed with tagging.
 
 1. Before selecting the words, make sure to **Run Layout** then only you will be able to select the words.
 
-1. Return to the second PDF and manually select each word in the **Abstract** section. Once highlighted, select the **Abstract** tag to tag this section. You will need to select each word individually rather than selecting a box. After tagging, you should see a tag logo next to the PDF. If the tag logo appears, it confirms that tagging was successful for this document.
+1. Go back to the **second PDF (1)** and manually select each word in the **Abstract (2)** section. Once highlighted, select the **Abstract tag (3)** to tag this section. You will need to select each word individually rather than selecting a box. After tagging, you should see a tag logo next to the PDF. If the tag logo appears, it confirms that tagging was successful for this document.
 
     ![The first PDF has been viewed, and the second PDF has been tagged](media/L2-T6-S16.1.png)
 
-1. Return to the first PDF and highlight the word **ABSTRACT** and the abstract. If the abstract is lengthy, as in this example, it is okay to include just the first paragraph. Then, select the **Abstract** tag to tag this document. Ensure that the viewed icon (an eye) changes to a tag icon. If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful. In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
+1. Return to the **first PDF (1)** and ensure **Run Layout (2)** has already been completed. Highlight the **ABSTRACT (3)** if the abstract is lengthy,it is okay to include just the first paragraph. Then, select the **Abstract (4)** tag to tag this document. Ensure that the viewed icon (an eye) changes to a **tag icon (5)**, indicating successful tagging.
+   >**Note:** If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful. In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
 
     ![The first PDF has been tagged](media/L2-T6-S17.png)
 
@@ -391,7 +392,7 @@ The high-level steps covered in the lab are:
 
     ![The option to train a model has been selected](media/Lab2-8.png)
 
-1. Training a model may take up to 45-60 minutes to succeed. Click on **Go to models**. 
+1. Training a model may take up to 45-60 minutes to succeed. Click on **Go to Models**. 
 
     ![The option to train a model has been selected](media/Lab2-9.png)
 
@@ -405,7 +406,7 @@ The high-level steps covered in the lab are:
 
     ![An analyzed document](media/innovate6.png)
     
-1. In the Upload Files pop-up, Navigate to `C:\Temp\AzureSearch\` **(1)**, select `2020.09.25.20201616v1.pdf` **(2)** file and then click on **Open** **(3)**.
+1. In the Upload Files pop-up, Navigate to `C:\Temp\AzureSearch\` **(1)**, select `2020.09.25.20201616v1.pdf` **(2)** file and click on **Open** **(3)**.
     
     ![An analyzed document](media/innovate7.png)
    
@@ -446,7 +447,9 @@ In this task, we are creating a text summarization application with the client l
 
     ![The Command Prompt application is selected](media/Lab2-0.png)
 
-4. Run the below command. To run this, you must have Python installed on the machine. If `python.exe` is not accessible as part of the path--meaning you get an error when trying to run `pip`, navigate to where Python is installed.  The `pip.exe` program is inside the `\Scripts\` folder.
+4. Run the below command. 
+
+    >**Note:** To run this, you must have Python installed on the machine. If `python.exe` is not accessible as part of the path--meaning you get an error when trying to run `pip`, navigate to where Python is installed.  The `pip.exe` program is inside the `\Scripts\` folder.
 
     ```bash
     pip install azure-ai-textanalytics==5.2.0b1
@@ -486,4 +489,8 @@ You can find more references about Document Summarization from here: [Quickstart
 
 In this lab, you have explored Azure Document Intelligence and AI Services and extracted, analyzed, and summarized key information from documents.
 
-### You have successfully completed the lab
+### You have successfully completed the lab!
+
+### Click the **Next >>** button in the Guide section to move on to Lab 3.
+
+![](./media/GettingStarted-08.png)
