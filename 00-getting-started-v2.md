@@ -46,31 +46,31 @@ The architecture for this lab involves the following key components:
 - **Conversational AI with Power Virtual Agents** : Implements a chatbot interface using Power Virtual Agents and AI Services to facilitate intuitive, natural language interactions for navigating and retrieving relevant research documents.
 
 ## Getting Started with Lab
-Once you're ready to dive in, your virtual machine and **Lab guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-![](media/ing1.png)
+![](media/GettingStarted-00.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-![](media/ing2.png)
+![](media/GettingStarted-01.png)
 
 ## Virtual Machine & Lab Guide
-Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+Your virtual machine is your workhorse throughout the workshop. The guide is your roadmap to success.
 
 ## Exploring Your Lab Resources
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-![](media/ing3.png)
+![](media/GettingStarted-03.png)
 
 ## Utilizing the Split Window Feature
-For convenience, you can open the lab guide in a separate window by selecting the Split Window button from the top right corner.
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
-![](media/ing4.png)
+![](media/GettingStarted-07.png)
 
 ## Managing Your Virtual Machine
-Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **start, restart, or stop (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
 ![](media/ing5.png)
 
@@ -78,19 +78,19 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
 1. On your virtual machine, click on the **Azure Portal** icon as shown below:
  
-   ![](media/azure-portal-edge.png)
+   ![](media/GettingStarted-09.png)
 
-1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next**. 
+1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next (2)**. 
 
-   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
    
-      ![](media/user-email.png "Enter Email")
+      ![](media/GettingStarted-04.png "Enter Email")
      
-1. Now enter the following password and click on **Sign in**.
+1. Now enter the following password and click on **Sign in (2)**.
    
-   * **Password**: <inject key="AzureAdUserPassword"></inject>
+   * **Password**: <inject key="AzureAdUserPassword"></inject> **(1)**
    
-      ![](media/user-pass.png "Enter Password")
+      ![](media/GettingStarted-05.png "Enter Password")
 
 1. If you see the pop-up Action Required, click Ask Later.
 
@@ -99,6 +99,8 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
    >**NOTE:** Do not enable MFA, select **Ask Later**.
      
 1. If you see the pop-up **Stay Signed in?**, select **No**.
+
+   ![](media/GettingStarted-06.png)
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
@@ -113,9 +115,9 @@ Learner Support Contacts:
 - Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
-Click **Next** from the bottom right corner to embark on your Lab journey!
+Click **Next >>** from the bottom right corner to embark on your Lab journey!
 
-![](media/ing6.png)
+![](media/GettingStarted-08.png)
 
 ### Happy Learning!!
 

@@ -40,61 +40,57 @@ The semantic ranking is an extension of the query execution pipeline that improv
 
     ![Semantic config](media/inn20.png)
 
-3. You will see a tab appear on the right side with **New semantic configuration**. Enter the below values:
+3. You will see a tab appear on the right side with **New semantic configuration**. Enter the following details, then click on **Save** **(5)**.
 
     | Parameter                   | Value                                        |
     | --------------------------- | -------------------------------------------- |
-    | Name                     | my-semantic-config (1)                          |
-    | Title field (2)             | Select `metadata/title` (2 )from the drop-down   |
-    | Field name under Content fields  | Select `bib_entries/BIBREFO/title` (3) from the drop-down |
-    | Field name under Keyword fields     | Select `bib_entries/BIBREFO/ref_id` (4) from the drop-down |
-  
-   Click on **Save** **(5)**.
+    | Name                     | **my-semantic-config (1)**                          |
+    | Title field              | Select `metadata/title` **(2)** from the drop-down   |
+    | Field name under Content fields  | Select `bib_entries/BIBREFO/title` **(3)** from the drop-down |
+    | Field name under Keyword fields     | Select `bib_entries/BIBREFO/ref_id` **(4)** from the drop-down |
   
     ![Semantic configuration](media/lab2b-new-sc.png)
   
-4. You will be able to see the added semantic configuration **(1)** under the Semantic Configurations tab. Click on **Save** **(2)** to save the changes made.
+4. You will now see the added **semantic configuration (1)** listed under the Semantic configurations tab. Click **Save (2)** to apply and save the changes.
 
     ![Semantic configuration](media/inn21.png)
 
 ## Task 3 - Semantic search using the semantic configuration in Azure Portal
 
-1. Navigate to **Overview** **(1)** of **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and then click on **Search explorer (2)**.
+1. Navigate to the **Overview (1)** section of the **Search service** resource named **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**, then click on **Search explorer (2)** to proceed.
 
     ![Semantic search](media/inn17.png)
    
 2. In the **Search explorer** pane, select the Index **covid19temp** **(1)**.Click on the **Query options** **(2)**.
     ![Semantic search](media/L3T3S2.png)
 
-3. In a popup on the right side, turn **On** **(1)** the Semantic ranker, select **my-semantic-config** **(2)** from the drop-down under Semantic configuration, which you created in the previous task. Click on **Close** **(3)**. 
+3. In the pop-up panel on the right, turn **On (1)** the Semantic ranker. Then, from the Semantic configuration drop-down, select **my-semantic-config (2)**, the one you created in the previous task. Finally, click **Close (3)** to apply the settings. 
 
-    ![Semantic search](media/L3T3S3.png)
+    ![Semantic search](media/Lab3-01.png)
    
-4. Click on **Search** **(1)**.Wait for a few seconds to complete the search and scroll down to the **Results** **(2)**part on the same page. You will be able to see the output for the semantic search using semantic configuration.
+4. Click on **Search (1)**. Wait a few seconds for the search to complete, then scroll down to the **Results (2)** section on the same page. You should now see the output of the semantic search using the selected semantic configuration.
 
-    ![Semantic search](media/L3T3S4.png)
+    ![Semantic search](media/Lab3-11.png)
    
 ## Task 4 - Semantic Query using REST APIs
 
 In this task, you are going to perform the semantic search using a query in [REST APIs](https://docs.microsoft.com/en-us/azure/search/search-get-started-rest). For now, you will perform with [Postman desktop app](https://www.getpostman.com/) to send requests to Azure AI Search.
-
-1. In the **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** pane, select **Keys** under settings from left menu.
-
-    ![Semantic search](media/inn18.png)
    
-1. Make sure to copy **key**, which you can find below the **Manage query keys**, and save it in the text file for later use.
+1. In the **Search service** resource pane for **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**, go to **Keys (1)** under the Settings section in the left menu. 
 
-    ![Semantic search](media/inn19.png)
+1. Then, under **Manage query keys**, copy the **Key (2)** and save it in **Notepad** for later use.
+
+    ![Semantic search](media/Lab3-13.png)
    
 1. Navigate to **LABVM Desktop** and open the **Postman** application by double-clicking on it.
 
-    ![Semantic search](media/lab2b-ssp11.png)
+    ![Semantic search](media/Lab3-14.png)
    
-1. In the Overview page of the Postman app, click on **Create a request** under Get Started.
+1. In the Overview page of the **Postman** application, click on **Create a request** under Get started.
 
     ![Semantic search](media/lab2b-ssp12.png)
    
-1. Select the **POST (1)** Method from the drop-down. Enter the request URL given below and make sure to replace the search service name as **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and the index name as **covid19temp**.
+1. Select the **POST (1)** method from the drop-down menu. Then, enter the request URL provided below, making sure to replace the search service name with **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and the index name with **covid19temp**.
 
    `https://[search-service-name].search.windows.net/indexes/[index-name]/docs/search` **(2)**.
    
@@ -104,32 +100,37 @@ In this task, you are going to perform the semantic search using a query in [RES
 
     | Key           | Value                                        |
     | --------------------| -------------------------------------------- |
-    | api-version         | 2021-04-30-Preview (1)                           |
-    | api-key             | Enter the manage query key which you have copied earlier in Step - 2  (2)  |
+    | api-version         | **2021-04-30-Preview (1)**                           |
+    | api-key             | Enter the manage query key which you have copied earlier in Step - 2  **(2)**  |
    
    After updating the parameters, your **Request URL** **(3)** should be the same as shown in the below screenshot.
    
     ![Semantic search](media/lab2b-ssp14.png)
 
-1. For adding a query, you need to select the **Body** **(1)** section. Then click on **raw** **(2)** as code type and select **JSON** **(3)** as an extension from the drop-down. Copy-paste the query which is given below into the **coding area** **(4)** and click on **Send** **(5)**.
-
-   ```bash
-   {
-       "search": "What is Endoplasmic Reticulum",
-       "queryType": "semantic",
-       "queryLanguage": "en-us",
-       "semanticConfiguration": "my-semantic-config",
-       "answers": "extractive|count-3",
-       "captions": "extractive|highlight-true",
-       "count": "true"
-   }
-   ```
+1. To add a query:
+     - Select the **Body (1)** section.
+     - Click on **raw (2)** as the code type.
+     - From the drop-down, choose **JSON (3)** as the format.
+     - Copy and paste the query provided below into the **coding area (4)**.
+     - Click **Send (5)** to execute the request.
+ 
+       ```bash
+       {
+          "search": "What is Endoplasmic Reticulum",
+          "queryType": "semantic",
+          "queryLanguage": "en-us",
+          "semanticConfiguration": "my-semantic-config",
+          "answers": "extractive|count-3",
+          "captions": "extractive|highlight-true",
+          "count": "true"
+       }
+       ```
    
-    ![Semantic search](media/newlatest15.png)
+       ![Semantic search](media/newlatest15.png)
    
-1. You will see a **Sending request** in the **Response** section, which will take a few seconds to get the response from the AI search service. Once you get the response check that **Network Status: 200 OK**, review the response and explore with your query requests.
+1. You’ll see a **Sending request** message in the **Response** section, which may take a few seconds to complete. Once the response is received, ensure that the **Network Status shows 200 OK**. Then, review the response content and feel free to explore further using your own query requests.
 
-    ![Semantic search](media/lab2b-ssp16.png)
+    ![Semantic search](media/Lab3-15.png)
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Hit the Validate button for the corresponding task.
@@ -144,4 +145,8 @@ In this task, you are going to perform the semantic search using a query in [RES
 
 In this lab, you worked on indexing and exploring data, extracting insights, and enabling advanced search capabilities across structured and unstructured content.
 
-### You have successfully completed the lab
+### You have successfully completed the lab!
+
+### Click the **Next >>** button in the Guide section to move on to Lab 3.
+
+![](./media/GettingStarted-08.png)
