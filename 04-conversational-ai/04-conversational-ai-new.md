@@ -79,19 +79,21 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/Lab4-04.png)
 
-1. In add a condition,select **City (1)** as the **variable** and enter **Los Angeles (2)** as the value for the condition.
+1. In add a condition, click on the **variable selector (1)**. From the variable list, select **City (2)**, Choose the condition type **is equal to (3)** and enter **Los Angeles (2)** as the value for the condition.
 
    ![](media/Lab4-8.png)
 
-1. Add another condition by clicking on the **+** at the bottom of the **Question** node and select **City** as the **variable** and enter **Seattle** as the value for the condition.
+1. Add another condition by clicking on the **+ (1)** at the bottom of the **Question** node and and select **Add a condition (2)**.
 
    ![](media/L4T3S4-3.png)
 
-1. Select **Ask a question** from the drop-down while adding a node.
+1. In add a condition, click on the **variable selector (1)**. From the variable list, select **City (2)**, Choose the condition type **is equal to (3)** and enter **Seattle (2)** as the value for the condition.
+
+1. Click on **+ (1)** at the bottom of the **Question** node and select **Ask a question (2)** from the drop-down while adding a node.
 
    ![](media/Lab4-06.png)
 
-1. Enter the question as "**What type of food would you like to order?**" **(1)** and under options for users, click on **New option** **(2)** to add types of food. Add **Chinese** and **Italian** **(3)** as shown in the below screenshot.
+1. Enter the question as "**What type of food would you like to order?**" **(1)** and under options for users, click on **New option** **(2)** to add types of food. Add **Chinese (3)** and **Italian (4)**  as shown in the below screenshot.
 
    ![](media/Lab4-07.png)
    
@@ -132,12 +134,17 @@ The way organizations are building conversational systems is evolving, with bots
 
 ## Task 4 - Test your Copilot
 
-1. Once the Topic is saved, click on **Test Copilot** from the right-top corner.
+1. Once the Topic is saved, click on **Test Copilot (1)** from the right-top corner.
 
-1. In the Test copilot pane, enter the given phrase ```What are my meal delivery options?``` and then enter the city name as ```Seattle```, You can select the type of food that you are looking for i.e., Chinese or Italian. 
+1. In the Test copilot pane, enter the given phrase ```What are my meal delivery options?``` **(2)** and then enter the city name as ```Seattle``` **(3)**, You can select the type of food that you are looking for i.e., **Chinese or Italian (4).** 
 
    ![](media/Lab4-9.png)
- 
+
+   >**Note:** If the given phrase ```What are my meal delivery options?``` won't give you expected output, you can select the pre- existing **Phrases** under Trigger.
+     
+     ![](media/New-01.png)
+
+
 1. Your chatbot should display the names of the meals as shown below.
 
    ![](media/Lab4-13.png)
