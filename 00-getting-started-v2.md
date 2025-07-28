@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this lab, you will explore the use of Natural Language Processing and Machine Learning to classify COVID-19 research papers into natural groupings. You will utilize Automated Machine Learning (AutoML) in Azure to train and refine the best classification models. The lab emphasizes the importance of a fully automated and traceable process for managing large volumes of incoming research documents, ensuring data quality through engineering processes, and providing advanced indexing and search capabilities using AI Search. Additionally, you will learn how to leverage Conversational AI, using Power Virtual Agents and Azure AI Services, to help analysts easily navigate and find relevant research documents through natural language interactions.
+In this lab, you will explore the use of Natural Language Processing and Machine Learning to classify COVID-19 research papers into natural groupings. You will utilize Automated Machine Learning (AutoML) in Azure to train and refine the best classification models. The lab emphasizes the importance of a fully automated and traceable process for managing large volumes of incoming research documents, ensuring data quality through engineering processes, and providing advanced indexing and search capabilities using AI Search. Additionally, you will learn how to leverage Conversational AI, using Microsoft Copilot Studio and Azure AI Services, to help analysts easily navigate and find relevant research documents through natural language interactions.
 
 ## Objective
 
@@ -13,15 +13,15 @@ Understand how to utilize Natural Language Processing, Machine Learning, and Con
 - **Azure Machine Learning Model Training** : Learn to build, train, and evaluate machine learning models using Azure Machine Learning. You will explore the end-to-end process, from data preparation to model deployment, leveraging Azure's Automated ML and other tools for streamlined development and operationalization.
 - **Document Processing and Summarization with Azure Document Intelligence and AI Service for Language** : Explore document processing and summarization using Azure Document Intelligence and AI Service for Language. learn to extract, analyze, and summarize key information from documents, enhancing data accessibility and comprehension.
 - **Knowledge Mining with Azure AI Search** : Learn to create rich search experiences by indexing and exploring data, extracting insights, and enabling advanced search capabilities across structured and unstructured content.
-- **Conversational AI with Bot Service using Power Virtual Agents** : Learn to create new topics, define conversation flows, and test the bot, enabling interactive and natural language interactions with users.
+- **Conversational AI with Microsoft Copilot Studio** : Learn to create and deploy sophisticated chatbots with no code, enabling automated interactions and enhanced customer engagement through intuitive, customizable conversational flows.
 
 ## Pre-requisites
 
 Participants should have:
 
-- Basic understanding of Azure AI Services and Azure DevOps
-- working knowledge with Github
-- Familarity with Machine Learning concepts
+- Basic understanding of Azure AI Services.
+- Experience with Microsoft Copilot Studio.
+- Familarity with Machine Learning concepts.
 
 ## Architecture
 
@@ -43,7 +43,7 @@ The architecture for this lab involves the following key components:
 
 - **Data Engineering and Quality Assurance** : Involves transforming natural language data into numerical formats suitable for machine learning and ensuring data accuracy and completeness through robust quality checks.
 
-- **Conversational AI with Power Virtual Agents** : Implements a chatbot interface using Power Virtual Agents and AI Services to facilitate intuitive, natural language interactions for navigating and retrieving relevant research documents.
+- **Conversational AI with Microsoft Copilot Studio** : Builds an AI-powered chatbot interface with Microsoft Copilot Studio and integrated AI services to enable natural language interactions. This solution helps users easily search, navigate, and retrieve relevant research documents through a conversational experience.
 
 ## Getting Started with Lab
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.

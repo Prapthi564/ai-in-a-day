@@ -73,7 +73,7 @@ The high-level steps covered in the lab are:
 
 ## Task 3 - Prepare Azure Machine Learning workspace
 
-1. In the **Azure portal** search bar, search for **All resources (1)** and select it **(1)** under Services.
+1. In the **Azure portal** search bar, search for **All resources (1)** and select it **All resources (2)** under Services.
 
     ![All Resources](./media/Ex1-01.png)
         
@@ -173,15 +173,15 @@ The high-level steps covered in the lab are:
 
       ![](./media/Lab1-17.png)
 
-1. Select **From Azure Storage (1)** and click on **Next (2)**.
+1. In **Data source** section, select **From Azure Storage (1)** and click on **Next (2)**.
 
       ![](./media/Lab1-18.png)
 
-1. Select **Azure Blob Storage (1)** for Datastore type, click on **workspaceblobstore (2)** and click on **Next (3)**.
+1. In **Source storage type** section, select **Azure Blob Storage (1)** for Datastore type. Then choose **workspaceblobstore (2)** and click on **Next (3)** to proceed.
 
       ![](./media/Lab1-19.png)
 
-1. Select the **covid19articles_data (1)** folder.
+1. In **Storage path** section, select the **covid19articles_data (1)** folder and click to open it.
 
       ![](./media/Lab1-20.png)
 
@@ -189,25 +189,30 @@ The high-level steps covered in the lab are:
 
       ![](./media/Lab1-21.png)
 
-1. Review the setting for you data asset, then click on **Create.**
+1. Review the setting for your data asset, then click on **Create.**
       ![](./media/Lab1-22.png)
 
 1. You will now see the details of the newly created **COVID19Articles_Train_Vectors** dataset displayed on the screen.
 
       ![](./media/Lab1-23.png)
 
-1. On the Create data asset page, provide the name as **COVID19Articles_Train_Vectors (1)**, select the type as **Tabular (2)** and click on **Next (3)**.
+
+1.  Navigate back to the studio, click on **Data (1)** in the left-hand menu, and then select **Create (2)** to start creating a new dataset named **COVID19Articles_Test_Vectors**.
+
+      ![](./media/Lab1-16.png)
+
+1. On the Create data asset page, provide the name as **COVID19Articles_Test_Vectors (1)**, select the type as **Tabular (2)** and click on **Next (3)**.
       ![](./media/Lab1-25.png)
 
-1. Select **From Azure Storage (1)** and click on **Next (2)**.
+1. In **Data source** section, select **From Azure Storage (1)** and click on **Next (2)**.
 
       ![](./media/Lab1-18.png)
 
-1. Select **Azure Blob Storage (1)** for Datastore type, click on **workspaceblobstore (2)** and click on **Next (3)**.
+1. In **Source storage type** section, select **Azure Blob Storage (1)** for Datastore type, click on **workspaceblobstore (2)** and click on **Next (3)**.
 
       ![](./media/Lab1-19.png)
 
-1. Select the **covid19articles_data (1)** folder.
+1. In **Storage path** section, select the **covid19articles_data (1)** folder.
 
       ![](./media/Lab1-20.png)
 
@@ -215,7 +220,7 @@ The high-level steps covered in the lab are:
 
       ![](./media/Lab1-26.png)
 
-1. Review the setting for you data asset, then click on **Create.**
+1. Review the setting for your data asset, then click on **Create.**
 
       ![](./media/Lab1-27.png)
 
@@ -231,7 +236,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     ![Automated ML section is open. + New Automated ML run button is highlighted.](media/ml-newautomatedml.png)
 
-2. In the `Submit an Automated ML job` wizard, provide the following details:
+2. On the `Submit an Automated ML job` page, provide the following details in **Basic settings** section:
 
    - Experiment name: `Select Existing` **(1)** 
    - Existing experiment: Select `COVID19_Classification` **(2)**
@@ -239,7 +244,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
      ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn5.png)
    
-3. On the `Task type and data` page,
+3. On the `Task type and data` section,
 
    - **Select task type**:  Make sure `Classification` **(1)** is selected from the dropdown.
    - Select `COVID19Articles_Train_Vectors`**(2)** as your **dataset**
@@ -247,7 +252,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
      ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/Lab1-30.png)
 
-5. On `Task settings` page, select the Target column to `cluster (Integer)` **(1)**. The values we're trying to predict are in the `cluster` column.
+5. On `Task settings` section, select the Target column to `cluster (Integer)` **(1)**. The values we're trying to predict are in the `cluster` column.
 
      ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn1.png)
 
@@ -273,9 +278,9 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 8. On the `Create compute cluster` screen set the values listed below:
 
-    - **Virtual machine priority (1)**: Dedicated
-    - **Virtual machine type (2)**: CPU
-    - **Virtual machine Size (3)**: Standard_DS3_v2
+    - Virtual machine priority: **Dedicated (1)**
+    - Virtual machine type: **CPU (2)**
+    - Virtual machine Size: **Standard_DS3_v2 (3)**
     - Select `Next` **(4)** to continue.
 
      ![Dedicated virtual machine priority, CPU virtual machine type, and Standard_DS3_v2 virtual machine size are selected. The next button is highlighted.](./media/Lab1-33.png)
@@ -284,11 +289,12 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 9. To configure cluster settings set the values given below:
 
-    - **Compute name (1)**: aml-<inject key="DeploymentID" enableCopy="false"/>
-    - **Minimum number of nodes (2)**: 0
-    - **Maximum number of nodes (3)**: 4  
+    - Compute name: **aml-<inject key="DeploymentID" enableCopy="false"/> (1)**
+    - Minimum number of nodes: **0 (2)**
+    - Maximum number of nodes: **4 (3)**
+    - Click on **Create (4)** to proceed.
 
-    Setting the number of maximum nodes to a higher value will allow Automated ML to run more experiments in parallel but will also increase your costs.
+    >**Note:** Setting the number of maximum nodes to a higher value will allow Automated ML to run more experiments in parallel but will also increase your costs.
 
     ![Computer name is set to aml-compute-cpu. The minimum number of nodes is set to zero. The maximum number of nodes is set to four. The create button is highlighted.](./media/Lab1-34.png)    
 
@@ -302,19 +308,21 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 13. Now that you understand the process of launching an AutoML run, let's explore in the next task the results of an already completed AutoML run.
 
->**Note**: We have already executed in this environment an AutoML run that is very similar to the one you've just launched. This allows you to explore AutoML results without having to wait for the completion of the run.
+    >**Note**: We have already executed in this environment an AutoML run that is very similar to the one you've just launched. This allows you to explore AutoML results without having to wait for the completion of the run.
 
 ## Task 6 - Explore AutoML results
 
-1. In the Azure Machine Learning Studio, navigate to the **Jobs (1)** section and locate the **COVID19_Classification** experiment **(2)**. Select the experiment name link.
+1. In the Azure Machine Learning Studio, navigate to the **Jobs (1)** section and locate the **COVID19_Classification** **(2)** experiment, then click on experiment name to open it.
 
    ![Locate the completed experiment ](media/ml-job.png)
 
-2. You will navigate to the experiment details page, where you should see the list of experiment runs. Locate the first run **(1)** listed here, which has the status **Completed**. The name of the run can be different in your environment and may not match the below screenshot.
+2. You will navigate to the experiment details page, where you should see the list of experiment runs. Locate the first run **(1)** listed here, which has the status **Completed**. 
+
+   >**Note:** The name of the run can be different in your environment and may not match the below screenshot.
 
    ![Locate the completed AutoML run](media/ml-completedjob.png)
 
-3. On the **Run details** page, navigate to the **Models+ child jobs** section. Check the values on the  **AUC weighted** column, which is the primary metric selected in the AutoML run configuration. See how the best model was selected; this is the one with the maximum metric value. This is also the model for which the explanation was generated.
+3. On the **Run details** page, navigate to the **Models+ child jobs** section. Check the values on the  **AUC weighted** column, which is the primary metric selected in the AutoML run configuration. 
 
    ![Explore the models section of the AutoML run](media/Lab1-39.png)
 
@@ -338,7 +346,7 @@ Responsible AI is a governance framework that documents how a specific organizat
 
 **Principles of responsible AI**: AI and the machine learning models that support it should be comprehensive, explainable, ethical and efficient.
 
- - Comprehensiveness – Comprehensive AI has clearly defined testing and governance criteria to prevent machine learning from being hacked easily.
+ - Comprehensive AI has clearly defined testing and governance criteria to prevent machine learning from being hacked easily.
  - Explainable AI is programmed to describe its purpose, rationale and decision-making process in a way that can be understood by the average end user.
  - Ethical AI initiatives have processes in place to seek out and eliminate bias in machine learning models.
  - Efficient AI is able to run continually and respond quickly to changes in the operational environment.
@@ -347,7 +355,7 @@ Responsible AI is a governance framework that documents how a specific organizat
 
    ![Select Note Book](./media/in10.png)
    
-1. Once the notebook is opened in the Jupyter application, select **Kernel** **(1)**. Then select **Change kernel** **(2)** and make sure to select **Python (aiw-ai-kernel) (3)**.
+1. Once the notebook is opened in the Jupyter application, select **Kernel** **(1)**. Then select **Change kernel** **(2)**. On Select Kernel pop-up, ensure to select **Python (aiw-ai-kernel) (3)** from the dropdown, then click on **Select (4)**.
 
    ![](./media/Lab1-42.png)
 
@@ -359,7 +367,7 @@ Responsible AI is a governance framework that documents how a specific organizat
 
  1. Run the import cell and ensure it completes execution.
 
-    ![Note Book Cell Output](./media/import-1.png)
+    ![Note Book Cell Output](./media/Ex1-2.png)
 
      >**Note:** If you see the "IProgress not found" error, it is expected. Please proceed further.    
 
@@ -369,7 +377,7 @@ Responsible AI is a governance framework that documents how a specific organizat
 
 ## Task 8 -  Explore the Responsible AI dashboard
 
-1. Once you click on the endpoint, you will be navigated to the new tab. Select **Tree map (1)** from the drop-down next to **Error Explorer**, the tree visualization uses the mutual information between each feature and the error to best separate error instances from success instances hierarchically in the data. This simplifies the process of discovering and highlighting common failure patterns. Choose the **Mean squared error (2)** for **Select metric** and click on **Explanation (3)** to view the results. 
+1. Once you click on the endpoint, you will be navigated to the new tab. Select **Tree map (1)** from the drop-down next to **Error Explorer**,  Choose the **Mean squared error (2)** for **Select metric** and click on **Explanation (3)** to view the results. 
 
    ![Run Note Book Cell](./media/ai-img4.png)
  
@@ -379,9 +387,9 @@ Responsible AI is a governance framework that documents how a specific organizat
 
 1. Navigate back to **Error explorer** page, and choose **Heat map (1)** form the drop-down next to **Error Explorer**. 
    
-   - Choose **number_of_elements (2)** for **Rows: Feature 1** 
-   - Choose **mean_atomic_mass (3)** for **Columns: Feature 2** 
-   - Set **Select mertic** to **Mean absolute error (4)** .
+   - For **Rows: Feature 1 :** Select **number_of_elements (2)**  
+   - For **Columns: Feature 2 :** Select **mean_atomic_mass (3)** 
+   - Set **Select mertic:** **Mean absolute error (4)** .
 
      ![Run Note Book Cell](./media/image02.png)
 
