@@ -167,15 +167,15 @@ The high-level steps covered in the lab are:
 
 1. Navigate back to the studio, click on **Data (1)** and select **Create (2)**.
 
-      ![](./media/Lab1-16.png)
+   ![](./media/Lab1-16.png)
 
 1. On the Create data asset page, provide the name as **COVID19Articles_Train_Vectors (1)**, select the type as **Tabular (2)** and click on **Next (3)**.
 
-      ![](./media/Lab1-17.png)
+   ![](./media/Lab1-17.png)
 
 1. In **Data source** section, select **From Azure Storage (1)** and click on **Next (2)**.
 
-      ![](./media/Lab1-18.png)
+   ![](./media/Lab1-18.png)
 
 1. In **Source storage type** section, select **Azure Blob Storage (1)** for Datastore type. Then choose **workspaceblobstore (2)** and click on **Next (3)** to proceed.
 
@@ -183,19 +183,18 @@ The high-level steps covered in the lab are:
 
 1. In **Storage path** section, select the **covid19articles_data (1)** folder and click to open it.
 
-      ![](./media/Lab1-20.png)
+   ![](./media/Lab1-20.png)
 
 1. Select the **train_data_vectors.csv (1)** file and click on **Next (2)** twice.
 
-      ![](./media/Lab1-21.png)
+  ![](./media/Lab1-21.png)
 
 1. Review the setting for your data asset, then click on **Create.**
-      ![](./media/Lab1-22.png)
+   ![](./media/Lab1-22.png)
 
 1. You will now see the details of the newly created **COVID19Articles_Train_Vectors** dataset displayed on the screen.
 
       ![](./media/Lab1-23.png)
-
 
 1. Navigate back to the studio, click on **Data (1)** in the left-hand menu, and then select **Create (2)** to start creating a new dataset named **COVID19Articles_Test_Vectors**.
 
