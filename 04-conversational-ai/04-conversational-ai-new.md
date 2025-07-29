@@ -155,6 +155,5 @@ Now you have successfully created and tested the Microsoft Copilot.
 In this lab, you set up Microsoft Copilot Studio, created your first Copilot, and tested it by developing and validating a new topic.
 
 ## You have successfully completed this Lab!
-
 By completing this lab, you have successfully designed and implemented an end-to-end AI solution using Azure's powerful suite of services. You have achieved the classification of COVID-19 research papers through Azure Automated ML, enabling automated and scalable machine learning workflows. You applied Natural Language Processing techniques to extract and summarize key insights from unstructured documents, improving accessibility and comprehension. Through Azure AI Search, you enabled intelligent indexing and semantic search across a large dataset, and finally, you built a no-code Conversational AI interface using Microsoft Copilot Studio, allowing users to interact with the research corpus through natural language. This hands-on experience has equipped you with practical skills in AI solution development on Azure, demonstrating how multiple AI services can be integrated to solve complex, real-world problems efficiently.
 
