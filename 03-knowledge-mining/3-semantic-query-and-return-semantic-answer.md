@@ -21,6 +21,8 @@ The semantic ranking is an extension of the query execution pipeline that improv
 
 1. Navigate to **AI-in-a-Day** resource group in the [Azure portal](https://portal.azure.com).
 
+   ![Azure resource group](media/Rg-00.png)
+
 2. Locate **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and select it.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
@@ -59,10 +61,10 @@ The semantic ranking is an extension of the query execution pipeline that improv
 
 1. Navigate to the **Overview (1)** section of the **Search service** resource named **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**, then click on **Search explorer (2)** to proceed.
 
-    ![Semantic search](media/inn17.png)
+    ![Semantic search](media/Lab3-08.png)
    
 2. In the **Search explorer** pane, select the Index **covid19temp** **(1)**.Click on the **Query options** **(2)**.
-    ![Semantic search](media/L3T3S2.png)
+    ![Semantic search](media/Lab3-10.png)
 
 3. In the pop-up panel on the right, turn **On (1)** the Semantic ranker. Then, from the Semantic configuration drop-down, select **my-semantic-config (2)**, the one you created in the previous task. Finally, click **Close (3)** to apply the settings. 
 
@@ -84,17 +86,17 @@ In this task, you are going to perform the semantic search using a query in [RES
    
 1. Navigate to **LABVM Desktop** and open the **Postman** application by double-clicking on it.
 
-    ![Semantic search](media/Lab3-14.png)
+     ![Semantic search](media/Lab3-14.png)
    
 1. In the Overview page of the **Postman** application, click on **Create a request** under Get started.
 
-    ![Semantic search](media/lab2b-ssp12.png)
+     ![Semantic search](media/lab2b-ssp12.png)
    
 1. Select the **POST (1)** method from the drop-down menu. Then, enter the request URL provided below, making sure to replace the search service name with **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and the index name with **covid19temp**.
 
    `https://[search-service-name].search.windows.net/indexes/[index-name]/docs/search` **(2)**.
    
-    ![Semantic search](media/lab2b-ssp13.png)
+     ![Semantic search](media/lab2b-ssp13.png)
 
 1. In the **Parameters** section, enter the below values for **api-version** **(1)** and **api-key** **(2)**.
 
@@ -105,7 +107,7 @@ In this task, you are going to perform the semantic search using a query in [RES
    
    After updating the parameters, your **Request URL** **(3)** should be the same as shown in the below screenshot.
    
-    ![Semantic search](media/lab2b-ssp14.png)
+     ![Semantic search](media/lab2b-ssp14.png)
 
 1. To add a query:
      - Select the **Body (1)** section.
@@ -126,7 +128,7 @@ In this task, you are going to perform the semantic search using a query in [RES
        }
        ```
    
-       ![Semantic search](media/newlatest15.png)
+          ![Semantic search](media/newlatest15.png)
    
 1. You’ll see a **Sending request** message in the **Response** section, which may take a few seconds to complete. Once the response is received, ensure that the **Network Status shows 200 OK**. Then, review the response content and feel free to explore further using your own query requests.
 

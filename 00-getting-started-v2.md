@@ -25,7 +25,7 @@ Participants should have:
 
 ## Architecture
 
-In this lab, you will use AI technologies to manage and analyze COVID-19 research papers. You'll apply Natural Language Processing and Machine Learning with Azure Automated ML to classify and group papers effectively. The workflow involves transforming natural language data for machine learning, ensuring high data quality, and using Azure AI Search for advanced document indexing and exploration. Additionally, you'll implement a conversational AI solution with Power Virtual Agents and Azure AI Services to enable intuitive navigation and retrieval of relevant research.
+In this lab, you will use AI technologies to manage and analyze COVID-19 research papers. You'll apply Natural Language Processing and Machine Learning with Azure Automated ML to classify and group papers effectively. The workflow involves transforming natural language data for machine learning, ensuring high data quality, and using Azure AI Search for advanced document indexing and exploration. Additionally, you'll also build a no-code Conversational AI using Microsoft Copilot Studio and Azure AI Services, enabling users to easily find relevant research through natural language interactions.
 
 ## Architecture Diagram
 
@@ -62,12 +62,12 @@ Your virtual machine is your workhorse throughout the workshop. The guide is you
 ## Exploring Your Lab Resources
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-![](media/GettingStarted-03.png)
+![](media/GettingStarted-10.png)
 
 ## Utilizing the Split Window Feature
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
-![](media/GettingStarted-07.png)
+![](media/GettingStarted-11.png)
 
 ## Managing Your Virtual Machine
 Feel free to **start, restart, or stop (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!

@@ -146,10 +146,10 @@ The high-level steps covered in the lab are:
    - **Restart the kernel (2)**
    - **Restart the kernel and run all cells (3)**
 
-   ![Run Note Book Cell](./media/Lab1-11.png)
+     ![Run Note Book Cell](./media/Lab1-11.png)
    ![Note Book Cell Output](./media/SHC4.1.png)
 
-    >**Note:** Once the packages have been updated **(1)**, please **restart (2)** the kernel. 
+     >**Note:** Once the packages have been updated **(1)**, please **restart (2)** the kernel. 
 
      ![Note Book Cell Output](./media/in6.png)    
 
@@ -197,7 +197,7 @@ The high-level steps covered in the lab are:
       ![](./media/Lab1-23.png)
 
 
-1.  Navigate back to the studio, click on **Data (1)** in the left-hand menu, and then select **Create (2)** to start creating a new dataset named **COVID19Articles_Test_Vectors**.
+1. Navigate back to the studio, click on **Data (1)** in the left-hand menu, and then select **Create (2)** to start creating a new dataset named **COVID19Articles_Test_Vectors**.
 
       ![](./media/Lab1-16.png)
 
@@ -283,7 +283,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
     - Virtual machine Size: **Standard_DS3_v2 (3)**
     - Select `Next` **(4)** to continue.
 
-     ![Dedicated virtual machine priority, CPU virtual machine type, and Standard_DS3_v2 virtual machine size are selected. The next button is highlighted.](./media/Lab1-33.png)
+      ![Dedicated virtual machine priority, CPU virtual machine type, and Standard_DS3_v2 virtual machine size are selected. The next button is highlighted.](./media/Lab1-33.png)
 
    
 
@@ -294,9 +294,9 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
     - Maximum number of nodes: **4 (3)**
     - Click on **Create (4)** to proceed.
 
-    >**Note:** Setting the number of maximum nodes to a higher value will allow Automated ML to run more experiments in parallel but will also increase your costs.
+      >**Note:** Setting the number of maximum nodes to a higher value will allow Automated ML to run more experiments in parallel but will also increase your costs.
 
-    ![Computer name is set to aml-compute-cpu. The minimum number of nodes is set to zero. The maximum number of nodes is set to four. The create button is highlighted.](./media/Lab1-34.png)    
+      ![Computer name is set to aml-compute-cpu. The minimum number of nodes is set to zero. The maximum number of nodes is set to four. The create button is highlighted.](./media/Lab1-34.png)    
 
 10. On the Review page, select **Submit training job**  to kick off the Automated ML experiment run. If this is the first time you are launching an experiment run in the Azure Machine Learning workspace, the total experiment time will be longer than the `training job time` we have set. This is because of the time needed to start the Compute Cluster and deploy the container images required to execute.
 
