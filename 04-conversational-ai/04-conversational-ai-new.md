@@ -136,7 +136,7 @@ The way organizations are building conversational systems is evolving, with bots
 
 1. Once the Topic is saved, click on **Test Copilot (1)** from the right-top corner.
 
-1. In the Test copilot pane, enter the given phrase ```What are my meal delivery options?``` **(2)** and then enter the city name as ```Seattle``` **(3)**, You can select the type of food that you are looking for i.e., **Chinese or Italian (4).** 
+2. In the Test copilot pane, enter the given phrase ```What are my meal delivery options?``` **(2)** and then enter the city name as ```Seattle``` **(3)**, You can select the type of food that you are looking for i.e., **Chinese or Italian (4).** 
 
     ![](media/Lab4-9.png)
 
@@ -144,8 +144,7 @@ The way organizations are building conversational systems is evolving, with bots
      
      ![](media/New-01.png)
 
-
-1. Your chatbot should display the names of the meals as shown below.
+3. Your chatbot should display the names of the meals as shown below.
 
     ![](media/Lab4-13.png)
 
