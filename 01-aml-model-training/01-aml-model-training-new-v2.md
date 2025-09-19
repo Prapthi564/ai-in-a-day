@@ -1,6 +1,8 @@
-# Lab 1 - Azure Machine Learning Model Training
+# Lab 1: Azure Machine Learning Model Training
 
 ### Estimated Duration: 2 Hours
+
+## Overview
 
 Azure Machine Learning model training involves using Azure’s cloud-based platform to build, train, and tune machine learning models with scalable compute resources, automated workflows, and integrated tools, streamlining the process from data preparation to model deployment.
 
@@ -26,31 +28,40 @@ The corpus may be updated as new research is published in peer-reviewed publicat
 
 ## Lab Objectives
 
-- Task 1 - Explore dashboard of COVID-19 data
-- Task 2 - Explore lab scenario
-- Task 3 - Prepare Azure Machine Learning workspace
-- Task 4 - Prepare data for the Machine Learning process
-- Task 5 - Train a Machine Learning model with Automated ML
-- Task 6 - Explore AutoML results
-- Task 7 - Generate a Responsible AI dashboard
-- Task 8 - Explore the Responsible AI dashboard
+- Task 1: Explore dashboard of COVID-19 data
+- Task 2: Explore lab scenario
+- Task 3: Prepare Azure Machine Learning workspace
+- Task 4: Prepare data for the Machine Learning process
+- Task 5: Train a Machine Learning model with Automated ML
+- Task 6: Explore AutoML results
+- Task 7: Generate a Responsible AI dashboard
+- Task 8: Explore the Responsible AI dashboard
 
-## Task 1 - Explore dashboard of COVID-19 data
+## Task 1: Explore dashboard of COVID-19 data
 
-To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) of the virtual machine provided with your environment. If you see the `Introducing the updated mobile layout` pop-up screen, then close it by clicking on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
+In this lab, you’ll open and explore the COVID-19 Power BI dashboard to review the source datasets that will be used in upcoming AI and ML exercises.
 
-> **Note:** Please close and reopen the Power BI Desktop document if it throws an error on the first attempt.
+1. To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) of the virtual machine provided with your environment.
 
- ![Azure AI in a Day datasets](./media/in1.png)
+   ![Azure AI in a Day datasets](./media/in1.png)
 
-Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
+   > **Note:** Please close and reopen the Power BI Desktop document if it throws an error on the first attempt.
 
-![Azure AI in a Day datasets](./media/SHC1.png)
+   >**Note:** If you see the **Introducing the updated mobile layout** pop-up screen, then close it by clicking on `Got it`.
 
-To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
+   ![](./media/e1t1p1(1).png)
 
+1. Collapse the **Fields (1)** and **Visualizations (2)** tabs to see the clear report.
 
-## Task 2 - Explore lab scenario
+   ![](./media/e1t1p2.png)
+
+1. Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
+
+   ![Azure AI in a Day datasets](./media/SHC1.png)
+
+   >To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
+
+## Task 2: Explore lab scenario
 
 Given the magnitude of the COVID-19 problem, it comes naturally to have a lot of research on the topic. In fact, in 2020 alone, tens of thousands of papers have been published on COVID-19 alone. The sheer amount of communication on the subject makes it difficult for a researcher to grasp and structure all the relevant topics and details. Furthermore, pre-defined catalogs and paper classification might not always reflect their content in the most effective way possible.
 
@@ -71,7 +82,9 @@ The high-level steps covered in the lab are:
 - Run the classifier on "new" research papers
 - Explain the best model produced by AutoML
 
-## Task 3 - Prepare Azure Machine Learning workspace
+## Task 3: Prepare Azure Machine Learning workspace
+
+In this lab, you’ll access your Azure Machine Learning workspace, launch the studio, verify that your compute instance is running, and set up the required Python environment. You’ll then configure and launch Jupyter to prepare for running notebooks in the upcoming exercises.
 
 1. In the **Azure portal** search bar, search for **All resources (1)** and select it **All resources (2)** under Services.
 
@@ -87,7 +100,7 @@ The high-level steps covered in the lab are:
     
    >**Note:** If you are prompted to sign in again, use the same **lab credentials** you used to login to the Azure portal.  If a welcome pop-up appears, simply close it by clicking the **X (close)** icon.  
 
-1. In Azure Machine Learning Studio, select `Compute` **(1)** from the left side menu and verify that your compute instance is `Running` **(2)**.
+1. In **Azure Machine Learning Studio**, select **Compute (1)** from the left navigation menu and verify that your compute instance is **Running (2)**.
    
    * Compute instance name: **notebook<inject key="DeploymentID" enableCopy="false"/>**
 
@@ -95,7 +108,7 @@ The high-level steps covered in the lab are:
 
      >**Note**: If you launched Azure Machine Learning Studio right after your lab environment was provisioned, you might find the compute instance in a provisioning state. In this case, wait a few minutes until it changes its status to `Running`.
 
-1. In the Azure Machine Learning Studio under **Compute** **(1)**, click on **ellipsis (...) (2)** and, open the **Terminal** **(3)** environment.
+1. In the **Azure Machine Learning Studio** under **Compute** **(1)**, click on **ellipsis (...) (2)** and, open the **Terminal** **(3)** environment.
     
    ![](media/ml-terminal.png)
    
@@ -105,6 +118,12 @@ The high-level steps covered in the lab are:
     conda env create -f aiw-ai-kernel.yml
     ```
      ![](./media/Ex1new-00.png)
+
+1. Accept the **Terms of Service (ToS)**, by entering **a**.
+
+   ![](./media/e1t3p7.png)
+
+1. Now run the following the commands: 
 
     ```
     conda activate aiw-ai-kernel
@@ -118,11 +137,11 @@ The high-level steps covered in the lab are:
 
     > **Note:** Ensure that you execute all the commands and verify that they run to completion.
 
-1. Navigate back to **Compute (1)**, under the `Applications` **(2)** section associated with the compute instance, select `Jupyter` **(3)**. 
+1. Navigate back to **Compute (1)**, under the **Applications** **(2)** section associated with the compute instance, select **Jupyter** **(3)**. 
 
     ![](media/in3.png)
 
-1. If you see **IMPORTANT NOTE: Always use trusted code**, then check on **Yes, I Understand (1)** and then click on **Continue (2)**.
+1. If you see **IMPORTANT NOTE: Always use trusted code**, then check **Yes, I Understand (1)** and then click on **Continue (2)**.
 
     ![](./media/in4.png)
     
@@ -130,13 +149,13 @@ The high-level steps covered in the lab are:
     
     ![](./media/upd-l1-t3-s14.png)
     
-## Task 4 - Prepare data for the Machine Learning process
+## Task 4: Prepare data for the Machine Learning process
 
 1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/> (1)** and open `1. Data Preparation.ipynb` **(2)** notebook.
 
    ![Select Note Book](./media/Lab1-45.png)
    
-1. On Jupyter page, select **Kernel (1)**, then **Change Kernel... (2)** also ensure **Python (aiw-ai-kernel) (3)** is selected from the dropdown menu, then click **Select (4)**.
+1. On the Jupyter page, go to the top menu and click **Kernel (1)**, then choose **Change Kernel... (2)**. In the dialog box, select **Python (aiw-ai-kernel) (3)** from the dropdown and click **Select (4)** to confirm.
 
    ![](./media/Lab1-9.png)
 
@@ -161,31 +180,33 @@ The high-level steps covered in the lab are:
 
 1. Run each cell and Please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>** and storage account access key with **<inject key="Storage Account Access key" enableCopy="false"/>**.
 
-      ![](./media/inno10.png)
+      ![](./media/e1t4p5.png)
 
-      ![](./media/inno11.png)
+      ![](./media/e1t4p5(1).png)
 
-1. Navigate back to the studio, click on **Data (1)** and select **Create (2)**.
+1. Run all the cells before moving to the next step.
+
+1. Navigate back to the studio, in the left navigation pane, select **Data (1)** and click on **+ Create (2)**.
 
    ![](./media/Lab1-16.png)
 
-1. On the Create data asset page, provide the name as **COVID19Articles_Train_Vectors (1)**, select the type as **Tabular (2)** and click on **Next (3)**.
+1. On the **Create data asset** page, provide the name as **COVID19Articles_Train_Vectors (1)**, select the type as **Tabular (2)** and click on **Next (3)**.
 
    ![](./media/Lab1-17.png)
 
-1. In **Data source** section, select **From Azure Storage (1)** and click on **Next (2)**.
+1. In **Data source** section, select **From Azure storage (1)** and click on **Next (2)**.
 
    ![](./media/Lab1-18.png)
 
 1. In **Source storage type** section, select **Azure Blob Storage (1)** for Datastore type. Then choose **workspaceblobstore (2)** and click on **Next (3)** to proceed.
 
-   ![](./media/Lab1-19.png)
+   ![](./media/e1t4p9.png)
 
 1. In **Storage path** section, select the **covid19articles_data (1)** folder and click to open it.
 
    ![](./media/Lab1-20.png)
 
-1. Select the **train_data_vectors.csv (1)** file and click on **Next (2)** twice.
+1. Select the **train_data_vectors.csv (1)** file and now click on **Next (2)** thrice.
 
    ![](./media/Lab1-21.png)
 
@@ -197,7 +218,7 @@ The high-level steps covered in the lab are:
 
    ![](./media/Lab1-23.png)
 
-1. Navigate back to the studio, click on **Data (1)** in the left-hand menu, and then select **Create (2)** to start creating a new dataset named **COVID19Articles_Test_Vectors**.
+1. Navigate back to the studio, click on **Data (1)** in the left-hand menu, and then select **+ Create (2)** to start creating a new dataset.
 
    ![](./media/Lab1-16.png)
 
@@ -205,19 +226,19 @@ The high-level steps covered in the lab are:
    
    ![](./media/Lab1-25.png)
 
-1. In **Data source** section, select **From Azure Storage (1)** and click on **Next (2)**.
+1. In **Data source** section, select **From Azure storage (1)** and click on **Next (2)**.
 
    ![](./media/Lab1-18.png)
 
 1. In **Source storage type** section, select **Azure Blob Storage (1)** for Datastore type, click on **workspaceblobstore (2)** and click on **Next (3)**.
 
-   ![](./media/Lab1-19.png)
+   ![](./media/e1t4p9.png)
 
 1. In **Storage path** section, select the **covid19articles_data (1)** folder.
 
    ![](./media/Lab1-20.png)
 
-1. Select the **test_data_vectors.csv (1)** file and click on **Next (2).**  
+1. Select the **test_data_vectors.csv (1)** file and click on **Next (2)** thrice.  
 
    ![](./media/Lab1-26.png)
 
@@ -229,49 +250,49 @@ The high-level steps covered in the lab are:
 
    ![](./media/Lab1-28.png)
 
-## Task 5 - Train a Machine Learning model with Automated ML
+## Task 5: Train a Machine Learning model with Automated ML
 
 In this task, we'll use Azure Automated ML to train a machine learning model capable of determining the best cluster for a COVID-19 scientific article. It builds upon the work done in the Data Preparation notebook.
 
-1. In the Azure Machine Learning Studio, switch to the `Automated ML` **(1)** section and select `+ New Automated ML job` **(2)** to start the Automated ML.
+1. In the Azure Machine Learning Studio, from the left navigation pane, select **Automated ML** **(1)** section and click **+ New Automated ML job** **(2)** to start the Automated ML.
 
     ![Automated ML section is open. + New Automated ML run button is highlighted.](media/ml-newautomatedml.png)
 
-2. On the `Submit an Automated ML job` page, provide the following details in **Basic settings** section:
+2. On the **Submit an Automated ML job** page, provide the following details in **Basic settings** section:
 
-   - Experiment name: `Select Existing` **(1)** 
-   - Existing experiment: Select `COVID19_Classification` **(2)**
-   - Click  on `Next` **(3)** to proceed.
+   - Experiment name: **Select existing** **(1)** 
+   - Existing experiment: Select **COVID19_Classification** **(2)**
+   - Click  on **Next** **(3)** to proceed.
 
      ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn5.png)
    
-3. On the `Task type and data` section,
+3. On the **Task type and data** section,
 
-   - **Select task type**:  Make sure `Classification` **(1)** is selected from the dropdown.
-   - Select `COVID19Articles_Train_Vectors`**(2)** as your **dataset**
-   - Click `Next` **(3)** to proceed.
+   - **Select task type**:  Make sure **Classification** **(1)** is selected from the dropdown.
+   - Select **COVID19Articles_Train_Vectors** **(2)** as your **dataset**
+   - Click **Next** **(3)** to proceed.
 
-     ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/Lab1-30.png)
+     ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/e1t5p3.png)
 
-5. On `Task settings` section, select the Target column to `cluster (Integer)` **(1)**. The values we're trying to predict are in the `cluster` column.
+5. On **Task settings** section, select the Target column to **cluster (Integer)** **(1)**. The values we're trying to predict are in the **cluster** column.
 
      ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn1.png)
 
-6. Scroll down on the same page, fill in the values listed below and click `Next` **(4)**.
+6. Scroll down on the same page, fill in the values listed below and click **Next** **(4)**.
 
     - Validation type : **k-fold cross validation (2)**
     - Number of cross validations: **5 (3)**
-    - Leave Default for Test dataset
+    - Leave Default for Test data.
 
-      ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn2.png)
+      ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/e1t5p5.png)
       
-7. In order to be able to launch an Automated ML run, we need to provision an Azure ML compute cluster. On the `Compute` page, 
+7. In order to be able to launch an Automated ML run, we need to provision an Azure ML compute cluster. On the **Compute** page, 
 
-   - Select compute type as `Compute Cluster` **(1)** 
-   - Select Azure AML compute cluster as `aml-compute-cpu` **(2)** from the list of clusters
+   - Select compute type as **Compute Cluster** **(1)** 
+   - Select Azure AML compute cluster as **aml-compute-cpu** **(2)** from the list of clusters
    - Then click on **Next** and proceed with **step 9** 
    
-     >**Note**: If the list is empty then only select `+ New` **(3)** link and follow the steps from 7
+     >**Note**: If the list is empty then only select **+ New** **(3)** link and follow the steps from 7
 
       ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/inn3.png)
 
@@ -305,13 +326,13 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 12. On the following screen, you will see the progress of your experiment run.
 
-    ![Validation is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/Lab1-36.png)
+    ![Validation is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/e1t5p10.png)
 
 13. Now that you understand the process of launching an AutoML run, let's explore in the next task the results of an already completed AutoML run.
 
     >**Note**: We have already executed in this environment an AutoML run that is very similar to the one you've just launched. This allows you to explore AutoML results without having to wait for the completion of the run.
 
-## Task 6 - Explore AutoML results
+## Task 6: Explore AutoML results
 
 1. In the Azure Machine Learning Studio, navigate to the **Jobs (1)** section and locate the **COVID19_Classification** **(2)** experiment, then click on experiment name to open it.
 
@@ -321,27 +342,24 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    >**Note:** The name of the run can be different in your environment and may not match the below screenshot.
 
-   ![Locate the completed AutoML run](media/ml-completedjob.png)
+   ![Locate the completed AutoML run](media/e1t6p2.png)
 
 3. On the **Run details** page, navigate to the **Models+ child jobs** section. Check the values on the  **AUC weighted** column, which is the primary metric selected in the AutoML run configuration. 
 
-   ![Explore the models section of the AutoML run](media/Lab1-39.png)
+   ![](media/e1t6p3.png)
 
 4. Browse all the tabs to get more details about the model.
 
-   ![View explanations](media/Lab1-40.png)
+   ![](media/e1t6p4.png)
 
-   <validation step="46d5c33f-126f-4f3c-9a15-a4596a0b876c"/>
-
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="46d5c33f-126f-4f3c-9a15-a4596a0b876c" />
 
-
-## Task 7 - Generate a Responsible AI dashboard
+## Task 7: Generate a Responsible AI dashboard
 
 Responsible AI is a governance framework that documents how a specific organization is addressing the challenges around artificial intelligence (AI) from both an ethical and legal point of view. Resolving ambiguity about where responsibility lies if something goes wrong is an important driver for responsible AI initiatives.
 
@@ -356,7 +374,7 @@ Responsible AI is a governance framework that documents how a specific organizat
 
    ![Select Note Book](./media/in10.png)
    
-1. Once the notebook is opened in the Jupyter application, select **Kernel** **(1)**. Then select **Change kernel** **(2)**. On Select Kernel pop-up, ensure to select **Python (aiw-ai-kernel) (3)** from the dropdown, then click on **Select (4)**.
+1. On the Jupyter page, go to the top menu and click **Kernel (1)**, then choose **Change Kernel... (2)**. In the dialog box, select **Python (aiw-ai-kernel) (3)** from the dropdown and click **Select (4)** to confirm.
 
    ![](./media/Lab1-42.png)
 
@@ -364,9 +382,15 @@ Responsible AI is a governance framework that documents how a specific organizat
 
    ![Run Note Book Cell](./media/IMG014.png)
 
-    >**Note:** Please restart the kernal once the packages have been updated
+1. Please restart the kernal once the packages have been updated by clicking on the **Restart the kernel (1)** icon on the top.
 
- 1. Run the import cell and ensure it completes execution.
+   ![](media/e1t7p3(1).png)
+
+1. In the Restart Kernel? pop-up window, click on **Restart**.
+
+   ![](media/e1t7p3(2).png)
+
+1. Run the import cell and ensure it completes execution.
 
     ![Note Book Cell Output](./media/Ex1-2.png)
 
@@ -376,9 +400,9 @@ Responsible AI is a governance framework that documents how a specific organizat
 
    ![Note Book Cell Output](./media/ai-img3.png)
 
-## Task 8 -  Explore the Responsible AI dashboard
+## Task 8:  Explore the Responsible AI dashboard
 
-1. Once you click on the endpoint, you will be navigated to the new tab. Select **Tree map (1)** from the drop-down next to **Error Explorer**,  Choose the **Mean squared error (2)** for **Select metric** and click on **Explanation (3)** to view the results. 
+1. Once you click on the endpoint, you will be navigated to the new tab. Select **Tree map (1)** from the drop-down next to **Error Explorer**,  choose the **Mean squared error (2)** for **Select metric** and click on **Explanation (3)** to view the results. 
 
    ![Run Note Book Cell](./media/ai-img4.png)
  

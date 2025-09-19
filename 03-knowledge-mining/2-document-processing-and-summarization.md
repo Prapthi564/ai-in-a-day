@@ -1,36 +1,46 @@
-# Lab 2 - Document Processing and Summarization with Azure Document Intelligence and AI Service for Language
+# Lab 2: Document Processing and Summarization with Azure Document Intelligence and AI Service for Language
 
 ### Estimated Duration: 2 Hours 30 Minutes
+
+## Overview
 
 Azure Document Intelligence and AI Service for Language streamline document processing by extracting key information and automating summaries, leveraging AI to enhance data extraction accuracy and deliver actionable insights efficiently.
 
 ## Lab Objectives
 
-- Task 1 - Explore the dashboard of COVID-19 data
-- Task 2 - Explore lab scenario
-- Task 3 - Creating Azure Search Indexes
-- Task 4 - Querying Azure Search Indexes
-- Task 5 - Updating Azure Search Indexes
-- Task 6 - Using the Document Intelligence Studio
-- Task 7 - Document Summarization via AI Service for Language Integration
+- Task 1: Explore the dashboard of COVID-19 data
+- Task 2: Explore lab scenario
+- Task 3: Creating Azure Search Indexes
+- Task 4: Querying Azure Search Indexes
+- Task 5: Updating Azure Search Indexes
+- Task 6: Using the Document Intelligence Studio
+- Task 7: Document Summarization via AI Service for Language Integration
 
-## Task 1 - Explore the dashboard of COVID-19 data
+## Task 1: Explore the dashboard of COVID-19 data
 
-To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) of the virtual machine provided with your environment. If you see the `Introducing the updated mobile layout` pop-up screen, then close it by clicking on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
+In this lab, you’ll open and explore the COVID-19 Power BI dashboard to review the source datasets that will be used in upcoming AI and ML exercises.
 
- ![Azure AI in a Day datasets](./media/in1.png)
+1. To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) of the virtual machine provided with your environment.
 
-> **Note:** Please close and reopen the Power BI Desktop document if it throws an error on the first attempt.
+   ![Azure AI in a Day datasets](./media/in1.png)
 
-Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
+   > **Note:** Please close and reopen the Power BI Desktop document if it throws an error on the first attempt.
 
-![Azure AI in a Day datasets](./media/SHC1.png)
+   >**Note:** If you see the **Introducing the updated mobile layout** pop-up screen, then close it by clicking on `Got it`.
 
-To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
+   ![](./media/e1t1p1(1).png)
 
+1. Collapse the **Fields (1)** and **Visualizations (2)** tabs to see the clear report.
 
+   ![](./media/e1t1p2.png)
 
-## Task 2 - Explore lab scenario
+1. Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
+
+   ![Azure AI in a Day datasets](./media/SHC1.png)
+
+   >To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
+
+## Task 2: Explore lab scenario
 
 Another critical problem to deal with when it comes to the volumes of research documents covering COVID-19 is the problem of advanced indexing and searching their content. The specific internal structure of research papers (including citations, contributors, and various entities like diagnosis, forms of examination, family relations, genes, medication, symptoms or signs, and treatments) form a reach semantic graph that goes way beyond simple document categorization. An analyst would benefit significantly from exploring the corpus of documents in a way that considers all these complex relationships.
 
@@ -49,9 +59,9 @@ The high-level steps covered in the lab are:
 - Add a set of new documents and trigger the index update process
 - Explore the document and graph search and identify updated results
 
-## Task 3 - Creating Azure Search Indexes
+## Task 3: Creating Azure Search Indexes
 
-1. Navigate to [the Azure portal](https://portal.azure.com), search for **Resource groups (1)** and **select it (2)** under Services.
+1. Navigate to [the Azure portal](https://portal.azure.com), search for **Resource groups (1)** and select **Resource groups (2)** under Services.
 
     ![Open Azure resource group](media/Lab2-00.png)
 
@@ -79,7 +89,7 @@ The high-level steps covered in the lab are:
 
     ![The Search service's API key is copied to the clipboard.](media/in14.png)
 
-1. On the Storage account named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** **(1)**, select **Access keys** **(2)** under Security + networking from left-menu. Click on **Show (3)** of the connection string under Key1  to see the connection string and **copy the connection string** **(4)** under Key1. Paste this into a text file.
+1. On the Storage account named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** **(1)**, under **Security + networking** from left navigation pane ,select **Access keys** **(2)** . Click on **Show (3)** of the connection string under Key1  to see the connection string and **copy the connection string** **(4)** under Key1. Paste this into notepad.
 
    ![](media/ai-sa-cs.png)
 
@@ -87,7 +97,7 @@ The high-level steps covered in the lab are:
 
    ![](media/in11.png)
 
-1. Open the `abstracts_datasource.schema` **(1)** file with a **Notepad (2)**, then click on **OK(3)**.
+1. Open the `abstracts_datasource.schema` **(1)** file with a **Notepad (2)**, then click on **OK (3)**.
 
    ![](media/in12.png)
 
@@ -136,16 +146,16 @@ The high-level steps covered in the lab are:
 
     ![The Create-AzureSearchIndex function has been run to create a new index.](media/create-azuresearchindex-use.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Hit the Validate button for the corresponding task.
-    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task.
+> - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="6e7f9bb9-9bed-4f51-ac7b-c6aa82222f50" />
 
-## Task 4 - Querying Azure Search Indexes
+## Task 4: Querying Azure Search Indexes
 
-1. Navigate to [the Azure portal](https://portal.azure.com), search for **Resource groups (1)** and **select it (2)** under Services.
+1. Navigate to [the Azure portal](https://portal.azure.com), search for **Resource groups (1)** and select **Resource groups (2)** under Services.
 
     ![Open Azure resource group](media/Lab2-00.png)
 
@@ -157,27 +167,27 @@ The high-level steps covered in the lab are:
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
 
-1. Select the **Indexes (1)** tab under Search management and ensure that you have two indexes created. If the Document Count is 0 for either, wait a couple of minutes and select **Refresh (2)** until the document count appears.
+1. Select the **Indexes (1)** tab under **Search management** and ensure that you have two indexes created. If the Document Count is 0 for either, wait a couple of minutes and select **Refresh (2)** until the document count appears.
 
     ![The list of Azure Search indexes.](media/Lab2-02.png)
 
-1. Once documents are available, Navigate to **Overview (1)** of Search service and then select **Search Explorer (2)** to open up the Search Explorer.
+1. Once documents are available, navigate to **Overview (1)** of Search service and then select **Search explorer (2)** to open up the Search Explorer.
 
-    ![The Search Explorer option is selected.](media/Lab3-08.png)
+    ![The Search Explorer option is selected.](media/e2t4p5.png)
 
 1. Choose the **covid19temp (1)** index and enter `RNA interference`**(2)** into the Query string input box, and then select **Search (3)**. This will return the documents which include the phrase "RNA interference."
 
-    ![Articles with the phrase RNA interference.](media/Lab2-03.png)
+    ![The Search Explorer option is selected.](media/e2t4p6.png)
 
 1. Keeping the **covid19temp (1)** index selected, we can also see how many articles match a certain search string. In the Query string input box, enter the phrase `Brazil&$count=true` **(2)** and then select **Search (3)**.  This will return 53 documents.
 
-    ![53 articles reference Brazil.](media/Lab2-04.png)
+    ![](media/e2t4p7.png)
 
 1. Keeping the **covid19temp (1)** index selected, in the Query string input box, enter the phrase `UNC Chapel Hill&$select=metadata/authors, metadata/title` **(2)** and then select **Search (3)**. This will return the title as well as detailed information on each author.
 
-    ![Paper titles and authors referencing UNC Chapel Hill.](media/Lab2-05.png)
+    ![](media/e2t4p8.png)
 
-1. The Azure Search service can also generate a demo application. Return to the search service and select **Indexes (1)** from left pane under Search management and navigate to the **covid19temp (2)** index.
+1. The Azure Search service can also generate a demo application. Return to the search service and select **Indexes (1)** from left pane under **Search management** and navigate to the **covid19temp (2)** index.
 
     ![The covid19temp index is selected.](media/inn8.png)
 
@@ -185,7 +195,7 @@ The high-level steps covered in the lab are:
 
     ![The Create Demo App option is selected.](media/Lab2-06.png)
 
-1. On **Create Demo app** page, under Customize individual result section, select `metadata.title` **(1)** for the Title and `abstract.text` **(2)** for the Description. Then click **Next (3)** twice to proceed. 
+1. On **Create Demo app** page, under Customize individual result section, select **metadata.title** **(1)** for the Title and **abstract.text** **(2)** for the Description. Then click **Next (3)** twice to proceed. 
 
     ![Create a demo app.](media/Lab2-07.png)
 
@@ -193,26 +203,27 @@ The high-level steps covered in the lab are:
 
     ![Create a demo app.](media/Lab2-08.png)
 
-1. On the prompt **Your demo app is ready** click **Download** to download an HTML file named `AzSearch.html`. 
+1. On the prompt **Your demo app is ready**, click **Download** to download an HTML file named `AzSearch.html`. 
 
     ![Create a demo app.](media/in16.png)
 
-1. Open the HTML file named `AzSearch.html`.
+1. Open the HTML file named **AzSearch.html**.
 
     ![Create a demo app.](media/in17.png)
 
-1. Open the demo app HTML file. In the search box, enter the phrase **RNA interference (1)** and select the **Search icon (2)**. This will return 497 papers relating to RNA interference.
+1. Open the demo app HTML file. In the search box, enter the phrase **RNA interference (1)** and click the **Search icon (2)**. This will return 497 papers relating to RNA interference.
 
     ![Use the demo app.](media/L2T4S12.png)
 
-## Task 5 - Updating Azure Search Indexes
+## Task 5: Updating Azure Search Indexes
 
-1. On the desktop, select the **Azure Storage Explorer**.  
+1. On the desktop, select the **Azure Storage Explorer** and open it.  
 
     ![Storage explorer is selected on the desktop.](media/storage-exp-desktop.png)
 
 2. Select the **Connect (1)** option and then click on **Storage account or service (2)**.
 
+    ![](media/e2t5p2.png)
     ![storageaccount](media/Lab2-11.png)
 
 3. Select **Connection String (Key or SAS) (1)** under the Select Connection Method window and then select **Next (2)**.
@@ -231,7 +242,7 @@ The high-level steps covered in the lab are:
 
     ![The comm_use_subset folder is selected.](media/Lab2-13.png)
 
-6. Select the **pdf_json_refresh** folder.
+6. Select and open the **pdf_json_refresh** folder.
 
     ![Select the PDF refresh folder.](media/Lab2-14.png)
 
@@ -279,16 +290,17 @@ The high-level steps covered in the lab are:
 
     ![57 documents pertaining to Brazil.](media/Lab2-22.png)
 
-<validation step="b927b6a3-f2fd-4047-9a54-233ef39525c5" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
+<validation step="b927b6a3-f2fd-4047-9a54-233ef39525c5" />
+
 >**Note**: If you face any issues on validation, please perform the next steps till the end of this lab and then click on validate button again.
 
-## Task 6 - Using the Document Intelligence Studio
+## Task 6: Using the Document Intelligence Studio
 
 1. Navigate to [the Azure portal](https://portal.azure.com), search for **Resource groups (1)** and **select it (2)** under Services.
 
@@ -311,7 +323,7 @@ The high-level steps covered in the lab are:
     | Parameter                   | Value                                              |
     | --------------------------- | -------------------------------------------------- |
     | Allowed origins             | Enter `https://formrecognizer.appliedai.azure.com` **(2)**  |
-    | Allowed methods             | **Select all (3)** methods.               |
+    | Allowed methods             | **Select all** methods **(3)**               |
     | Allowed headers             | Enter `*` **(4)**                                         |
     | Exposed headers             | Enter `*` **(5)**                                         |
     | Max age                     | Enter `200` **(6)**                                        |
@@ -353,7 +365,7 @@ The high-level steps covered in the lab are:
     | Resource Group              | Select `AI-in-a-Day` **(2)**                |
     | Document Intelligence or AI Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
     
-     ![Project](media/form-service.png)
+    ![Project](media/form-service.png)
     
 1. Next in the connect training data source, select the below values from the drop-down and click on **Continue (6)**.
 
