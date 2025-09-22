@@ -77,7 +77,7 @@ The high-level steps covered in the lab are:
 
     ![The Search service's URL is copied to the clipboard.](media/copy-azure-search-url.png)
 
-1. Navigate to the **Keys (1)** under Settings and copy the **Primary admin key (2)**. Paste this into a notepad.
+1. Navigate to the **Keys (1)** under Settings and copy the **Primary admin key (2)**. Paste this in the notepad.
 
     ![The Search service's API key is copied to the clipboard.](media/inn7.png)
 
@@ -95,11 +95,13 @@ The high-level steps covered in the lab are:
 
 1. Open **File Explorer** from the task bar and navigate to the path `C:\Temp\AzureSearch\` **(1)**. There are six files, three prefixed with `abstracts` **(2)** and three with `covid19temp` **(3)**.
 
-   ![](media/in11.png)
+   ![](media/e2t3p9.png)
 
-1. Open the `abstracts_datasource.schema` **(1)** file with a **Notepad (2)**, then click on **OK (3)**.
+1. Open the `abstracts_datasource.schema` **(1)** file in the **Windows cant't open this type of file (.schema)** window, click **Try an app on this PC (2)**, then in **How do you want to open this file?** window, select **Notepad (3)**, and then click on **OK (4)**.
 
-   ![](media/in12.png)
+   ![](media/e2t3p10.png)
+
+   ![](media/e2t3p10(1).png)
 
 1. Replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
 
