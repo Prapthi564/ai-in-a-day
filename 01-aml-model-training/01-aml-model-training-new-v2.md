@@ -166,11 +166,16 @@ In this lab, you’ll access your Azure Machine Learning workspace, launch the s
    - **Restart the kernel and run all cells (3)**
 
      ![Run Note Book Cell](./media/Lab1-11.png)
-   ![Note Book Cell Output](./media/SHC4.1.png)
+
+      ![Note Book Cell Output](./media/SHC4.1.png)
 
      >**Note:** Once the packages have been updated **(1)**, please **restart (2)** the kernel. 
 
-     ![Note Book Cell Output](./media/in6.png)    
+     ![Note Book Cell Output](./media/in6.png)
+
+ 1. In the Restart Kernel? pop-up, click on **Restart**.
+
+      ![](./media/e1t4p4.png)    
 
  1. Run the import cell and ensure it completes execution.
 
@@ -178,13 +183,13 @@ In this lab, you’ll access your Azure Machine Learning workspace, launch the s
 
     >**Note:** If you see the "IProgress not found" error, it is expected. Please proceed further.
 
-1. Run each cell and Please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>** and storage account access key with **<inject key="Storage Account Access key" enableCopy="false"/>**.
+1. Run each cell and please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>** and storage account access key with **<inject key="Storage Account Access key" enableCopy="false"/>**.
 
       ![](./media/e1t4p5.png)
 
       ![](./media/e1t4p5(1).png)
 
-1. Run all the cells before moving to the next step.
+1. In the same way, make sure to run all the cells before proceeding to the next step.
 
 1. Navigate back to the studio, in the left navigation pane, select **Data (1)** and click on **+ Create (2)**.
 
@@ -274,42 +279,35 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
      ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/e1t5p3.png)
 
-5. On **Task settings** section, select the Target column to **cluster (Integer)** **(1)**. The values we're trying to predict are in the **cluster** column.
-
-     ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn1.png)
-
-6. Scroll down on the same page, fill in the values listed below and click **Next** **(4)**.
+4. On **Task settings** section, select the Target column to **cluster (Integer)** **(1)**. The values we're trying to predict are in the **cluster** column. Scroll down on the same page, fill in the values listed below and click **Next** **(4)**.
 
     - Validation type : **k-fold cross validation (2)**
     - Number of cross validations: **5 (3)**
-    - Leave Default for Test data.
 
-      ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/e1t5p5.png)
+      ![](media/e1t5p5(1).png)
       
-7. In order to be able to launch an Automated ML run, we need to provision an Azure ML compute cluster. On the **Compute** page, 
+5. In order to be able to launch an Automated ML run, we need to provision an Azure ML compute cluster. On the **Compute** page, 
 
    - Select compute type as **Compute Cluster** **(1)** 
    - Select Azure AML compute cluster as **aml-compute-cpu** **(2)** from the list of clusters
    - Then click on **Next** and proceed with **step 9** 
    
-     >**Note**: If the list is empty then only select **+ New** **(3)** link and follow the steps from 7
+     >**Note**: If the list is empty then only select **+ New** **(3)** link and follow the steps 6 and 7.
 
-      ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/inn3.png)
+      ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/e1t5p5(2).png)
 
-       >**Note**: If you already have `aml-compute-cpu` cluster provisioned, feel free to skip to step 9.
+       >**Note**: If you already have `aml-compute-cpu` cluster provisioned, feel free to skip to step 8.
 
-8. On the `Create compute cluster` screen set the values listed below:
+6. On the `Create compute cluster` screen set the values listed below:
 
     - Virtual machine priority: **Dedicated (1)**
     - Virtual machine type: **CPU (2)**
     - Virtual machine Size: **Standard_DS3_v2 (3)**
     - Select `Next` **(4)** to continue.
 
-      ![Dedicated virtual machine priority, CPU virtual machine type, and Standard_DS3_v2 virtual machine size are selected. The next button is highlighted.](./media/Lab1-33.png)
+      ![Dedicated virtual machine priority, CPU virtual machine type, and Standard_DS3_v2 virtual machine size are selected. The next button is highlighted.](./media/Lab1-33.png)  
 
-   
-
-9. To configure cluster settings set the values given below:
+7. To configure cluster settings set the values given below:
 
     - Compute name: **aml-<inject key="DeploymentID" enableCopy="false"/> (1)**
     - Minimum number of nodes: **0 (2)**
@@ -340,9 +338,9 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 2. You will navigate to the experiment details page, where you should see the list of experiment runs. Locate the first run **(1)** listed here, which has the status **Completed**. 
 
-   >**Note:** The name of the run can be different in your environment and may not match the below screenshot.
-
    ![Locate the completed AutoML run](media/e1t6p2.png)
+
+   >**Note:** The name of the run can be different in your environment and may not match the below screenshot.
 
 3. On the **Run details** page, navigate to the **Models+ child jobs** section. Check the values on the  **AUC weighted** column, which is the primary metric selected in the AutoML run configuration. 
 
@@ -378,7 +376,7 @@ Responsible AI is a governance framework that documents how a specific organizat
 
    ![](./media/Lab1-42.png)
 
-1. Execute the cells inside `erroranalysis-dashboard-regression-superconductor.ipynb` notebook one by one (Click on the **Run** button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or) and observe the results of each cell execution.
+1. Execute the cells inside `erroranalysis-dashboard-regression-superconductor.ipynb` notebook one by one (Click on the **Run** button or by using either **Ctrl + Enter** to stay on the same cell, or **Shift + Enter** to advance to the next cell or) and observe the results of each cell execution.
 
    ![Run Note Book Cell](./media/IMG014.png)
 
@@ -386,7 +384,7 @@ Responsible AI is a governance framework that documents how a specific organizat
 
    ![](media/e1t7p3(1).png)
 
-1. In the Restart Kernel? pop-up window, click on **Restart**.
+1. In the **Restart Kernel?** pop-up window, click on **Restart**.
 
    ![](media/e1t7p3(2).png)
 
@@ -416,7 +414,11 @@ Responsible AI is a governance framework that documents how a specific organizat
    - For **Columns: Feature 2 :** Select **mean_atomic_mass (3)** 
    - Set **Select mertic:** **Mean absolute error (4)** .
 
-     ![Run Note Book Cell](./media/image02.png)
+     ![Run Note Book Cell](./media/e1t8p3.png)
+
+     >**Note:** If you don’t see options like **number\_of\_elements** or **mean\_atomic\_mass** in the drop-down, scroll down and select them from the list.
+
+     ![Run Note Book Cell](./media/e1t8p3(note).png)
 
 ## Summary
 
@@ -424,9 +426,9 @@ In this lab, you explore the COVID-19 data dashboard, set up and prepare your Az
 
 ### You have successfully completed the lab!
 
-### Click the **Next >>** button in the Guide section to move on to Lab 2.
+### Click the Next >> button in the Guide section to move on to Lab 2.
 
-![](./media/GettingStarted-08.png)
+![](./media/nextpage2.png)
 
 
 

@@ -92,7 +92,7 @@ Feel free to **Start, Restart, or Stop (2)** your virtual machine as needed from
    
       ![](media/GettingStarted-05.png "Enter Password")
 
-1. If you see the pop-up Action Required, click Ask Later.
+1. If you see the pop-up Action Required, click **Ask Later**.
 
    ![](media/asklater.png)
 

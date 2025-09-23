@@ -61,7 +61,7 @@ The high-level steps covered in the lab are:
 
 ## Task 3: Creating Azure Search Indexes
 
-1. Navigate to [the Azure portal](https://portal.azure.com), search for **Resource groups (1)** and select **Resource groups (2)** under Services.
+1. Navigate to the [Azure portal](https://portal.azure.com), search for **Resource groups (1)** and select **Resource groups (2)** under Services.
 
     ![Open Azure resource group](media/Lab2-00.png)
 
@@ -73,11 +73,11 @@ The high-level steps covered in the lab are:
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
 
-1. Copy the search service **URL** and paste this into a notepad. Also make a note of the **service account name**, which comes before `.search.windows.net` in the search service URL.
+1. Copy the search service **URL** and save it in a notepad. Also note the **service account name**, which is the part before `.search.windows.net` in the URL.
 
     ![The Search service's URL is copied to the clipboard.](media/copy-azure-search-url.png)
 
-1. Navigate to the **Keys (1)** under Settings and copy the **Primary admin key (2)**. Paste this in the notepad.
+1. Go to **Keys (1)** under **Settings**, copy the **Primary admin key (2)**, and save it in the notepad.
 
     ![The Search service's API key is copied to the clipboard.](media/inn7.png)
 
@@ -93,29 +93,31 @@ The high-level steps covered in the lab are:
 
    ![](media/ai-sa-cs.png)
 
-1. Open **File Explorer** from the task bar and navigate to the path `C:\Temp\AzureSearch\` **(1)**. There are six files, three prefixed with `abstracts` **(2)** and three with `covid19temp` **(3)**.
+1. Go to the LabVM and open **File Explorer** from the task bar and navigate to the path `C:\Temp\AzureSearch\` **(1)**. There are six files, three prefixed with `abstracts` **(2)** and three with `covid19temp` **(3)**.
 
    ![](media/e2t3p9.png)
 
-1. Open the `abstracts_datasource.schema` **(1)** file in the **Windows cant't open this type of file (.schema)** window, click **Try an app on this PC (2)**, then in **How do you want to open this file?** window, select **Notepad (3)**, and then click on **OK (4)**.
+1. Double click on the `abstracts_datasource.schema` **(1)** file and in the **Windows cant't open this type of file (.schema)** window, click **Try an app on this PC (2)**, then in **How do you want to open this file?** window, select **Notepad (3)**, and then click on **OK (4)**.
 
    ![](media/e2t3p10.png)
 
    ![](media/e2t3p10(1).png)
 
-1. Replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
+1. Replace the segment starting `<< TODO:>>` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
 
     ![The abstract data source is ready to be updated.](media/edit-abstracts-datasource.png)
 
-1. Open the `covid19temp_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** that you copied in Step 8 and then save the file.
+1. Similarly, open the `covid19temp_datasource.schema` file with a text editor and replace the segment starting `<< TODO:>>` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
 
-1. Now, locate the `AzureSearchIndex.ps1` **(1)** file at  path`C:\Temp\AzureSearch\` and right- click on it and select **Open with... (2)** from the context menu.
+1. Now, locate the **AzureSearchIndex.ps1** **(1)** file at  path`C:\Temp\AzureSearch\` and right- click on it and select **Open with... (2)** from the context menu.
 
      ![](media/Updates-00.png)
 
 1. From **How do you want to open this file?** prompt, select **Notepad (1)** and click **OK (2)** to open the script. Once opened, copy the entire content of the file.
 
      ![](media/Updates-01.png)
+
+     ![](media/e2t3p14.png)
 
 1. On your VM's search bar, type **Windows Powershell (1)**, then right click on **Windows Powershell (2)** and select **Run as administrator (3)**.
 
@@ -127,7 +129,9 @@ The high-level steps covered in the lab are:
     cd C:\Temp\AzureSearch\
     ```
 
-1. Paste the copied code from the **AzureSearchIndex.ps1** file in **Step 13** and press enter to create an Azure Search data source, index, and indexer.
+    ![](media/e2t3p16.png)
+
+1. Paste the copied code from the **AzureSearchIndex.ps1** file and press enter to create an Azure Search data source, index, and indexer.
 
     ![The Create-AzureSearchIndex function has been created in PowerShell.](media/create-azuresearchindex.png)
 
@@ -136,17 +140,17 @@ The high-level steps covered in the lab are:
     Make sure to update the Azure Search account name and Azure Search API key in the below commands and then run.
    
      - Azure Search Account Name: **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**
-     - Azure Search API key: You saved the **Primary admin key** in the notepad in **step 5**, use that.
+     - Azure Search API key: You saved the **Primary admin key** in the notepad earlier, use that.
 
-    ```powershell
-    Create-AzureSearchIndex "C:/Temp/AzureSearch/abstracts_datasource.schema" "C:/Temp/AzureSearch/abstracts.schema" "C:/Temp/AzureSearch/abstracts_indexer.schema" "AZURE SEARCH ACCOUNT NAME" "API KEY"
-    ```
+        ```powershell
+        Create-AzureSearchIndex "C:/Temp/AzureSearch/abstracts_datasource.schema" "C:/Temp/AzureSearch/abstracts.schema" "C:/Temp/AzureSearch/abstracts_indexer.schema" "AZURE SEARCH ACCOUNT NAME" "API KEY"
+        ```
     
-    ```powershell
-    Create-AzureSearchIndex "C:/Temp/AzureSearch/covid19temp_datasource.schema" "C:/Temp/AzureSearch/covid19temp.schema" "C:/Temp/AzureSearch/covid19temp_indexer.schema" "AZURE SEARCH ACCOUNT NAME" "API KEY"
-    ```
+        ```powershell
+        Create-AzureSearchIndex "C:/Temp/AzureSearch/covid19temp_datasource.schema" "C:/Temp/AzureSearch/covid19temp.schema" "C:/Temp/AzureSearch/covid19temp_indexer.schema" "AZURE SEARCH ACCOUNT NAME" "API KEY"
+        ```
 
-    ![The Create-AzureSearchIndex function has been run to create a new index.](media/create-azuresearchindex-use.png)
+        ![The Create-AzureSearchIndex function has been run to create a new index.](media/create-azuresearchindex-use.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task.
@@ -157,7 +161,7 @@ The high-level steps covered in the lab are:
 
 ## Task 4: Querying Azure Search Indexes
 
-1. Navigate to [the Azure portal](https://portal.azure.com), search for **Resource groups (1)** and select **Resource groups (2)** under Services.
+1. Navigate to the [Azure portal](https://portal.azure.com), search for **Resource groups (1)** and select **Resource groups (2)** under Services.
 
     ![Open Azure resource group](media/Lab2-00.png)
 
@@ -177,7 +181,7 @@ The high-level steps covered in the lab are:
 
     ![The Search Explorer option is selected.](media/e2t4p5.png)
 
-1. Choose the **covid19temp (1)** index and enter `RNA interference`**(2)** into the Query string input box, and then select **Search (3)**. This will return the documents which include the phrase "RNA interference."
+1. Choose the **covid19temp (1)** index and enter `RNA interference`**(2)** into the Query string input box, and then click **Search (3)**. This will return the documents which include the phrase "RNA interference."
 
     ![The Search Explorer option is selected.](media/e2t4p6.png)
 
@@ -221,24 +225,35 @@ The high-level steps covered in the lab are:
 
 1. On the desktop, select the **Azure Storage Explorer** and open it.  
 
-    ![Storage explorer is selected on the desktop.](media/storage-exp-desktop.png)
+    ![Storage explorer is selected on the desktop.](media/e2t5p1.png)
 
-2. Select the **Connect (1)** option and then click on **Storage account or service (2)**.
+2. In the **Let Us Know What You Think** pane, **check (1)** the **Don't show this dialogue again** and click **Dismiss (2)**.
 
     ![](media/e2t5p2.png)
+
+2. In the **Connect to Azure Storage** window, under the **Select Resource** section, select **Storage account or service**. 
+
+    ![](media/e2t5p3.png)
+
+    >**Note:** If the Connect to Azure Storage window doesn’t appear, click **Connect (1)** and then choose **Storage account or service (2)**.
+
     ![storageaccount](media/Lab2-11.png)
 
-3. Select **Connection String (Key or SAS) (1)** under the Select Connection Method window and then select **Next (2)**.
+3. Select **Connection String (Key or SAS) (1)** under the **Select Connection Method** window and then select **Next (2)**.
 
     ![The Use a connection string option is selected.](media/Lab2-10.png)
 
-4. Paste in your storage account **Connection string (1)** **<inject key="storageAccountConnectionString" enableCopy="true"/>**. Then, select **Next (2)**. 
+4. Enter your storage account **Connection string (1)** **<inject key="storageAccountConnectionString" enableCopy="true"/>**, and then click **Next (2)**. 
 
     ![The connection string is filled in.](media/Lab2-09.png)
 
 1. Review the details under the **Summary** and click **Connect** to complete the operation.
 
     ![Connect is selected on the storage explorer page](media/Lab2-12.png)
+
+    >**Note:** In the **Microsoft Azure Storage Explorer** pop-up window, click **Ok**.
+
+    ![](media/e2t5p5.png)
 
 1. In **Azure Storage Explorer (1)**, navigate to the attached storage named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> (2)**. Expand **Blob containers (3)** and select **covid19temp (4)**. Then, double-click the **comm_use_subset (5)** folder to open it.
 
@@ -250,11 +265,13 @@ The high-level steps covered in the lab are:
 
 7. Then, in the **Select All (1)** menu, choose **Select All Cached (2)**. This will highlight all 100 records in the folder.  Select **Copy (3)** to copy these documents.
     
-    ![Select all cached items and copy them.](media/Lab2-16.png)
+    ![Select all cached items and copy them.](media/e2t5p9.png)
 
-8. Navigate up to **comm_use_subset** by selecting the upward arrow.
+8. Navigate back to **comm_use_subset** by clicking the upward arrow.
 
-9. Then double-click **pdf_json**.
+    ![](media/e2t5p10.png)
+
+9. Then double-click on **pdf_json** to open.
 
     ![Select all cached items and copy them.](media/in21.png)
 
@@ -262,7 +279,7 @@ The high-level steps covered in the lab are:
 
     ![Navigate into the pdf_json folder.](media/Lab2-17.png)
 
-11. Navigate to [the Azure portal](https://portal.azure.com), search for **Resource groups (1)** and **select it (2)** under Services.
+11. Navigate to the [Azure portal](https://portal.azure.com), search for **Resource groups (1)** and **select it (2)** under Services.
 
     ![Open Azure resource group](media/Lab2-00.png)
 
@@ -276,13 +293,17 @@ The high-level steps covered in the lab are:
 
     ![The covid19temp indexer is selected.](media/Lab2-18.png)
 
-15. Select the **Run** option to process the 100 documents. Although we can configure an indexer to run periodically, this indexer will only run when manually engaged.  Select **Yes** to run the indexer.
+15. Select the **Run** option to process the 100 documents. Although we can configure an indexer to run periodically, this indexer will only run when manually engaged.
 
     ![The covid19temp indexer is set to run.](media/Lab2-19.png)
 
+16. In the **Run indexer** wizard, click **Yes**.
+
+    ![](media/e2t5p18.png)
+
 16. The indexer will run. It should be completed within 15-30 seconds to process the 100 new documents. You may need to select **Refresh** to see the indexer's progress.
 
-    ![The covid19temp indexer has finished running.](media/Lab2-21.png)
+    ![](media/e2t5p19.png)
 
 17. Return to the **Indexes (1)** tab for the Search service and ensure that the **covid19temp (2)** index has `965` documents. If it still reads 865, wait 30 seconds and select **Refresh** to check again.
 
@@ -304,7 +325,7 @@ The high-level steps covered in the lab are:
 
 ## Task 6: Using the Document Intelligence Studio
 
-1. Navigate to [the Azure portal](https://portal.azure.com), search for **Resource groups (1)** and **select it (2)** under Services.
+1. Navigate to the [Azure portal](https://portal.azure.com), search for **Resource groups (1)** and **select it (2)** under Services.
 
     ![Open Azure resource group](media/Lab2-00.png)
 
@@ -320,7 +341,7 @@ The high-level steps covered in the lab are:
 
      ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/lab2-3.png)
     
-1. On the Resource Sharing (CORS) page, ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table and then select **Save** **(7)** to save the CORS settings.  
+1. On the Resource Sharing (CORS) page, ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table and then click **Save** **(7)** to save the CORS settings.  
 
     | Parameter                   | Value                                              |
     | --------------------------- | -------------------------------------------------- |
@@ -336,22 +357,25 @@ The high-level steps covered in the lab are:
 
      ![The AI Services service is selected](media/inn11.png)
 
-1. Select the **Keys and Endpoint** **(1)** option under Resource Management and click on **Show Keys** **(2)**. Then, copy the value for **KEY 1** **(3)** and the **Endpoint** **(4)**. Paste these into a text file for later use.
+1. Under **Resource Management**, select **Keys and Endpoint (1)** and click **Show Keys (2)**. Copy the values for **KEY 1 (3)** and **Endpoint (4)**, then save them in a notepad file for later use.
 
      ![The AI Services key and endpoint are selected](media/inn12.png)
 
-1. Navigate to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/).
- 
+1. Go to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/) `https://formrecognizer.appliedai.azure.com/` and click the **Sign in** icon in the top-right corner.
 
+    ![](media/e2t6p8.png)
+ 
 1. If prompted, select your user account.
 
-     ![Create new custom model](media/Lab2-4.png)   
+     ![Create new custom model](media/Lab2-4.png)
+
+     >**Note:** If prompted, use the credentials provided in the **Environment** Tab to Sign-in.   
  
-1. Scroll-down to **Custom models** and select **Get Started** under **Custom extraction model**. Use the credentials provided in the Environment Details to Sign-in.
+1. Scroll-down to **Custom models** and select **Get Started** under **Custom extraction model**. 
 
      ![Create new custom model](media/updated-document-ai.png)
 
-1. In the Custom models page, under **My Projects** click on **+ Create a project**.
+1. In the **Custom extraction models** page, under **My Projects** click on **+ Create a project**.
   
      ![Project](media/Lab2-24.png)
 
@@ -365,9 +389,9 @@ The high-level steps covered in the lab are:
     | --------------------------- | -------------------------------------|
     | Subscription                | Select the default subscription  **(1)**    |
     | Resource Group              | Select `AI-in-a-Day` **(2)**                |
-    | Document Intelligence or AI Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
+    | Document Intelligence or Cognitive Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
     
-    ![Project](media/form-service.png)
+    ![Project](media/e2t6p13.png)
     
 1. Next in the connect training data source, select the below values from the drop-down and click on **Continue (6)**.
 
@@ -386,6 +410,10 @@ The high-level steps covered in the lab are:
 1. Review the details and click on **Create project**.
 
      ![Project](media/SHC2a.6.13.png)
+
+1. In the **Start labeling now** pop-up window, click **Skip**.
+
+    ![](media/e2t6p16.png)
   
 1. After creating a new project, you will be sent to the project for tagging in Label data. Select **+Add a Field** **(1)** to create a new field click on **Field** **(2)**.
 
@@ -401,6 +429,8 @@ The high-level steps covered in the lab are:
 
 1. Once the layout is generated for the first document, move on to the next document. We will tag each of the five papers, so navigate to each in turn, allowing the layout to be processed. To ensure tagging is successful, you must first run the layout for a document, navigate to another document, and then return to the first document before beginning the tagging process. Layout generation happens only once per document, so after it is generated, you can return to the document and proceed with tagging.
 
+    ![](media/e2t6p20.png)
+
 1. Before selecting the words, make sure to **Run Layout** then only you will be able to select the words.
 
 1. Go back to the **second PDF (1)** and manually select each word in the **Abstract (2)** section. Once highlighted, select the **Abstract tag (3)** to tag this section. You will need to select each word individually rather than selecting a box. After tagging, you should see a tag logo next to the PDF. If the tag logo appears, it confirms that tagging was successful for this document.
@@ -414,7 +444,7 @@ The high-level steps covered in the lab are:
 
 1. Continue tagging until all five of the top papers are tagged. Once we have tagged five documents, select the **Train** option.
     
-     ![The first five PDFs have been tagged](media/L2-T6-S18.png)
+     ![The first five PDFs have been tagged](media/e2t6p24.png)
 
 1. In a pop-up to Train a new model, enter **Abstracts (1)** as the ModelID, and select the **Neural (Recommended) (2)** from the drop-down as Build Mode. Then click on **Train (3)**.
 
@@ -436,7 +466,7 @@ The high-level steps covered in the lab are:
     
 1. In the Upload Files pop-up, Navigate to `C:\Temp\AzureSearch\` **(1)**, select `2020.09.25.20201616v1.pdf` **(2)** file and click on **Open** **(3)**.
     
-     ![An analyzed document](media/innovate7.png)
+     ![An analyzed document](media/e2t6p29.png)
    
 1. Choose `2020.09.25.20201616v1.pdf` file, select **Run Analysis (1)**. Note that the abstract is on **page 2 (2)** of the PDF. View the **Results (3)** on the right side of the page.
     
@@ -521,4 +551,4 @@ In this lab, you have explored Azure Document Intelligence and AI Services and e
 
 ### Click the **Next >>** button in the Guide section to move on to Lab 3.
 
-![](./media/GettingStarted-08.png)
+![](./media/nextpage3.png)
