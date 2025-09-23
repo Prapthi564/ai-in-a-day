@@ -2,6 +2,8 @@
 
 ### Estimated Duration: 1 Hour 30 Minutes
 
+## Overview
+
 Conversational AI with Microsoft Copilot Studio allows users to create and deploy sophisticated chatbots with no code, enabling automated interactions and enhanced customer engagement through intuitive, customizable conversational flows.
 
 ## Lab Objectives
@@ -23,21 +25,29 @@ The way organizations are building conversational systems is evolving, with bots
 
 ## Task 2 - Setting up Microsoft Copilot Studio and Create your first Copilot
 
-1. Navigate to **[Microsoft Copilot Studio page](https://www.microsoft.com/en-us/copilot/microsoft-copilot-studio)** and select **Try for free**. 
+1. Navigate to **[Microsoft Copilot Studio page](https://www.microsoft.com/en-us/copilot/microsoft-copilot-studio)** `https://www.microsoft.com/en-us/copilot/microsoft-copilot-studio` and select **Try for free**. 
 
-    ![](media/Lab4-00.png)
+    ![](media/e4t1p1.png)
 
 1. On the **Let's get you started** page, enter your azure **Username (1)** and select **Next (2)**. 
 
     ![](media/Lab4-1.png)
 
-1. Then click on **Sign in.**  
+1. To solve the puzzle click **Next**.
+
+    ![](media/e4t2p3.png)
+
+1. Then click on **Sign in**.  
 
     ![](media/Lab4-2.png)
 
 1. Once signed in, under Create your account, select your **respective region (1)** from the drop-down menu. Then, enter your **Job title (2)** and **Phone number (3)**. Finally, click on **Get Started (4)** to proceed.
    
     ![](media/Lab4-4.png)   
+
+1. On the Confirmation deatils section, click **Get Started**.
+
+    ![](media/e4t2p5.png)
 
 1. You have now successfully signed up for **Microsoft Copilot Studio**.
 
@@ -46,15 +56,15 @@ The way organizations are building conversational systems is evolving, with bots
    ![](media/Lab4-5.png)
    >**Note:** If you see a page **Welcome to Copilot Studio!**, click on Skip.
 
-1. On the Agent page click on **Skip to configure**.
+1. On the **Start building your agent** page click on **Configure**.
 
-   ![](media/Lab4-3.png)
+   ![](media/e4t2p7.png)
 
 1. On the **Agents** page enter the following details and click on **Create (2)**.
 
-   - **Copilot name (1)**: Enter **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>**.
+   - **Copilot name (1)**: Enter **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>**
 
-   ![](media/Lab4-6.png)
+        ![](media/e4t2p10.png)
 
 1. Once the Bot is created you will see the Copilot Studio page.
 
@@ -63,13 +73,13 @@ The way organizations are building conversational systems is evolving, with bots
 
 ## Task 3 - Create a New Topic
 
-1. One the **Microsoft Copilot Studio** page, select **Topics** **(1)**, **Add a topic** **(2)**, from the drop down menu select **Create from description with Copilot** **(3)**.
+1. On the **Microsoft Copilot Studio** page, select **Topics** **(1)**, click on **Add a topic** **(2)**, and from the drop down menu select **Add from description with Copilot** **(3)**.
 
     ![](media/Lab4-02.png)
 
-1. In Create it with Copilot pane, Name your topic as **Meal in solution** **(1)**. In Create a topic to ..., enter the given phrase "**Checking for food options based on the city you are in**" **(2)**, then click on **Create** **(3)**.
+1. In **Add from description with Copilot** pane, name your topic as **Meal in solution** **(1)**. In **Create a topic to ...** section, enter the given phrase "**Checking for food options based on the city you are in**" **(2)**, then click on **Create** **(3)**.
 
-    ![](media/Lab4-03.png)
+    ![](media/e4t3p2.png)
 
 1. Once you are in the topic pane, **close** the edit with copilot pane from right-side.
 

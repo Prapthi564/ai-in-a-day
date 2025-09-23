@@ -456,7 +456,7 @@ The high-level steps covered in the lab are:
 
      >**Note**: As Training a model will take up to 45-60 minutes to succeed. No need to wait for it, you can continue with next Lab. Come back later and review it after an hour.
 
-1. After the model has finished training, you will see that the Status has succeeded.  Although the estimated accuracy is not great, we will use this model.
+1. After the model has finished training, you will see that the Status has succeeded.  Although the estimated accuracy is not great, but we will use this model.
 
      ![The Abstracts model has been trained](media/Lab2-5.png)
 
@@ -470,7 +470,7 @@ The high-level steps covered in the lab are:
    
 1. Choose `2020.09.25.20201616v1.pdf` file, select **Run Analysis (1)**. Note that the abstract is on **page 2 (2)** of the PDF. View the **Results (3)** on the right side of the page.
     
-     ![An analyzed document](media/innovate8.png)
+     ![An analyzed document](media/e2t6p30.png)
 
 1. Select **Result (1)** and click on **download icon (2)** to download JSON file. Find the location where the script was downloaded and observe the result code.
 
@@ -478,12 +478,13 @@ The high-level steps covered in the lab are:
     
 1. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Document Intelligence Studio: [Quickstart: Document Intelligence Studio - Azure Applied AI Services | Microsoft Docs](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-3.1.0)
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Hit the Validate button for the corresponding task.
-     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
- 
-     <validation step="24474dca-c3ab-413f-ba34-eb278f3c895f" />
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task.
+> - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="24474dca-c3ab-413f-ba34-eb278f3c895f" />
 
 ## Task 7 - Document Summarization via AI Service for Language Integration
 
@@ -497,7 +498,7 @@ In this task, we are creating a text summarization application with the client l
 
      ![The AI Services service is selected](media/inn13.png)
 
-2. Select the **Keys and Endpoint (1)** option under Resource Management.  Then, copy the value for **KEY 1 (2)** and the **Endpoint (3)**.  Paste these into notepad for later use.
+2. Select the **Keys and Endpoint (1)** option under **Resource Management**.  Then, copy the value for **KEY 1 (2)** and the **Endpoint (3)**.     Paste these into notepad for later use.
 
      ![The AI Services key and endpoint are selected](media/inn14.png)
 
