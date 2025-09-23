@@ -486,7 +486,7 @@ The high-level steps covered in the lab are:
 
 <validation step="24474dca-c3ab-413f-ba34-eb278f3c895f" />
 
-## Task 7 - Document Summarization via AI Service for Language Integration
+## Task 7: Document Summarization via AI Service for Language Integration
 
 Summarization is one of the features offered by [Azure AI Service for Language](https://docs.microsoft.com/en-us/azure/AI-services/language-service/overview), a collection of machine learning and AI algorithms in the cloud for developing intelligent applications that involve written language. Use this article to learn more about this feature, and how to use it in your applications.
 
@@ -548,8 +548,6 @@ You can find more references about Document Summarization from here: [Quickstart
 
 In this lab, you have explored Azure Document Intelligence and AI Services and extracted, analyzed, and summarized key information from documents.
 
-### You have successfully completed the lab!
-
-### Click the **Next >>** button in the Guide section to move on to Lab 3.
+### You have successfully completed the Lab 2. Click on Next >> to proceed with the next Lab.
 
 ![](./media/nextpage3.png)

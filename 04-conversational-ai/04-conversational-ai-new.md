@@ -1,4 +1,4 @@
-# Lab 4 - Conversational AI with Microsoft Copilot Studio
+# Lab 4: Conversational AI with Microsoft Copilot Studio
 
 ### Estimated Duration: 1 Hour 30 Minutes
 
@@ -8,12 +8,12 @@ Conversational AI with Microsoft Copilot Studio allows users to create and deplo
 
 ## Lab Objectives
 
-- Task 1 - Explore lab scenario
-- Task 2 - Setting up Microsoft Copilot Studio and Create your first Copilot
-- Task 3 - Create a New Topic
-- Task 4 - Test your Copilot
+- Task 1: Explore lab scenario
+- Task 2: Setting up Microsoft Copilot Studio and Create your first Copilot
+- Task 3: Create a New Topic
+- Task 4: Test your Copilot
 
-## Task 1 - Explore lab scenario
+## Task 1: Explore lab scenario
 
 The power of Machine Learning also comes into play when dealing with human-to-machine interfaces. While classical interfaces like native or web applications are ubiquitous, the new approaches based on conversational AI are becoming increasingly popular. Having the capability to interact with intelligent services using natural language is quickly becoming the norm rather than the exception. Using Conversational AI, analysts can find the research of interest by using simple natural language phrases.
 
@@ -23,7 +23,7 @@ The way organizations are building conversational systems is evolving, with bots
 
 ![Architecture for Lab 4](media/ai-workflow.png)
 
-## Task 2 - Setting up Microsoft Copilot Studio and Create your first Copilot
+## Task 2: Setting up Microsoft Copilot Studio and Create your first Copilot
 
 1. Navigate to **[Microsoft Copilot Studio page](https://www.microsoft.com/en-us/copilot/microsoft-copilot-studio)** `https://www.microsoft.com/en-us/copilot/microsoft-copilot-studio` and select **Try for free**. 
 
@@ -71,7 +71,7 @@ The way organizations are building conversational systems is evolving, with bots
     ![](media/Lab4-01.png)
 
 
-## Task 3 - Create a New Topic
+## Task 3: Create a New Topic
 
 1. On the **Microsoft Copilot Studio** page, select **Topics** **(1)**, click on **Add a topic** **(2)**, and from the drop down menu select **Add from description with Copilot** **(3)**.
 
@@ -135,14 +135,14 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/Lab4-12.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Hit the Validate button for the corresponding task.
-   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task.
+> - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-   <validation step="1f3092c6-421b-4e88-8fe6-b5cb70ca1396" />
+<validation step="1f3092c6-421b-4e88-8fe6-b5cb70ca1396" />
 
-## Task 4 - Test your Copilot
+## Task 4: Test your Copilot
 
 1. Once the Topic is saved, click on **Test Copilot (1)** from the right-top corner.
 
@@ -164,8 +164,10 @@ Now you have successfully created and tested the Microsoft Copilot.
 
 In this lab, you set up Microsoft Copilot Studio, created your first Copilot, and tested it by developing and validating a new topic.
 
-## You have successfully completed this Lab!
+### Conclusion
+
 By completing the **Innovate with Ai** Hands-On lab, you have successfully designed and implemented an end-to-end AI solution using Azure's powerful suite of services. You have achieved the classification of COVID-19 research papers through Azure Automated ML, enabling automated and scalable machine learning workflows. You applied Natural Language Processing techniques to extract and summarize key insights from unstructured documents, improving accessibility and comprehension. Through Azure AI Search, you enabled intelligent indexing and semantic search across a large dataset, and finally, you built a no-code Conversational AI interface using Microsoft Copilot Studio, allowing users to interact with the research corpus through natural language.
 
 This hands-on experience has equipped you with practical skills in AI solution development on Azure, demonstrating how multiple AI services can be integrated to solve complex, real-world problems efficiently.
 
+### You have successfully completed this Hands-on Lab!
