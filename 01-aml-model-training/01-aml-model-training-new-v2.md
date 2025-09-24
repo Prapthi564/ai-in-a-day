@@ -151,6 +151,8 @@ In this lab, you’ll access your Azure Machine Learning workspace, launch the s
     
 ## Task 4: Prepare data for the Machine Learning process
 
+In this task, you’ll prepare and register the datasets required for the machine learning process. You will execute the provided Jupyter notebook to preprocess the COVID-19 articles data, configure the correct kernel, update storage details, and run all necessary cells. After preprocessing, you’ll create and register the **COVID19Articles\_Train\_Vectors** and **COVID19Articles\_Test\_Vectors** datasets in Azure Machine Learning Studio, making them available for use in subsequent model training and evaluation steps.
+
 1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/> (1)** and open `1. Data Preparation.ipynb` **(2)** notebook.
 
    ![Select Note Book](./media/Lab1-45.png)
@@ -332,6 +334,8 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 ## Task 6: Explore AutoML results
 
+In this task, you’ll review the results of the AutoML experiment by exploring the completed run of the **COVID19\_Classification** experiment in Azure Machine Learning Studio. You will analyze key metrics such as **AUC weighted**, examine model performance across child jobs, and explore the available tabs to gain deeper insights into the trained models.
+
 1. In the Azure Machine Learning Studio, navigate to the **Jobs (1)** section and locate the **COVID19_Classification** **(2)** experiment, then click on experiment name to open it.
 
    ![Locate the completed experiment ](media/ml-job.png)
@@ -368,6 +372,8 @@ Responsible AI is a governance framework that documents how a specific organizat
  - Ethical AI initiatives have processes in place to seek out and eliminate bias in machine learning models.
  - Efficient AI is able to run continually and respond quickly to changes in the operational environment.
 
+In this task, you’ll generate and review a Responsible AI dashboard by running the `erroranalysis-dashboard-regression-superconductor.ipynb` notebook. After configuring the kernel and executing all cells, you’ll open the provided endpoint to explore model explanations, error patterns, and fairness insights for responsible AI evaluation.
+
 1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/> (1)** and open `erroranalysis-dashboard-regression-superconductor.ipynb` **(2)** notebook.
 
    ![Select Note Book](./media/in10.png)
@@ -399,6 +405,8 @@ Responsible AI is a governance framework that documents how a specific organizat
    ![Note Book Cell Output](./media/ai-img3.png)
 
 ## Task 8:  Explore the Responsible AI dashboard
+
+In this task, you’ll explore the Responsible AI dashboard by interacting with the **Error Explorer** and **Explanation** views. You will analyze model performance using tree maps, heat maps, and box plots with different metrics and features to better understand errors, patterns, and explanations in the model’s predictions.
 
 1. Once you click on the endpoint, you will be navigated to the new tab. Select **Tree map (1)** from the drop-down next to **Error Explorer**,  choose the **Mean squared error (2)** for **Select metric** and click on **Explanation (3)** to view the results. 
 
