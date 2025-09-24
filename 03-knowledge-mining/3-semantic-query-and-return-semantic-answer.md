@@ -31,7 +31,7 @@ In this task, you’ll enable the Semantic ranker in the Azure AI Search service
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
    
-3. In the left-hand pane, under **Settings** section, choose **Semantic ranker (1)**. In the Semantic ranker pane, click **Select Plan (2)** and choose the **Free** tier. This will apply the free tier plan to your Semantic search.
+3. In the left-hand pane under the **Settings** section, select **Semantic ranker (1)**. Then, in the Semantic ranker pane, click **Selected Plan (2)** under the **Free** tier. This will set your Semantic search to use the free tier plan.
 
     ![Semantic search service to be selected](media/inn16.png)
    
@@ -93,7 +93,7 @@ In this task, you are going to perform the semantic search using a query in [RES
 
      ![Semantic search](media/e3t4p2.png)
 
-1. If a Postman update prompt appears, select **Dismiss**.
+1. If prompted to update Postman, click **Dismiss**.
 
     ![Semantic search](media/e3t4p3.png)
 
@@ -112,7 +112,7 @@ In this task, you are going to perform the semantic search using a query in [RES
     | Key           | Value                                        |
     | --------------------| -------------------------------------------- |
     | api-version         | **2021-04-30-Preview (1)**                           |
-    | api-key             | Enter the manage query key which you have copied earlier in Step - 2  **(2)**  |
+    | api-key             | Enter the manage query key which you have copied earlier in Step - 1  **(2)**  |
    
    After updating the parameters, your **Request URL** **(3)** should be the same as shown in the below screenshot.
    
@@ -137,7 +137,7 @@ In this task, you are going to perform the semantic search using a query in [RES
        }
        ```
    
-          ![Semantic search](media/e3t4p6.png)
+          ![Semantic search](media/e3t4p7.png)
    
 1. You’ll see a **Sending request** message in the **Response** section, which may take a few seconds to complete. Once the response is received, ensure that the **Network Status shows 200 OK**. Then, review the response content and feel free to explore further using your own query requests.
 
