@@ -119,7 +119,7 @@ In this lab, you’ll access your Azure Machine Learning workspace, launch the s
     ```
      ![](./media/Ex1new-00.png)
 
-1. Accept the **Terms of Service (ToS)**, by entering **a**.
+1. Accept the **Terms of Service (ToS)**, by typing **a** and then press **Enter**.
 
    ![](./media/e1t3p7.png)
 
