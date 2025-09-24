@@ -85,11 +85,23 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/Lab4-7.png)
 
+1. When you use **Add from description with Copilot**, the tool generates a sample topic with a suggested conversation flow. This sample may include placeholder questions, entities, or options (like FoodType or City). You can ignore or remove these placeholders and customize the topic by adding your own questions, conditions, and branching logic as needed.
+
+    ![](media/e4t3p3.png)
+
+1. In the **Question** node, click on **Ellipsis (...) (1)** and select **Delete (2)**.
+
+    ![](media/e4t3p3(1).png)
+
+1. Similarly, click on **Ellipsis (...) (1)** in **Message** node and select **Delete (2)**.
+
+    ![](media/e4t3p3(2).png)
+
 1. On the **topics** pane, click on **+ (1)** at the bottom of the **Question** node and select **Add a condition (2)**.
 
-    ![](media/Lab4-04.png)
+    ![](media/e4t3p7(1).png)
 
-1. In add a condition, click on the **variable selector (1)**. From the variable list, select **City (2)**, Choose the condition type **is equal to (3)** and enter **Los Angeles (2)** as the value for the condition.
+1. In add a condition, click on the **variable selector (1)**. From the variable list, select **City (2)**, Choose the condition type **is equal to (3)** and enter **Los Angeles (4)** as the value for the condition.
 
     ![](media/Lab4-8.png)
 
@@ -97,7 +109,9 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/L4T3S4-3.png)
 
-1. In add a condition, click on the **variable selector (1)**. From the variable list, select **City (2)**, Choose the condition type **is equal to (3)** and enter **Seattle (2)** as the value for the condition.
+1. In add a condition, click on the **variable selector (1)**. From the variable list, select **City (2)**, Choose the condition type **is equal to (3)** and enter **Seattle (4)** as the value for the condition.
+
+    ![](media/e4t3p7.png)
 
 1. Click on **+ (1)** at the bottom of the **Question** node and select **Ask a question (2)** from the drop-down while adding a node.
 
@@ -107,7 +121,7 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/Lab4-07.png)
    
-1. Now under Condition of Chinese, click on **+** to Add node.
+1. Now under Condition of **Chinese**, click on **+** to Add node.
 
     ![](media/cai-l4-t4-s7new.png)
 
@@ -115,11 +129,11 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/cai-l4-t4-s8.png)
 
-1. Enter the Chinese food items given here in the message section: **Noodles, Spring Rolls, Fried Chicken**
+1. Enter the Chinese food items given here in the message section: **Noodles, Spring Rolls, Fried Chicken**.
 
     ![](media/cai-l4-t4-s9.png)
 
-1. Now under Condition of Italian, click on **+** to Add node.
+1. Now under Condition of **Italian**, click on **+** to Add node.
 
     ![](media/cai-l4-t4-s10.png)
 
@@ -127,7 +141,7 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/cai-l4-t4-s11.png)
 
-1. Enter the Italian food items given here in the message section: **Pizza, Pasta, Truffles**
+1. Enter the Italian food items given here in the message section: **Pizza, Pasta, Truffles**.
 
     ![](media/cai-l4-t4-s12.png)
 
@@ -144,19 +158,15 @@ The way organizations are building conversational systems is evolving, with bots
 
 ## Task 4: Test your Copilot
 
-1. Once the Topic is saved, click on **Test Copilot (1)** from the right-top corner.
+1. Once the Topic is saved, click on **Test (1)** from the right-top corner.
 
-2. In the Test copilot pane, enter the given phrase ```What are my meal delivery options?``` **(2)** and then enter the city name as ```Seattle``` **(3)**, You can select the type of food that you are looking for i.e., **Chinese or Italian (4).** 
+2. In the **Test your agent** pane, enter the given phrase `what is a meal in solution` **(2)** and then enter the city name as `Seattle` **(3)**, You can select the type of food that you are looking for i.e., **Chinese or Italian (4)**. 
 
-    ![](media/Lab4-9.png)
-
-    >**Note:** If the given phrase ```What are my meal delivery options?``` won't give you expected output, you can select the pre- existing **Phrases** under Trigger.
-     
-     ![](media/New-01.png)
+    ![](media/e4t4p1.png)
 
 3. Your chatbot should display the names of the meals as shown below.
 
-    ![](media/Lab4-13.png)
+    ![](media/e4t4p2.png)
 
 Now you have successfully created and tested the Microsoft Copilot.
 
