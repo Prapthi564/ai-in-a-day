@@ -61,6 +61,8 @@ The high-level steps covered in the lab are:
 
 ## Task 3: Creating Azure Search Indexes
 
+In this task, you’ll set up Azure Cognitive Search indexes by configuring data source schema files with your storage account connection string, and then using a PowerShell script to create the data sources, indexes, and indexers. This will prepare the search service to query and retrieve information from the COVID-19 datasets.
+
 1. Navigate to the [Azure portal](https://portal.azure.com), search for **Resource groups (1)** and select **Resource groups (2)** under Services.
 
     ![Open Azure resource group](media/Lab2-00.png)
@@ -161,6 +163,8 @@ The high-level steps covered in the lab are:
 
 ## Task 4: Querying Azure Search Indexes
 
+In this task, you’ll query the Azure Cognitive Search indexes to explore indexed COVID-19 datasets. You’ll practice running keyword searches, counting matching documents, retrieving specific fields, and generating a demo search application to visualize results.
+
 1. Navigate to the [Azure portal](https://portal.azure.com), search for **Resource groups (1)** and select **Resource groups (2)** under Services.
 
     ![Open Azure resource group](media/Lab2-00.png)
@@ -222,6 +226,8 @@ The high-level steps covered in the lab are:
     ![Use the demo app.](media/L2T4S12.png)
 
 ## Task 5: Updating Azure Search Indexes
+
+In this task, you’ll update the Azure Cognitive Search index by adding new documents to the storage account, running the indexer to refresh the index, and verifying that the updated content is searchable.
 
 1. On the desktop, select the **Azure Storage Explorer** and open it.  
 
@@ -313,7 +319,6 @@ The high-level steps covered in the lab are:
 
     ![57 documents pertaining to Brazil.](media/Lab2-22.png)
 
-
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
@@ -324,6 +329,8 @@ The high-level steps covered in the lab are:
 >**Note**: If you face any issues on validation, please perform the next steps till the end of this lab and then click on validate button again.
 
 ## Task 6: Using the Document Intelligence Studio
+
+In this task, you’ll use Document Intelligence Studio to create a custom model for extracting abstracts from research papers. This involves configuring storage access, labeling sample documents, training a model, and testing it to see how well it identifies and extracts the targeted data.
 
 1. Navigate to the [Azure portal](https://portal.azure.com), search for **Resource groups (1)** and **select it (2)** under Services.
 
@@ -477,7 +484,6 @@ The high-level steps covered in the lab are:
      ![An analyzed document](media/lab2a-t6-frs19.1.png)
     
 1. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Document Intelligence Studio: [Quickstart: Document Intelligence Studio - Azure Applied AI Services | Microsoft Docs](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-3.1.0)
-
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task.
