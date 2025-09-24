@@ -10,7 +10,7 @@ Semantic search is a premium feature in Azure AI Search that invokes a semantic 
 
 The semantic ranking is an extension of the query execution pipeline that improves precision by reranking the top matches of an initial result set. In order to complete processing within the expected latency of a query operation, inputs to the semantic ranker are consolidated and reduced so that the underlying summarization and reranking steps can be completed as quickly as possible.
 
->**Note**: Ensure to complete Lab 2 before proceeding with this lab.
+>**Note:** Ensure to complete Lab 2 before proceeding with this lab.
 
 ## Lab Objectives
 
@@ -20,6 +20,8 @@ The semantic ranking is an extension of the query execution pipeline that improv
 - Task 4: Semantic Query using REST APIs
 
 ## Task 1: Enabling the Semantic ranker in the AI Search service
+
+In this task, you’ll enable the Semantic ranker in the Azure AI Search service and apply the free tier plan to enhance search results with semantic ranking.
 
 1. Navigate to **AI-in-a-Day** resource group in the [Azure portal](https://portal.azure.com).
 
@@ -34,6 +36,8 @@ The semantic ranking is an extension of the query execution pipeline that improv
     ![Semantic search service to be selected](media/inn16.png)
    
 ## Task 2: Creating a Semantic Configuration
+
+In this task, you’ll create a semantic configuration for the `covid19temp` Azure Search index to define how search results are ranked and displayed based on selected title, content, and keyword fields.
 
 1. Navigate to the **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and then select **Indexes (1)** under the **Search management**. You will be able to see the list of indexes, click on the **covid19temp (2)** index for adding semantic configuration.
 
@@ -59,6 +63,8 @@ The semantic ranking is an extension of the query execution pipeline that improv
     ![Semantic configuration](media/e3t2p4.png)
 
 ## Task 3: Semantic search using the semantic configuration in Azure Portal
+
+In this task, you’ll perform a semantic search on the `covid19temp` index using the previously created semantic configuration to retrieve and rank results based on meaning rather than just keyword matches.
 
 1. Navigate to the **Overview (1)** section of the **Search service** resource named **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**, then click on **Search explorer (2)** to proceed.
 
