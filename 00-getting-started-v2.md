@@ -80,6 +80,10 @@ Feel free to **Start, Restart, or Stop (2)** your virtual machine as needed from
  
    ![](media/GettingStarted-09.png)
 
+   >**Note:**  If a PowerShell window appears, wait for it to complete the process. It will close automatically once finished. If nothing happens after 3–5 minutes, press **Enter** to start the process manually. Once it begins, do not interfere, allow it to run until the window closes on its own.
+
+   ![](media/powershell.png)
+
 1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next (2)**. 
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**

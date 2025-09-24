@@ -508,7 +508,7 @@ In this task, we are creating a text summarization application with the client l
 
 2. Select the **Keys and Endpoint (1)** option under **Resource Management**.  Then, copy the value for **KEY 1 (2)** and the **Endpoint (3)**.     Paste these into notepad for later use.
 
-     ![The AI Services key and endpoint are selected](media/inn14.png)
+     ![The AI Services key and endpoint are selected](media/e2t7p2.png)
 
 3. In the labvm, open a command prompt (`cmd.exe`). To do this, open the Windows menu, type in `CMD` **(1)**, and select the **Command Prompt (2)** application.
 
@@ -519,36 +519,37 @@ In this task, we are creating a text summarization application with the client l
     >**Note:** To run this, you must have Python installed on the machine. If `python.exe` is not accessible as part of the path--meaning you get an error when trying to run `pip`, navigate to where Python is installed.  The `pip.exe` program is inside the `\Scripts\` folder.
 
     ```bash
-    pip install azure-ai-textanalytics==5.2.0b1
+    C:\Python312\python.exe -m pip install --upgrade azure-ai-textanalytics
     ```
 
-    ![Pip has installed the azureai text analytics package for Python](media/lab2a-t7-pip-azureai.png)
+    ![Pip has installed the azureai text analytics package for Python](media/e2t7p4.png)
 
 5. Open **File Explorer** and navigate to the path `C:\Temp\AzureSearch\` **(1)**. Select the file named **summarization.py (2)** and open it in **Notepad or IDLE**. 
 
-     ![summarization](media/in27.png)
+     ![summarization](media/e2t7p5.png)
 
 6. Replace the **key** and **endpoint** in the file with AI services multi-service account named **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have already copied in step-2 of the same task and finally save the file.
     
-     ![summarization](media/lab2a-t7-summarization.png) 
+     ![summarization](media/e2t7p6.png) 
 
-7. Navigate to the command prompt and run the following commands.
+7. Navigate to the command prompt and run the following commands:
 
    ```bash
    cd C:\Temp\AzureSearch\
    ```
+
    ```bash
-   python summarization.py
+   C:\Python312\python.exe summarization.py
    ```
    
-     ![summarization](media/lab2a-t7-summ-results.png)
+     ![summarization](media/e2t7p7.png)
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Hit the Validate button for the corresponding task.
-    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task.
+> - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-   <validation step="9783aabe-40ad-4cba-b3b6-6b1a967e27c6" />
+<validation step="9783aabe-40ad-4cba-b3b6-6b1a967e27c6" />
 
 You can find more references about Document Summarization from here: [Quickstart: Get started with Language Studio - Azure AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/AI-services/language-service/language-studio). Use this article to learn about Language Studio, and testing features of Azure AI Service for Language Integration.
 
