@@ -70,7 +70,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 ![](media/GettingStarted-11.png)
 
 ## Managing Your Virtual Machine
-Feel free to **start, restart, or stop (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Restart, or Stop (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
 ![](media/ing5.png)
 
@@ -92,7 +92,7 @@ Feel free to **start, restart, or stop (2)** your virtual machine as needed from
    
       ![](media/GettingStarted-05.png "Enter Password")
 
-1. If you see the pop-up Action Required, click Ask Later.
+1. If you see the pop-up Action Required, click **Ask Later**.
 
    ![](media/asklater.png)
 
@@ -104,7 +104,9 @@ Feel free to **start, restart, or stop (2)** your virtual machine as needed from
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-1. If a **Welcome to Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
+1. If a **Welcome to Microsoft Azure** popup window appears, select **Cancel** to skip the tour.
+
+   ![](media/l2at2p2.png)
 
 ## Support Contact
 
