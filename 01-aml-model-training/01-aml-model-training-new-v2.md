@@ -86,7 +86,7 @@ The high-level steps covered in the lab are:
 
 In this lab, you’ll access your Azure Machine Learning workspace, launch the studio, verify that your compute instance is running, and set up the required Python environment. You’ll then configure and launch Jupyter to prepare for running notebooks in the upcoming exercises.
 
-1. In the **Azure portal** search bar, search for **All resources (1)** and select it **All resources (2)** under Services.
+1. In the **Azure portal** search bar, search for **All resources (1)** and select **All resources (2)** under Services.
 
     ![All Resources](./media/Ex1-01.png)
         
@@ -171,21 +171,21 @@ In this task, you’ll prepare and register the datasets required for the machin
 
       ![Note Book Cell Output](./media/SHC4.1.png)
 
-     >**Note:** Once the packages have been updated **(1)**, please **restart (2)** the kernel. 
+ 1. Once the packages have been updated **(1)**, please **restart (2)** the kernel. 
 
      ![Note Book Cell Output](./media/in6.png)
 
- 1. In the Restart Kernel? pop-up, click on **Restart**.
+ 1. In the **Restart Kernel?** pop-up, click on **Restart**.
 
       ![](./media/e1t4p4.png)    
 
  1. Run the import cell and ensure it completes execution.
 
-    ![Note Book Cell Output](./media/in7.png)
+    ![Note Book Cell Output](./media/e1t4p6.png)
 
     >**Note:** If you see the "IProgress not found" error, it is expected. Please proceed further.
 
-1. Run each cell and please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>** and storage account access key with **<inject key="Storage Account Access key" enableCopy="false"/>**.
+1. Run each of the cells and please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>** and storage account access key with **<inject key="Storage Account Access key" enableCopy="false"/>**.
 
       ![](./media/e1t4p5.png)
 
@@ -193,7 +193,7 @@ In this task, you’ll prepare and register the datasets required for the machin
 
 1. In the same way, make sure to run all the cells before proceeding to the next step.
 
-1. Navigate back to the studio, in the left navigation pane, select **Data (1)** and click on **+ Create (2)**.
+1. Once all the cells have been executed, navigate back to the studio, and in the left navigation pane, select **Data (1)** and click on **+ Create (2)**.
 
    ![](./media/Lab1-16.png)
 
@@ -286,7 +286,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
     - Validation type : **k-fold cross validation (2)**
     - Number of cross validations: **5 (3)**
 
-      ![](media/e1t5p5(1).png)
+      ![](./media/e1t5p5(1)png.png)
       
 5. In order to be able to launch an Automated ML run, we need to provision an Azure ML compute cluster. On the **Compute** page, 
 
@@ -294,9 +294,9 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
    - Select Azure AML compute cluster as **aml-compute-cpu** **(2)** from the list of clusters
    - Then click on **Next** and proceed with **step 9** 
    
-     >**Note**: If the list is empty then only select **+ New** **(3)** link and follow the steps 6 and 7.
+     >**Note**: If the list is empty only then select **+ New** **(3)** link and follow the steps 6 and 7.
 
-      ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/e1t5p5(2).png)
+      ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/e1t5p5(2)png.png)
 
        >**Note**: If you already have `aml-compute-cpu` cluster provisioned, feel free to skip to step 8.
 
@@ -384,7 +384,7 @@ In this task, you’ll generate and review a Responsible AI dashboard by running
 
 1. Execute the cells inside `erroranalysis-dashboard-regression-superconductor.ipynb` notebook one by one (Click on the **Run** button or by using either **Ctrl + Enter** to stay on the same cell, or **Shift + Enter** to advance to the next cell or) and observe the results of each cell execution.
 
-   ![Run Note Book Cell](./media/IMG014.png)
+   ![Run Note Book Cell](./media/e1t7p3.png)
 
 1. Please restart the kernal once the packages have been updated by clicking on the **Restart the kernel (1)** icon on the top.
 

@@ -109,11 +109,13 @@ In this task, you’ll set up Azure Cognitive Search indexes by configuring data
 
     ![The abstract data source is ready to be updated.](media/edit-abstracts-datasource.png)
 
+    ![](media/e2t3p11.png)
+
 1. Similarly, open the `covid19temp_datasource.schema` file with a text editor and replace the segment starting `<< TODO:>>` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
 
 1. Now, locate the **AzureSearchIndex.ps1** **(1)** file at  path`C:\Temp\AzureSearch\` and right- click on it and select **Open with... (2)** from the context menu.
 
-     ![](media/Updates-00.png)
+     ![](media/e2t3p13.png)
 
 1. From **How do you want to open this file?** prompt, select **Notepad (1)** and click **OK (2)** to open the script. Once opened, copy the entire content of the file.
 
@@ -135,7 +137,7 @@ In this task, you’ll set up Azure Cognitive Search indexes by configuring data
 
 1. Paste the copied code from the **AzureSearchIndex.ps1** file and press enter to create an Azure Search data source, index, and indexer.
 
-    ![The Create-AzureSearchIndex function has been created in PowerShell.](media/create-azuresearchindex.png)
+    ![The Create-AzureSearchIndex function has been created in PowerShell.](media/e2t3p17.png)
 
 1. In the same PowerShell prompt, call this function for the `abstracts` index and the `covid19temp` index.
 
@@ -152,7 +154,7 @@ In this task, you’ll set up Azure Cognitive Search indexes by configuring data
         Create-AzureSearchIndex "C:/Temp/AzureSearch/covid19temp_datasource.schema" "C:/Temp/AzureSearch/covid19temp.schema" "C:/Temp/AzureSearch/covid19temp_indexer.schema" "AZURE SEARCH ACCOUNT NAME" "API KEY"
         ```
 
-        ![The Create-AzureSearchIndex function has been run to create a new index.](media/create-azuresearchindex-use.png)
+        ![The Create-AzureSearchIndex function has been run to create a new index.](media/e2t3p18.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task.
@@ -241,7 +243,7 @@ In this task, you’ll update the Azure Cognitive Search index by adding new doc
 
     ![](media/e2t5p3.png)
 
-    >**Note:** If the Connect to Azure Storage window doesn’t appear, click **Connect (1)** and then choose **Storage account or service (2)**.
+    >**Note:** If the Connect to Azure Storage window doesn’t appear, click **Connect (1)** from the left pane and then choose **Storage account or service (2)**.
 
     ![storageaccount](media/Lab2-11.png)
 

@@ -37,7 +37,7 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/e4t2p3.png)
 
-1. Then click on **Sign in**.  
+1. Once the puzzle has been solved successfully, click on **Sign in**.  
 
     ![](media/Lab4-2.png)
 
@@ -89,7 +89,7 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/e4t3p3.png)
 
-1. In the **Question** node, click on **Ellipsis (...) (1)** and select **Delete (2)**.
+1. In the **Question** (`What type of food are you lookin for?`) node, click on **Ellipsis (...) (1)** and select **Delete (2)**.
 
     ![](media/e4t3p3(1).png)
 
