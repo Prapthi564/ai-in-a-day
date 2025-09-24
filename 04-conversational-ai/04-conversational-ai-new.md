@@ -73,7 +73,7 @@ The way organizations are building conversational systems is evolving, with bots
 
 ## Task 3: Create a New Topic
 
-1. On the **Microsoft Copilot Studio** page, select **Topics** **(1)**, click on **Add a topic** **(2)**, and from the drop down menu select **Add from description with Copilot** **(3)**.
+1. On the **Microsoft Copilot Studio** page, select **Topics** **(1)**, click on **+ Add a topic** **(2)**, and from the drop down menu select **Add from description with Copilot** **(3)**.
 
     ![](media/Lab4-02.png)
 
@@ -81,7 +81,7 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/e4t3p2.png)
 
-1. Once you are in the topic pane, **close** the edit with copilot pane from right-side.
+1. Once you are in the topic pane, **close** the **Edit with Copilot** pane on right-side.
 
     ![](media/Lab4-7.png)
 
@@ -117,7 +117,7 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/Lab4-06.png)
 
-1. Enter the question as "**What type of food would you like to order?**" **(1)** and under options for users, click on **New option** **(2)** to add types of food. Add **Chinese (3)** and **Italian (4)**  as shown in the below screenshot.
+1. Enter the question as "**What type of food would you like to order?**" **(1)** and under options for users, click on **+ New option** **(2)** to add types of food. Add **Chinese (3)** and **Italian (4)**  as shown in the below screenshot.
 
     ![](media/Lab4-07.png)
    
