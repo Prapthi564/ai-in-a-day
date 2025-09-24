@@ -179,7 +179,7 @@ In this task, you’ll query the Azure Cognitive Search indexes to explore index
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
 
-1. Select the **Indexes (1)** tab under **Search management** and ensure that you have two indexes created. If the Document Count is 0 for either, wait a couple of minutes and select **Refresh (2)** until the document count appears.
+1. Select the **Indexes (1)** tab under **Search management** and ensure that you have two indexes created. If the Document Count is 0 for either, wait for a couple of minutes and select **Refresh (2)** until the document count appears.
 
     ![The list of Azure Search indexes.](media/Lab2-02.png)
 

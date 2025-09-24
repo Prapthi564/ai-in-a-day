@@ -185,7 +185,7 @@ In this task, you’ll prepare and register the datasets required for the machin
 
     >**Note:** If you see the "IProgress not found" error, it is expected. Please proceed further.
 
-1. Run each of the cells and please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>** and storage account access key with **<inject key="Storage Account Access key" enableCopy="false"/>**.
+1. Run each of the cells in the notebook and please make sure to read the cells carefully and update the storage account name wherever required with **<inject key="Storage Account Name" enableCopy="false"/>** and storage account access key with **<inject key="Storage Account Access key" enableCopy="false"/>**.
 
       ![](./media/e1t4p5.png)
 
