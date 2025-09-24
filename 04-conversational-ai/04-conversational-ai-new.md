@@ -25,6 +25,8 @@ The way organizations are building conversational systems is evolving, with bots
 
 ## Task 2: Setting up Microsoft Copilot Studio and Create your first Copilot
 
+In this task, you will set up Microsoft Copilot Studio and create your first Copilot agent. You’ll go through the sign-up process, configure your account details, and build a basic Copilot with a custom name. By the end of this task, you’ll have a working Copilot environment ready for further customization.
+
 1. Navigate to **[Microsoft Copilot Studio page](https://www.microsoft.com/en-us/copilot/microsoft-copilot-studio)** `https://www.microsoft.com/en-us/copilot/microsoft-copilot-studio` and select **Try for free**. 
 
     ![](media/e4t1p1.png)
@@ -72,6 +74,8 @@ The way organizations are building conversational systems is evolving, with bots
 
 
 ## Task 3: Create a New Topic
+
+In this task, you’ll create a new topic in Microsoft Copilot Studio using the “Add from description with Copilot” feature. You’ll learn how to generate a sample conversation flow, customize it by deleting placeholder nodes, add conditions based on variables (like city), and define branching logic with specific user questions and responses. By the end of this task, you’ll have a fully functional topic that recommends food options based on the user’s selected city and food type.
 
 1. On the **Microsoft Copilot Studio** page, select **Topics** **(1)**, click on **+ Add a topic** **(2)**, and from the drop down menu select **Add from description with Copilot** **(3)**.
 
@@ -157,6 +161,8 @@ The way organizations are building conversational systems is evolving, with bots
 <validation step="1f3092c6-421b-4e88-8fe6-b5cb70ca1396" />
 
 ## Task 4: Test your Copilot
+
+In this task, you’ll test the topic you created in Microsoft Copilot Studio. You’ll learn how to interact with your Copilot by entering sample phrases, providing variable inputs like the city and food type, and verifying that the chatbot responds correctly with the expected meal options. By the end of this task, you’ll confirm that your Copilot topic is functioning as intended.
 
 1. Once the Topic is saved, click on **Test (1)** from the right-top corner.
 
