@@ -46,45 +46,60 @@ The architecture for this lab involves the following key components:
 - **Conversational AI with Power Virtual Agents** : Implements a chatbot interface using Power Virtual Agents and AI Services to facilitate intuitive, natural language interactions for navigating and retrieving relevant research documents.
 
 ## Getting Started with Lab
+
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-![](media/getting-started-1.png)
+![](media/mod-re-g-6.png)
 
 ## Virtual Machine & Lab Guide
+
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
 
 ## Exploring Your Lab Resources
+
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
-![](media/getting-started-2.png)
+![](media/cor_gs_r_3.png)
 
 ## Utilizing the Split Window Feature
+
 For convenience, you can open the lab guide in a separate window by selecting the Split Window button from the top right corner.
 
-![](media/getting-started-3.png)
+![](media/cor_gs_r_6.png)
 
 ## Managing Your Virtual Machine
-Feel free to start, stop, or restart your virtual machine as needed from the Resources tab. Your experience is in your hands!
 
-![](media/getting-started-5.png)
+1. On the **Resources (1)** tab, you can manage your virtual machines. Under the **Actions (2)** column, use the buttons to start, stop, restart, or open your VM as needed.
+
+   ![](media/cor_gs_r_4.png)
+
+1. If the virtual machine is powered off, its status will be displayed as shown in the image below. In this case, click **Start VM** button to power it on. The startup process may take 2–5 minutes.
+
+   ![](media/VMon.png)
+
+## Lab Guide Zoom In/Zoom Out
+ 
+Click the **A↕ icon (1)** next to the timer to adjust the zoom level for the environment page. From the drop-down menu, select the desired **Percentage (2)**.
+
+![](media/cor_gs_r_5.png)
 
 ## Let's Get Started with Azure Portal
  
 1. On your virtual machine, click on the **Azure Portal** icon as shown below:
  
-   ![](media/azure-portal-edge.png)
+   ![](media/mod-re-g-7.png)
 
 1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next**. 
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
    
-      ![](media/user-email.png "Enter Email")
+      ![](media/rd_gs_1_6.png "Enter Email")
      
 1. Now enter the following password and click on **Sign in**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
-      ![](media/user-pass.png "Enter Password")
+      ![](media/rd_gs_1_7.png "Enter Password")
 
 1. If you see the pop-up Action Required, click Ask Later.
 
