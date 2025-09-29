@@ -124,7 +124,7 @@ Learner Support Contacts:
 
 Click **Next** from the bottom right corner to embark on your Lab journey!
 
-![](media/next.png)
+![](media/rd_gs_1_9.png)
 
 ### Happy Learning!!
 
