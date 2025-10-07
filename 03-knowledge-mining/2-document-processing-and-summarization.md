@@ -22,21 +22,21 @@ In this lab, you’ll open and explore the COVID-19 Power BI dashboard to review
 
 1. To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) of the virtual machine provided with your environment.
 
-   ![Azure AI in a Day datasets](./media/in1.png)
+   ![](media/in1.png)
 
    > **Note:** Please close and reopen the Power BI Desktop document if it throws an error on the first attempt.
 
    >**Note:** If you see the **Introducing the updated mobile layout** pop-up screen, then close it by clicking on `Got it`.
 
-   ![](./media/e1t1p1(1).png)
+   ![](media//e1t1p1(1).png)
 
 1. Collapse the **Fields (1)** and **Visualizations (2)** tabs to see the clear report.
 
-   ![](./media/e1t1p2.png)
+   ![](media//e1t1p2.png)
 
 1. Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
 
-   ![Azure AI in a Day datasets](./media/SHC1.png)
+   ![Azure AI in a Day datasets](media//SHC1.png)
 
    >To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
 
@@ -559,4 +559,4 @@ In this lab, you have explored Azure Document Intelligence and AI Services and e
 
 ### You have successfully completed the Lab 2. Click on Next >> to proceed with the next Lab.
 
-![](./media/nextpage3.png)
+![](media//nextpage3.png)
