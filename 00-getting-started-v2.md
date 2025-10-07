@@ -95,11 +95,11 @@ Click the **A↕ icon (1)** next to the timer to adjust the zoom level for the e
    
       ![](media/rd_gs_1_6.png "Enter Email")
      
-1. Now enter the following password and click on **Sign in**.
+1. Now enter the Temporary Access Pass in the **Password:** field and click **Sign in**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
-      ![](media/rd_gs_1_7.png "Enter Password")
+      ![](media/invo-e1-g1.png "Enter Password")
 
 1. If you see the pop-up Action Required, click Ask Later.
 

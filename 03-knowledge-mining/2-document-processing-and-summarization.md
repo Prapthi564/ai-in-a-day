@@ -22,21 +22,21 @@ In this lab, you’ll open and explore the COVID-19 Power BI dashboard to review
 
 1. To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) of the virtual machine provided with your environment.
 
-   ![Azure AI in a Day datasets](./media/in1.png)
+   ![](media/in1.png)
 
    > **Note:** Please close and reopen the Power BI Desktop document if it throws an error on the first attempt.
 
    >**Note:** If you see the **Introducing the updated mobile layout** pop-up screen, then close it by clicking on `Got it`.
 
-   ![](./media/e1t1p1(1).png)
+   ![](media//e1t1p1(1).png)
 
 1. Collapse the **Fields (1)** and **Visualizations (2)** tabs to see the clear report.
 
-   ![](./media/e1t1p2.png)
+   ![](media//e1t1p2.png)
 
 1. Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
 
-   ![Azure AI in a Day datasets](./media/SHC1.png)
+   ![Azure AI in a Day datasets](media//SHC1.png)
 
    >To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
 
@@ -549,7 +549,7 @@ In this task, we are creating a text summarization application with the client l
 > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="9783aabe-40ad-4cba-b3b6-6b1a967e27c6" />
+<validation step="40bf7076-a011-4d13-8381-fb496266f4b3" />
 
 You can find more references about Document Summarization from here: [Quickstart: Get started with Language Studio - Azure AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/AI-services/language-service/language-studio). Use this article to learn about Language Studio, and testing features of Azure AI Service for Language Integration.
 
@@ -559,4 +559,4 @@ In this lab, you have explored Azure Document Intelligence and AI Services and e
 
 ### You have successfully completed the Lab 2. Click on Next >> to proceed with the next Lab.
 
-![](./media/nextpage3.png)
+![](media//nextpage3.png)
