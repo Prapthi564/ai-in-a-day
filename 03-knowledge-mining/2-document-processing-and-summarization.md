@@ -549,7 +549,7 @@ In this task, we are creating a text summarization application with the client l
 > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="9783aabe-40ad-4cba-b3b6-6b1a967e27c6" />
+<validation step="40bf7076-a011-4d13-8381-fb496266f4b3" />
 
 You can find more references about Document Summarization from here: [Quickstart: Get started with Language Studio - Azure AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/AI-services/language-service/language-studio). Use this article to learn about Language Studio, and testing features of Azure AI Service for Language Integration.
 
