@@ -113,6 +113,10 @@ In this task, you’ll set up Azure Cognitive Search indexes by configuring data
 
 1. Similarly, open the `covid19temp_datasource.schema` file with a text editor and replace the segment starting `<< TODO:>>` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
 
+    ![The abstract data source is ready to be updated.](media/edit-covid19temp-datasource.png)
+
+    ![](media/edit-covid19temp-datasource-1.png)
+
 1. Now, locate the **AzureSearchIndex.ps1** **(1)** file at  path`C:\Temp\AzureSearch\` and right- click on it and select **Open with... (2)** from the context menu.
 
      ![](media/e2t3p13.png)
@@ -181,7 +185,7 @@ In this task, you’ll query the Azure Cognitive Search indexes to explore index
 
 1. Select the **Indexes (1)** tab under **Search management** and ensure that you have two indexes created. If the Document Count is 0 for either, wait for a couple of minutes and select **Refresh (2)** until the document count appears.
 
-    ![The list of Azure Search indexes.](media/Lab2-02.png)
+    ![The list of Azure Search indexes.](media/Lab2-02-1.png)
 
 1. Once documents are available, navigate to **Overview (1)** of Search service and then select **Search explorer (2)** to open up the Search Explorer.
 
@@ -201,7 +205,7 @@ In this task, you’ll query the Azure Cognitive Search indexes to explore index
 
 1. The Azure Search service can also generate a demo application. Return to the search service and select **Indexes (1)** from left pane under **Search management** and navigate to the **covid19temp (2)** index.
 
-    ![The covid19temp index is selected.](media/inn8.png)
+    ![The covid19temp index is selected.](media/inn8-1.png)
 
 1. On the **covid19temp** index select the **Create Demo app** option.
 
@@ -253,6 +257,8 @@ In this task, you’ll update the Azure Cognitive Search index by adding new doc
 
 4. Enter your storage account **Connection string (1)** **<inject key="storageAccountConnectionString" enableCopy="true"/>**, and then click **Next (2)**. 
 
+    > **Note:** Display name gets filled automatically when you add Connection string.
+
     ![The connection string is filled in.](media/Lab2-09.png)
 
 1. Review the details under the **Summary** and click **Connect** to complete the operation.
@@ -293,6 +299,8 @@ In this task, you’ll update the Azure Cognitive Search index by adding new doc
 
 12. Select the **AI-in-a-Day** resource group.
 
+    ![Azure resource group](media/Rg-00.png)
+
 13. Select the **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** Search service.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
@@ -315,7 +323,7 @@ In this task, you’ll update the Azure Cognitive Search index by adding new doc
 
 17. Return to the **Indexes (1)** tab for the Search service and ensure that the **covid19temp (2)** index has `965` documents. If it still reads 865, wait 30 seconds and select **Refresh** to check again.
 
-    ![The covid19temp index has finished updating.](media/Lab2-15.png)
+    ![The covid19temp index has finished updating.](media/Lab2-15-1.png)
 
 18. Select the **covid19temp** index to return to the Search Explorer. When we had 865 documents, 53 of them pertained to Brazil. We can confirm that this update was successful by entering `Brazil&$count=true` **(1)** and selecting **Search (2)**. This will now return 57 results **(3)** instead of the prior 53.
 
@@ -398,7 +406,7 @@ In this task, you’ll use Document Intelligence Studio to create a custom model
     | --------------------------- | -------------------------------------|
     | Subscription                | Select the default subscription  **(1)**    |
     | Resource Group              | Select `AI-in-a-Day` **(2)**                |
-    | Document Intelligence or Cognitive Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
+    | Document Intelligence or Cognitive Service Resource| Select **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>** **(3)**|
     
     ![Project](media/e2t6p13.png)
     
@@ -408,7 +416,7 @@ In this task, you’ll use Document Intelligence Studio to create a custom model
     | --------------------------- | -------------------------------------|
     | Subscription                | Select the default subscription **(1)**     |
     | Resource Group              | Select `AI-in-a-Day` **(2)**                |
-    | Storage account             | Select aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> **(3)** |
+    | Storage account             | Select **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** **(3)** |
     | Blob container              | Select `covid19temp` **(4)**                 |
     | Folder path                 | Enter `papers` **(5)**                      |
 

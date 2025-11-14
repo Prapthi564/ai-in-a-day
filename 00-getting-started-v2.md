@@ -88,29 +88,21 @@ Feel free to **Start, Restart, or Stop (2)** your virtual machine as needed from
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
    
-      ![](media/GettingStarted-04.png "Enter Email")
+      ![](media/sign-in-page.png "Enter Email")
      
 1. Now enter the following password and click on **Sign in (2)**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject> **(1)**
    
-      ![](media/GettingStarted-05.png "Enter Password")
-
-1. If you see the pop-up Action Required, click **Ask Later**.
-
-   ![](media/asklater.png)
-
-   >**NOTE:** Do not enable MFA, select **Ask Later**.
+      ![](media/tap-password.png "Enter Password")
      
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
-   ![](media/GettingStarted-06.png)
+   ![](media/Sign-in-no.png)
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, select **Cancel** to skip the tour.
-
-   ![](media/l2at2p2.png)
 
 ## Support Contact
 
