@@ -46,15 +46,14 @@ The architecture for this lab involves the following key components:
 - **Conversational AI with Microsoft Copilot Studio** : Builds an AI-powered chatbot interface with Microsoft Copilot Studio and integrated AI services to enable natural language interactions. This solution helps users easily search, navigate, and retrieve relevant research documents through a conversational experience.
 
 ## Getting Started with Lab
+
+Welcome to your Innovate with AI Hands-on Lab! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+
+## Accessing Your Lab Environment
+
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
 ![](media/GettingStarted-00.png)
-
-## Lab Guide Zoom In/Zoom Out
-
-To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
-
-![](media/GettingStarted-01.png)
 
 ## Virtual Machine & Lab Guide
 Your virtual machine is your workhorse throughout the workshop. The guide is your roadmap to success.
@@ -73,6 +72,12 @@ For convenience, you can open the lab guide in a separate window by selecting th
 Feel free to **Start, Restart, or Stop (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
 ![](media/ing5.png)
+
+## Lab Guide Zoom In/Zoom Out
+
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+![](media/GettingStarted-01.png)
 
 ## Let's Get Started with Azure Portal
  
