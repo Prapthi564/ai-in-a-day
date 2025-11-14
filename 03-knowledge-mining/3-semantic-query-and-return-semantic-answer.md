@@ -31,9 +31,9 @@ In this task, you’ll enable the Semantic ranker in the Azure AI Search service
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
    
-3. In the left-hand pane under the **Settings** section, select **Semantic ranker (1)**. Then, in the Semantic ranker pane, click **Selected Plan (2)** under the **Free** tier. This will set your Semantic search to use the free tier plan.
+3. In the left-hand pane under the **Settings** section, select **Premium features (1)**. Then, in the Premium features pane, click **Select Plan (2)** under the **Free** tier. This will set your Semantic search to use the free tier plan.
 
-    ![Semantic search service to be selected](media/inn16.png)
+    ![Semantic search service to be selected](media/inn16-1.png)
    
 ## Task 2: Creating a Semantic Configuration
 
@@ -41,7 +41,7 @@ In this task, you’ll create a semantic configuration for the `covid19temp` Azu
 
 1. Navigate to the **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and then select **Indexes (1)** under the **Search management**. You will be able to see the list of indexes, click on the **covid19temp (2)** index for adding semantic configuration.
 
-    ![Semantic config](media/e3t2p1.png)
+    ![Semantic config](media/Lab2-15-1.png)
    
 2. In the **covid19temp** index pane, select **Semantic configurations** **(1)** and click on **+ Add semantic configuration** **(2)**.
 

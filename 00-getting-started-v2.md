@@ -46,15 +46,14 @@ The architecture for this lab involves the following key components:
 - **Conversational AI with Microsoft Copilot Studio** : Builds an AI-powered chatbot interface with Microsoft Copilot Studio and integrated AI services to enable natural language interactions. This solution helps users easily search, navigate, and retrieve relevant research documents through a conversational experience.
 
 ## Getting Started with Lab
+
+Welcome to your Innovate with AI Hands-on Lab! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+
+## Accessing Your Lab Environment
+
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
 ![](media/GettingStarted-00.png)
-
-## Lab Guide Zoom In/Zoom Out
-
-To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
-
-![](media/GettingStarted-01.png)
 
 ## Virtual Machine & Lab Guide
 Your virtual machine is your workhorse throughout the workshop. The guide is your roadmap to success.
@@ -74,6 +73,12 @@ Feel free to **Start, Restart, or Stop (2)** your virtual machine as needed from
 
 ![](media/ing5.png)
 
+## Lab Guide Zoom In/Zoom Out
+
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+![](media/GettingStarted-01.png)
+
 ## Let's Get Started with Azure Portal
  
 1. On your virtual machine, click on the **Azure Portal** icon as shown below:
@@ -88,29 +93,21 @@ Feel free to **Start, Restart, or Stop (2)** your virtual machine as needed from
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
    
-      ![](media/GettingStarted-04.png "Enter Email")
+      ![](media/sign-in-page.png "Enter Email")
      
 1. Now enter the following password and click on **Sign in (2)**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject> **(1)**
    
-      ![](media/GettingStarted-05.png "Enter Password")
-
-1. If you see the pop-up Action Required, click **Ask Later**.
-
-   ![](media/asklater.png)
-
-   >**NOTE:** Do not enable MFA, select **Ask Later**.
+      ![](media/tap-password.png "Enter Password")
      
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
-   ![](media/GettingStarted-06.png)
+   ![](media/Sign-in-no.png)
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, select **Cancel** to skip the tour.
-
-   ![](media/l2at2p2.png)
 
 ## Support Contact
 
