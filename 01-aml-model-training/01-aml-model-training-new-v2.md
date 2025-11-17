@@ -273,6 +273,8 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
      ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn5.png)
    
+     >**Note:** If the Select Experiment Name section is greyed out, create a new experiment. Change the default experiment name to **COVID19_Classification**, then click **Next** to continue.
+
 3. On the **Task type and data** section,
 
    - **Select task type**:  Make sure **Classification** **(1)** is selected from the dropdown.
