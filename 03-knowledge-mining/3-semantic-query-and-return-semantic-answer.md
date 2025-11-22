@@ -41,7 +41,7 @@ In this task, you’ll create a semantic configuration for the `covid19temp` Azu
 
 1. Navigate to the **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and then select **Indexes (1)** under the **Search management**. You will be able to see the list of indexes, click on the **covid19temp (2)** index for adding semantic configuration.
 
-    ![Semantic config](media/Lab2-15-1.png)
+    ![Semantic config](media/inn-4.png)
    
 2. In the **covid19temp** index pane, select **Semantic configurations** **(1)** and click on **+ Add semantic configuration** **(2)**.
 
@@ -79,7 +79,7 @@ In this task, you’ll perform a semantic search on the `covid19temp` index usin
    
 4. Click on **Search (1)**. Wait a few seconds for the search to complete, then scroll down to the **Results (2)** section on the same page. You should now see the output of the semantic search using the selected semantic configuration.
 
-    ![Semantic search](media/Lab3-11.png)
+    ![Semantic search](media/inn-5.png)
    
 ## Task 4: Semantic Query using REST APIs
 
@@ -101,7 +101,7 @@ In this task, you are going to perform the semantic search using a query in [RES
 
      ![Semantic search](media/lab2b-ssp12.png)
    
-1. Select the **POST (1)** method from the drop-down menu. Then, enter the request URL provided below, making sure to replace the search service name with **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and the index name with **covid19temp**.
+1. Select the **POST (1)** method from the drop-down menu. Then, enter the request URL provided below, making sure to replace the `[search-service-name]` with **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and the `[index-name]` with **covid19temp**.
 
    `https://[search-service-name].search.windows.net/indexes/[index-name]/docs/search` **(2)**.
    
