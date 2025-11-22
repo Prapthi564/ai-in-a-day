@@ -31,7 +31,7 @@ In this task, you will set up Microsoft Copilot Studio and create your first Cop
 
     ![](media/e4t1p1.png)
 
-1. On the **Let's get you started** page, enter your azure **Username (1)** and select **Next (2)**. 
+1. On the **Let's get you started** page, enter your azure **Username: <inject key="AzureAdUserEmail"></inject> (1)** and select **Next (2)**. 
 
     ![](media/Lab4-1.png)
 
