@@ -275,7 +275,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
      ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn5.png)
    
-     >**Note:** If the Select Experiment Name section is greyed out, create a new experiment. Change the default experiment name to **COVID19_Classification**, then click **Next** to continue.
+     >**Note:** If the Select **Experiment Name** section is greyed out, create a new experiment. Change the default experiment name to **COVID19_Classification**, then click **Next** to continue.
 
 3. On the **Task type and data** section,
 
@@ -296,7 +296,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    - Select compute type as **Compute Cluster** **(1)** 
    - Select Azure AML compute cluster as **aml-compute-cpu** **(2)** from the list of clusters
-   - Then click on **Next** and proceed with **step 9** 
+   - Then click on **Next** and proceed with **step 8** 
    
      >**Note**: If the list is empty only then select **+ New** **(3)** link and follow the steps 6 and 7.
 
