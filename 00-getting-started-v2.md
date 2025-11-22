@@ -6,7 +6,7 @@
 
 In this lab, you will explore the use of Natural Language Processing and Machine Learning to classify COVID-19 research papers into natural groupings. You will utilize Automated Machine Learning (AutoML) in Azure to train and refine the best classification models. The lab emphasizes the importance of a fully automated and traceable process for managing large volumes of incoming research documents, ensuring data quality through engineering processes, and providing advanced indexing and search capabilities using AI Search. Additionally, you will learn how to leverage Conversational AI, using Microsoft Copilot Studio and Azure AI Services, to help analysts easily navigate and find relevant research documents through natural language interactions.
 
-## Objective
+## Objectives
 
 Understand how to utilize Natural Language Processing, Machine Learning, and Conversational AI in Azure for classifying and exploring COVID-19 research papers. By the end of the lab, you will have knowledge on : 
 

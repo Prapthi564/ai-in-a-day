@@ -123,6 +123,8 @@ In this task, you’ll access your Azure Machine Learning workspace, launch the 
 
    ![](./media/e1t3p7.png)
 
+1. Please wait until the command completes successfully. It may take around 5 minutes.   
+
 1. Now run the following the commands: 
 
     ```
