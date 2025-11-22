@@ -39,7 +39,7 @@ The corpus may be updated as new research is published in peer-reviewed publicat
 
 ## Task 1: Explore dashboard of COVID-19 data
 
-In this lab, you’ll open and explore the COVID-19 Power BI dashboard to review the source datasets that will be used in upcoming AI and ML exercises.
+In this task, you’ll open and explore the COVID-19 Power BI dashboard to review the source datasets that will be used in upcoming AI and ML exercises.
 
 1. To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) of the virtual machine provided with your environment.
 
@@ -84,7 +84,7 @@ The high-level steps covered in the lab are:
 
 ## Task 3: Prepare Azure Machine Learning workspace
 
-In this lab, you’ll access your Azure Machine Learning workspace, launch the studio, verify that your compute instance is running, and set up the required Python environment. You’ll then configure and launch Jupyter to prepare for running notebooks in the upcoming exercises.
+In this task, you’ll access your Azure Machine Learning workspace, launch the studio, verify that your compute instance is running, and set up the required Python environment. You’ll then configure and launch Jupyter to prepare for running notebooks in the upcoming exercises.
 
 1. In the **Azure portal** search bar, search for **All resources (1)** and select **All resources (2)** under Services.
 
