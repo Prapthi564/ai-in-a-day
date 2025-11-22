@@ -344,7 +344,7 @@ In this task, you’ll review the results of the AutoML experiment by exploring 
 
    ![Locate the completed experiment ](media/ml-job.png)
 
-2. You will navigate to the experiment details page, where you should see the list of experiment runs. Locate the first run **(1)** listed here, which has the status **Completed**. 
+2. You will navigate to the experiment details page, where you should see the list of experiment runs. Locate the first run **(1)** listed here, which has the status **Completed**. Sometimes it may take around `15–30` minutes for the status to change to `Completed`. Even if the job is still showing as `Running`, you can click on the job name and proceed with the steps mentioned below.
 
    ![Locate the completed AutoML run](media/e1t6p2.png)
 
