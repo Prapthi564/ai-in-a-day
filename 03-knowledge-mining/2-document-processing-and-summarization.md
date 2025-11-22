@@ -75,7 +75,7 @@ In this task, you’ll set up Azure Cognitive Search indexes by configuring data
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
 
-1. Copy the search service **URL** and save it in a notepad. Also note the **service account name**, which is the part before `.search.windows.net` in the URL.
+1. Copy the search service **URL** and save it in a notepad. Also note the **Search service name**, which is the part before `.search.windows.net` in the URL.
 
     ![The Search service's URL is copied to the clipboard.](media/copy-azure-search-url.png)
 
@@ -147,8 +147,8 @@ In this task, you’ll set up Azure Cognitive Search indexes by configuring data
 
     Make sure to update the Azure Search account name and Azure Search API key in the below commands and then run.
    
-     - Azure Search Account Name: **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**
-     - Azure Search API key: You saved the **Primary admin key** in the notepad earlier, use that.
+     - Replace `AZURE SEARCH ACCOUNT NAME` with **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**
+     - Replace `API KEY`: You saved the **Primary admin key** in the notepad earlier, use that.
 
         ```powershell
         Create-AzureSearchIndex "C:/Temp/AzureSearch/abstracts_datasource.schema" "C:/Temp/AzureSearch/abstracts.schema" "C:/Temp/AzureSearch/abstracts_indexer.schema" "AZURE SEARCH ACCOUNT NAME" "API KEY"
@@ -378,7 +378,7 @@ In this task, you’ll use Document Intelligence Studio to create a custom model
 
      ![The AI Services key and endpoint are selected](media/inn12.png)
 
-1. Go to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/) `https://formrecognizer.appliedai.azure.com/` and click the **Sign in** icon in the top-right corner.
+1. Go to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/) and click the **Sign in** icon in the top-right corner.
 
     ![](media/e2t6p8.png)
  
@@ -387,6 +387,10 @@ In this task, you’ll use Document Intelligence Studio to create a custom model
      ![Create new custom model](media/Lab2-4.png)
 
      >**Note:** If prompted, use the credentials provided in the **Environment** Tab to Sign-in.   
+
+1. Select **Start with Document Intelligence** under Document Intelligence.    
+
+     ![Create new custom model](media/inn-2.png)
  
 1. Scroll-down to **Custom models** and select **Get Started** under **Custom extraction model**. 
 
@@ -471,7 +475,7 @@ In this task, you’ll use Document Intelligence Studio to create a custom model
 
      ![The option to train a model has been selected](media/Lab2-9.png)
 
-     >**Note**: As Training a model will take up to 45-60 minutes to succeed. No need to wait for it, you can continue with next Lab. Come back later and review it after an hour.
+1. As Training a model will take up to `45-60` minutes to succeed. No need to wait for it, you can continue with next task and Lab. Come back later and review it after an hour.     
 
 1. After the model has finished training, you will see that the Status has succeeded.  Although the estimated accuracy is not great, but we will use this model.
 
