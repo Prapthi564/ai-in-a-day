@@ -420,7 +420,11 @@ In this task, you’ll explore the Responsible AI dashboard by interacting with 
 
    ![Run Note Book Cell](./media/ai-img5.png)
 
-1. Navigate back to **Error explorer** page, and choose **Heat map (1)** form the drop-down next to **Error Explorer**. 
+1. Navigate back to **Error explorer** page,
+
+   ![Run Note Book Cell](./media/inn-1.png)
+
+1. On the **Error explorer** page, choose **Heat map (1)** form the drop-down next to **Error Explorer**. 
    
    - For **Rows: Feature 1 :** Select **number_of_elements (2)**  
    - For **Columns: Feature 2 :** Select **mean_atomic_mass (3)** 
