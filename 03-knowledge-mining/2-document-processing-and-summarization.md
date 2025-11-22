@@ -105,13 +105,13 @@ In this task, you’ll set up Azure Cognitive Search indexes by configuring data
 
    ![](media/e2t3p10(1).png)
 
-1. Replace the segment starting `<< TODO:>>` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
+1. Replace the segment starting `<< TODO:>>` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>**. Then click **File** and then **Save** the file.
 
     ![The abstract data source is ready to be updated.](media/edit-abstracts-datasource.png)
 
     ![](media/e2t3p11.png)
 
-1. Similarly, open the `covid19temp_datasource.schema` file with a text editor and replace the segment starting `<< TODO:>>` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
+1. Similarly, open the `covid19temp_datasource` file with a text editor and replace the segment starting `<< TODO:>>` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>**. Then click **File** and then **Save** the file.
 
     ![The abstract data source is ready to be updated.](media/edit-covid19temp-datasource.png)
 
@@ -185,7 +185,7 @@ In this task, you’ll query the Azure Cognitive Search indexes to explore index
 
 1. Select the **Indexes (1)** tab under **Search management** and ensure that you have two indexes created. If the Document Count is 0 for either, wait for a couple of minutes and select **Refresh (2)** until the document count appears.
 
-    ![The list of Azure Search indexes.](media/Lab2-02-1.png)
+    ![The list of Azure Search indexes.](media/inn-3.png)
 
 1. Once documents are available, navigate to **Overview (1)** of Search service and then select **Search explorer (2)** to open up the Search Explorer.
 
@@ -205,7 +205,7 @@ In this task, you’ll query the Azure Cognitive Search indexes to explore index
 
 1. The Azure Search service can also generate a demo application. Return to the search service and select **Indexes (1)** from left pane under **Search management** and navigate to the **covid19temp (2)** index.
 
-    ![The covid19temp index is selected.](media/inn8-1.png)
+    ![The covid19temp index is selected.](media/inn-4.png)
 
 1. On the **covid19temp** index select the **Create Demo app** option.
 
