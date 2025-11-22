@@ -6,6 +6,8 @@
 
 Azure Document Intelligence and AI Service for Language streamline document processing by extracting key information and automating summaries, leveraging AI to enhance data extraction accuracy and deliver actionable insights efficiently.
 
+In this lab, you will use Azure Document Intelligence and the AI Service for Language to extract structured information from documents and generate automated summaries. You will create, query, and update Azure Search indexes, process documents using Document Intelligence Studio, and integrate language services for summarization.
+
 ## Lab Objectives
 
 - Task 1: Explore the dashboard of COVID-19 data
@@ -18,7 +20,7 @@ Azure Document Intelligence and AI Service for Language streamline document proc
 
 ## Task 1: Explore the dashboard of COVID-19 data
 
-In this lab, you’ll open and explore the COVID-19 Power BI dashboard to review the source datasets that will be used in upcoming AI and ML exercises.
+In this task, you’ll open and explore the COVID-19 Power BI dashboard to review the source datasets that will be used in upcoming AI and ML exercises.
 
 1. To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) of the virtual machine provided with your environment.
 

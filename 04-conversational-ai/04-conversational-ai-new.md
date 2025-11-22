@@ -6,6 +6,8 @@
 
 Conversational AI with Microsoft Copilot Studio allows users to create and deploy sophisticated chatbots with no code, enabling automated interactions and enhanced customer engagement through intuitive, customizable conversational flows.
 
+In this lab, you will use Microsoft Copilot Studio to build a no-code conversational AI experience. You will set up your Copilot environment, create topics, design conversational flows, and test your custom Copilot for real-time interactions.
+
 ## Lab Objectives
 
 - Task 1: Explore lab scenario

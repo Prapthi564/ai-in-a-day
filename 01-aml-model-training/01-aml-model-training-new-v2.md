@@ -6,6 +6,8 @@
 
 Azure Machine Learning model training involves using Azure’s cloud-based platform to build, train, and tune machine learning models with scalable compute resources, automated workflows, and integrated tools, streamlining the process from data preparation to model deployment.
 
+In this lab, you will use Azure Machine Learning to prepare data, train a classification model using Automated ML, and evaluate the results through Responsible AI tools. You will explore the workspace, review COVID-19 data, run an AutoML experiment, and analyze the generated insights and dashboards.
+
 ### Source datasets used by the labs
 
 ### COVID-19 Case Surveillance Public Use Data
